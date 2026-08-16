@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1445">
+        <Placemark id="1447">
+            <name>Former positions of S-200</name>
+            <description/>
+            <Point id="1446">
+                <coordinates>83.6199098,53.1686652,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1449">
+            <name>Сады (ru)</name>
+            <description/>
+            <Point id="1448">
+                <coordinates>83.6461364,53.1921758,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1451">
+            <name>Заброшенный аэродром Шадрино (ru)</name>
+            <description/>
+            <Point id="1450">
+                <coordinates>83.6535447,53.1177718,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1453">
+            <name>Dawna pozycja ogniowa S-200 (pl)</name>
+            <description/>
+            <Point id="1452">
+                <coordinates>83.6184615,53.1701604,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1455">
+            <name>Dawna pozycja ogniowa S-200 (pl)</name>
+            <description/>
+            <Point id="1454">
+                <coordinates>83.622635,53.1682845,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1457">
+            <name>Территория бывшего детского лагеря «Ракета» (ru)</name>
+            <description/>
+            <Point id="1456">
+                <coordinates>83.5875249,53.2689795,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1459">
+            <name>Недействующее Лебяжинское кладбище (ru)</name>
+            <description/>
+            <Point id="1458">
+                <coordinates>83.6695602,53.2529834,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1461">
+            <name>Заброшенная взлётно-посадочная полоса ГВПП 03/21 (ru)</name>
+            <description/>
+            <Point id="1460">
+                <coordinates>83.6538129,53.1177718,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1463">
+            <name>Заброшенное водохранилище (ru)</name>
+            <description/>
+            <Point id="1462">
+                <coordinates>83.666835,53.2205085,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1465">
+            <name>Заброшенный пивзавод (ru)</name>
+            <description/>
+            <Point id="1464">
+                <coordinates>83.7071995,53.2451838,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1467">
+            <name>Wyrzutnia nr 1 (pl)</name>
+            <description/>
+            <Point id="1466">
+                <coordinates>83.6167535,53.1699783,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1469">
+            <name>Radar K-1W (pl)</name>
+            <description/>
+            <Point id="1468">
+                <coordinates>83.611186,53.1650937,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1471">
+            <name>Radar K-1W (pl)</name>
+            <description/>
+            <Point id="1470">
+                <coordinates>83.6136858,53.1640838,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1473">
+            <name>Ангар (ru)</name>
+            <description/>
+            <Point id="1472">
+                <coordinates>83.6138359,53.1656932,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1475">
+            <name>Wyrzutnia nr 6 (pl)</name>
+            <description/>
+            <Point id="1474">
+                <coordinates>83.6192938,53.1690639,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1477">
+            <name>Wyrzutnia nr 2 (pl)</name>
+            <description/>
+            <Point id="1476">
+                <coordinates>83.6170252,53.1708276,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1479">
+            <name>Wyrzutnia nr 4 (pl)</name>
+            <description/>
+            <Point id="1478">
+                <coordinates>83.6203689,53.1704502,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1481">
+            <name>Wyrzutnia nr 3 (pl)</name>
+            <description/>
+            <Point id="1480">
+                <coordinates>83.6181818,53.171246,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1483">
+            <name>Wyrzutnia nr 5 (pl)</name>
+            <description/>
+            <Point id="1482">
+                <coordinates>83.6200268,53.1696503,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1485">
+            <name>Wyrzutnia nr 5 (pl)</name>
+            <description/>
+            <Point id="1484">
+                <coordinates>83.6233157,53.1673557,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1487">
+            <name>Wyrzutnia nr 4 (pl)</name>
+            <description/>
+            <Point id="1486">
+                <coordinates>83.6243461,53.1679463,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1489">
+            <name>Wyrzutnia nr 1 (pl)</name>
+            <description/>
+            <Point id="1488">
+                <coordinates>83.6208449,53.1687154,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1491">
+            <name>Wyrzutnia nr 2 (pl)</name>
+            <description/>
+            <Point id="1490">
+                <coordinates>83.6217714,53.1693685,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1493">
+            <name>Wyrzutnia nr 3 (pl)</name>
+            <description/>
+            <Point id="1492">
+                <coordinates>83.6232256,53.1694145,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1495">
+            <name>Wyrzutnia nr 6 (pl)</name>
+            <description/>
+            <Point id="1494">
+                <coordinates>83.6219455,53.1671232,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1497">
+            <name>Ангар хранения ракет (ru)</name>
+            <description/>
+            <Point id="1496">
+                <coordinates>83.6270965,53.1724084,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1499">
+            <name>Казарма (ru)</name>
+            <description/>
+            <Point id="1498">
+                <coordinates>83.6279363,53.168401,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1501">
+            <name>SD dywizjonu (pl)</name>
+            <description/>
+            <Point id="1500">
+                <coordinates>83.6184376,53.1700716,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1503">
+            <name>Развалины (ru)</name>
+            <description/>
+            <Point id="1502">
+                <coordinates>83.6251696,53.1692459,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1505">
+            <name>Котельная (ru)</name>
+            <description/>
+            <Point id="1504">
+                <coordinates>83.6256014,53.1688689,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1507">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1506">
+                <coordinates>83.7099341,53.2449511,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1509">
+            <name>SD dywizjonu (pl)</name>
+            <description/>
+            <Point id="1508">
+                <coordinates>83.6222344,53.168221,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1511">
+            <name>Столовая (ru)</name>
+            <description/>
+            <Point id="1510">
+                <coordinates>83.6270592,53.1683648,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1513">
+            <name>Заброшенное кафе (ru)</name>
+            <description/>
+            <Point id="1512">
+                <coordinates>83.6526395,53.1518106,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1515">
+            <name>Распределительный пункт (ru)</name>
+            <description/>
+            <Point id="1514">
+                <coordinates>83.6261151,53.1688199,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1517">
+            <name>Заброшенное здание насосной станции (ru)</name>
+            <description/>
+            <Point id="1516">
+                <coordinates>83.7308487,53.2195261,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1519">
+            <name>Заброшенный дом (ru)</name>
+            <description/>
+            <Point id="1518">
+                <coordinates>83.7239954,53.2217228,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1521">
+            <name>Заброшенный пост ДПС (ru)</name>
+            <description/>
+            <Point id="1520">
+                <coordinates>83.7293856,53.2686659,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1523">
+            <name>Подземное овощехранилище (ru)</name>
+            <description/>
+            <Point id="1522">
+                <coordinates>83.626677,53.1703827,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

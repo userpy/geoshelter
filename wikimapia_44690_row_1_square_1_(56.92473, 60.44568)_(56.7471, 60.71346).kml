@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="2">
+                <coordinates>60.5273374,56.8714608,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="4">
+                <coordinates>60.5788116,56.7763217,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Убежище гражданской обороны № 111 (ru)</name>
+            <description/>
+            <Point id="6">
+                <coordinates>60.7115468,56.7578933,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="8">
+                <coordinates>60.6389177,56.8682528,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="10">
+                <coordinates>60.6653498,56.8407265,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="12">
+                <coordinates>60.545622,56.8127202,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="14">
+                <coordinates>60.6453962,56.8846484,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>Бомбоубежище РЖД (ru)</name>
+            <description/>
+            <Point id="16">
+                <coordinates>60.5953,56.8570778,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="18">
+                <coordinates>60.6433362,56.9157496,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>Бомбоубежище ТЭЦ № 19 (ru)</name>
+            <description/>
+            <Point id="20">
+                <coordinates>60.583083,56.763795,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="22">
+                <coordinates>60.5978272,56.8021823,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="24">
+                <coordinates>60.6985562,56.8300768,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="26">
+                <coordinates>60.6987882,56.8404501,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="28">
+                <coordinates>60.5221773,56.863704,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="30">
+                <coordinates>60.5143689,56.8886098,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="32">
+                <coordinates>60.5074086,56.804507,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>48-й запасной пункт управления РЖД (ru)</name>
+            <description/>
+            <Point id="34">
+                <coordinates>60.5969823,56.8578235,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>Хранилище РХБЗ (ru)</name>
+            <description/>
+            <Point id="36">
+                <coordinates>60.5876522,56.8533462,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="38">
+                <coordinates>60.6269412,56.7766716,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="40">
+                <coordinates>60.5938906,56.8786978,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="42">
+                <coordinates>60.5169814,56.8717818,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="44">
+                <coordinates>60.5190709,56.8912845,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="46">
+                <coordinates>60.6684055,56.8714176,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="49">
+            <name>Убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="48">
+                <coordinates>60.5980109,56.8536271,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="51">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="50">
+                <coordinates>60.6566293,56.8482048,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="53">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="52">
+                <coordinates>60.4942845,56.846955,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="55">
+            <name>Заброшенное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="54">
+                <coordinates>60.603598,56.8549953,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="57">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="56">
+                <coordinates>60.4836523,56.8943922,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="59">
+            <name>Убежище ГО (ru)</name>
+            <description/>
+            <Point id="58">
+                <coordinates>60.6044348,56.8494244,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="61">
+            <name>Наклонка (Вход) (ru)</name>
+            <description/>
+            <Point id="60">
+                <coordinates>60.6253158,56.7848908,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>Вентиляционная шахта (ru)</name>
+            <description/>
+            <Point id="62">
+                <coordinates>60.5767974,56.8965264,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="65">
+            <name>Вентиляционная шахта (ru)</name>
+            <description/>
+            <Point id="64">
+                <coordinates>60.576147,56.8960261,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="67">
+            <name>Вентиляционная шахта (ru)</name>
+            <description/>
+            <Point id="66">
+                <coordinates>60.5786857,56.8980322,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

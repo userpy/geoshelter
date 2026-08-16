@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="381">
+        <Placemark id="383">
+            <name>Недействующий совхоз «Молодёжный» (ru)</name>
+            <description/>
+            <Point id="382">
+                <coordinates>136.9459426,50.3797036,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="385">
+            <name>Недействующие очистные сооружения водоотведения (ru)</name>
+            <description/>
+            <Point id="384">
+                <coordinates>136.9100224,50.386916,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="387">
+            <name>Войсковая часть 31458 (дивизион 11) (ru)</name>
+            <description/>
+            <Point id="386">
+                <coordinates>136.910324,50.2663513,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="389">
+            <name>Бывшие позиции ЗРК С-125 (ru)</name>
+            <description/>
+            <Point id="388">
+                <coordinates>136.9133416,50.2631396,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="391">
+            <name>Ангар ракет С-125, С-75 (ru)</name>
+            <description/>
+            <Point id="390">
+                <coordinates>136.9020092,50.2926551,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="393">
+            <name>Заброшенный детский сад № 50 (ru)</name>
+            <description/>
+            <Point id="392">
+                <coordinates>136.9063142,50.2442185,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="395">
+            <name>Заброшенный бассейн начальной школы № 7 (ru)</name>
+            <description/>
+            <Point id="394">
+                <coordinates>136.9099916,50.2423015,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="397">
+            <name>Разрушенное задние (ru)</name>
+            <description/>
+            <Point id="396">
+                <coordinates>136.8997524,50.2962634,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="399">
+            <name>Пусковая площадка (ru)</name>
+            <description/>
+            <Point id="398">
+                <coordinates>136.9008531,50.2938521,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="401">
+            <name>Пусковая площадка (ru)</name>
+            <description/>
+            <Point id="400">
+                <coordinates>136.9142199,50.2628496,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="403">
+            <name>Залитая бетонном ракетная шахта (ru)</name>
+            <description/>
+            <Point id="402">
+                <coordinates>136.9138546,50.2632118,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="405">
+            <name>Залитая бетонном ракетная шахта (ru)</name>
+            <description/>
+            <Point id="404">
+                <coordinates>136.9137333,50.2626683,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="407">
+            <name>Залитая бетоном ракетная шахта (ru)</name>
+            <description/>
+            <Point id="406">
+                <coordinates>136.9131909,50.2635275,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="409">
+            <name>Залитая бетонном ракетная шахта (ru)</name>
+            <description/>
+            <Point id="408">
+                <coordinates>136.9128378,50.2632967,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="411">
+            <name>Брошенный фундамент (ru)</name>
+            <description/>
+            <Point id="410">
+                <coordinates>137.0807678,50.4253546,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="413">
+            <name>Mil Mi-8T</name>
+            <description/>
+            <Point id="412">
+                <coordinates>136.9288941,50.3999202,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="415">
+            <name>Водонапорная башня (ru)</name>
+            <description/>
+            <Point id="414">
+                <coordinates>136.9244096,50.4021263,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

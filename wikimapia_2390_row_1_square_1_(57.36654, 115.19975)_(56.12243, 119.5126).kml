@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="827">
+        <Placemark id="829">
+            <name>Borsky ITL - Borlag GULAG - uranium mines Zabaikalye.</name>
+            <description/>
+            <Point id="828">
+                <coordinates>117.7110815,56.9123023,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="831">
+            <name>Sinilga  - Administration Borski ITL - BORLAG GULAG</name>
+            <description/>
+            <Point id="830">
+                <coordinates>118.0803787,56.8178575,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="833">
+            <name>Урочище Средний Сакукан (Борский ИТЛ (Борлаг)) (ru)</name>
+            <description/>
+            <Point id="832">
+                <coordinates>118.0923414,56.8985976,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="835">
+            <name>Заброшенный урановый рудник Хадатканда 1951-1953 гг. (ru)</name>
+            <description/>
+            <Point id="834">
+                <coordinates>117.2630667,56.7476578,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="837">
+            <name>Местонахождение колонии (ru)</name>
+            <description/>
+            <Point id="836">
+                <coordinates>118.0764573,56.8174291,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="839">
+            <name>Местонахождение бывшей колонии (ru)</name>
+            <description/>
+            <Point id="838">
+                <coordinates>118.0727291,56.8204883,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

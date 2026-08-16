@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="183">
+        <Placemark id="185">
+            <name>Кладбище (ru)</name>
+            <description/>
+            <Point id="184">
+                <coordinates>83.1421014,53.9702981,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="187">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="186">
+                <coordinates>83.0458017,53.7755574,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

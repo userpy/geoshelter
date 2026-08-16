@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="59">
+        <Placemark id="61">
+            <name>Разрушенная свиноферма (ru)</name>
+            <description/>
+            <Point id="60">
+                <coordinates>83.4169256,54.6082572,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>Заброшенные коровники (ru)</name>
+            <description/>
+            <Point id="62">
+                <coordinates>83.4025328,54.6081204,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="65">
+            <name>Ранетный сад (ru)</name>
+            <description/>
+            <Point id="64">
+                <coordinates>83.8299964,54.623065,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="67">
+            <name>Заброшенное кладбище (ru)</name>
+            <description/>
+            <Point id="66">
+                <coordinates>83.7384151,54.8112926,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="69">
+            <name>Заброшенные склады (ru)</name>
+            <description/>
+            <Point id="68">
+                <coordinates>83.6866699,54.8353563,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="71">
+            <name>Недостроенный корпус птицефабрики (ru)</name>
+            <description/>
+            <Point id="70">
+                <coordinates>83.3778122,54.5054119,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="73">
+            <name>Заброшенный коровник (ru)</name>
+            <description/>
+            <Point id="72">
+                <coordinates>83.5975416,54.7278794,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="75">
+            <name>Заброшенный убойный цех (ru)</name>
+            <description/>
+            <Point id="74">
+                <coordinates>83.4055856,54.6107178,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="77">
+            <name>Заброшенный дом (ru)</name>
+            <description/>
+            <Point id="76">
+                <coordinates>83.9852603,54.6439366,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="79">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="78">
+                <coordinates>83.6886941,54.8380384,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="81">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="80">
+                <coordinates>83.6902856,54.8383577,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

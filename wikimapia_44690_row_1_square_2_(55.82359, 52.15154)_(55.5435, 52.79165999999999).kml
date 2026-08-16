@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="313">
+        <Placemark id="315">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="314">
+                <coordinates>52.2778027,55.6927929,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

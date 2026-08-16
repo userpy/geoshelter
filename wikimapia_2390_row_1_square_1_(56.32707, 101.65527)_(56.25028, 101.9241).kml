@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="15">
+        <Placemark id="17">
+            <name>Бывшая городская свалка, полигон ТБО (ru)</name>
+            <description/>
+            <Point id="16">
+                <coordinates>101.708722,56.325568,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>Корпус ТАК -2500 (ru)</name>
+            <description/>
+            <Point id="18">
+                <coordinates>101.9220703,56.2891646,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>В/ч ПВО (ru)</name>
+            <description/>
+            <Point id="20">
+                <coordinates>101.6686498,56.2941943,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>ЗАО «Братский металлургический завод» (ru)</name>
+            <description/>
+            <Point id="22">
+                <coordinates>101.8809466,56.2777807,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>Недостроенные две линии гаражей (ru)</name>
+            <description/>
+            <Point id="24">
+                <coordinates>101.7129492,56.324124,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>Заброшенная территория (ru)</name>
+            <description/>
+            <Point id="26">
+                <coordinates>101.8618332,56.2667452,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>Мелькомбинат (ru)</name>
+            <description/>
+            <Point id="28">
+                <coordinates>101.6820073,56.3085521,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Заброшенное предприятие (ru)</name>
+            <description/>
+            <Point id="30">
+                <coordinates>101.8683456,56.2702066,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Заброшенный склад взрывчатых веществ (ru)</name>
+            <description/>
+            <Point id="32">
+                <coordinates>101.9091582,56.2622079,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>Заброшенные здания рядом с птицефабрикой (ru)</name>
+            <description/>
+            <Point id="34">
+                <coordinates>101.6667401,56.3171941,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>Бывший склад готовой продукции (ru)</name>
+            <description/>
+            <Point id="36">
+                <coordinates>101.8621285,56.273072,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>Заброшенная производственная база (ru)</name>
+            <description/>
+            <Point id="38">
+                <coordinates>101.8803748,56.2694731,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>Бытовые помещения корпуса ТАК-2500 (ru)</name>
+            <description/>
+            <Point id="40">
+                <coordinates>101.9231904,56.2881216,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>Несостоявшийся рынок (ru)</name>
+            <description/>
+            <Point id="42">
+                <coordinates>101.7299935,56.2945986,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>Недостроенное административное здание (ru)</name>
+            <description/>
+            <Point id="44">
+                <coordinates>101.7440176,56.3169136,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="46">
+                <coordinates>101.7317355,56.302705,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="49">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="48">
+                <coordinates>101.8653754,56.2725835,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="51">
+            <name>Заброшенный детский сад (ru)</name>
+            <description/>
+            <Point id="50">
+                <coordinates>101.898424,56.2778374,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="53">
+            <name>Старая смотровая площадка (ru)</name>
+            <description/>
+            <Point id="52">
+                <coordinates>101.7831627,56.2908266,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="55">
+            <name>Школа № 7 (ru)</name>
+            <description/>
+            <Point id="54">
+                <coordinates>101.8681579,56.2815406,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="57">
+            <name>Заброшенный корпус (ru)</name>
+            <description/>
+            <Point id="56">
+                <coordinates>101.9226543,56.2861649,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="59">
+            <name>Заброшенное административное здание (ru)</name>
+            <description/>
+            <Point id="58">
+                <coordinates>101.7793327,56.3151178,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="61">
+            <name>Заброшенное здание столовой (ru)</name>
+            <description/>
+            <Point id="60">
+                <coordinates>101.6678149,56.3019317,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>Заброшенное здание &quot;Наша цель - коммунизм&quot; (ru)</name>
+            <description/>
+            <Point id="62">
+                <coordinates>101.8433595,56.2862899,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="65">
+            <name>Заброшенный детский сад (ru)</name>
+            <description/>
+            <Point id="64">
+                <coordinates>101.8636859,56.2679853,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="67">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="66">
+                <coordinates>101.8653365,56.2738699,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="69">
+            <name>Заброшенный детский сад «Одуванчик» (ru)</name>
+            <description/>
+            <Point id="68">
+                <coordinates>101.9096425,56.2778954,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="71">
+            <name>Столовая «Астра» (ru)</name>
+            <description/>
+            <Point id="70">
+                <coordinates>101.8941646,56.2751824,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="73">
+            <name>Развалины летнего кафе (ru)</name>
+            <description/>
+            <Point id="72">
+                <coordinates>101.7592482,56.3035934,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="75">
+            <name>Заброшенная баня (ru)</name>
+            <description/>
+            <Point id="74">
+                <coordinates>101.8648723,56.2863659,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="77">
+            <name>Торговый центр «Виктория» (ru)</name>
+            <description/>
+            <Point id="76">
+                <coordinates>101.722805,56.2922713,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="79">
+            <name>Магазин (ru)</name>
+            <description/>
+            <Point id="78">
+                <coordinates>101.8952322,56.2753864,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="81">
+            <name>ул. Гидростроителей (ru), 65</name>
+            <description/>
+            <Point id="80">
+                <coordinates>101.7320815,56.2917012,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="83">
+            <name>Офицерский ДОС (ru)</name>
+            <description/>
+            <Point id="82">
+                <coordinates>101.6698714,56.3028227,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="85">
+            <name>Фундамент (ru)</name>
+            <description/>
+            <Point id="84">
+                <coordinates>101.7299828,56.2946685,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="87">
+            <name>Заброшенный железнодорожный вокзалл бывшей станции Братское Море (ru)</name>
+            <description/>
+            <Point id="86">
+                <coordinates>101.6572397,56.2697985,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="89">
+            <name>Разрушенная теплица при школе № 34 (ru)</name>
+            <description/>
+            <Point id="88">
+                <coordinates>101.7567846,56.2985583,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="91">
+            <name>Неработающий магазин (ru)</name>
+            <description/>
+            <Point id="90">
+                <coordinates>101.6949151,56.2960223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="93">
+            <name>Заброшенные гаражи (ru)</name>
+            <description/>
+            <Point id="92">
+                <coordinates>101.9027343,56.2886696,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="95">
+            <name>Школьная теплица (ru)</name>
+            <description/>
+            <Point id="94">
+                <coordinates>101.886127,56.2839588,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="97">
+            <name>Заброшенная школьная теплица (ru)</name>
+            <description/>
+            <Point id="96">
+                <coordinates>101.7341157,56.3131559,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="99">
+            <name>Узел связи (ru)</name>
+            <description/>
+            <Point id="98">
+                <coordinates>101.6700021,56.3038223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="101">
+            <name>Заброшенные склады (ru)</name>
+            <description/>
+            <Point id="100">
+                <coordinates>101.7677113,56.2957493,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

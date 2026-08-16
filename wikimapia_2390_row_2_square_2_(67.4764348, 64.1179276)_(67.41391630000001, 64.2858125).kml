@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="2713">
+        <Placemark id="2715">
+            <name>Комплекс очистных сооружений (ru)</name>
+            <description/>
+            <Point id="2714">
+                <coordinates>64.2784898,67.4650756,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2717">
+            <name>Штаб, казарма (ru)</name>
+            <description/>
+            <Point id="2716">
+                <coordinates>64.2748888,67.4705064,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2719">
+            <name>Казарама (ru)</name>
+            <description/>
+            <Point id="2718">
+                <coordinates>64.2767932,67.4705393,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2721">
+            <name>Столовая (ru)</name>
+            <description/>
+            <Point id="2720">
+                <coordinates>64.2773529,67.4697163,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

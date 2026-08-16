@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1425">
+        <Placemark id="1427">
+            <name>Центральная ул. (ru), 6</name>
+            <description/>
+            <Point id="1426">
+                <coordinates>132.2693414,43.8204332,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

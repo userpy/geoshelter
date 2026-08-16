@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1719">
+        <Placemark id="1721">
+            <name>Рыбозавод 19-й (заброш.) (ru)</name>
+            <description/>
+            <Point id="1720">
+                <coordinates>138.3551645,53.6045892,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

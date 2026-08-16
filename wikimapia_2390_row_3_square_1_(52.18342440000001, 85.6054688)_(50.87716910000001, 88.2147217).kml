@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="903">
+        <Placemark id="905">
+            <name>Заброшенный фруктовый сад (ru)</name>
+            <description/>
+            <Point id="904">
+                <coordinates>86.1341428,51.1616911,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="907">
+            <name>Катунская ГЭС (ru)</name>
+            <description/>
+            <Point id="906">
+                <coordinates>86.084013,51.2095156,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="909">
+            <name>Кладбище (ru)</name>
+            <description/>
+            <Point id="908">
+                <coordinates>85.8095993,51.5173444,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="911">
+            <name>Заброшенный коровник (ru)</name>
+            <description/>
+            <Point id="910">
+                <coordinates>86.0826305,51.0403881,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="913">
+            <name>Дом барачного типа (ru)</name>
+            <description/>
+            <Point id="912">
+                <coordinates>85.9010575,51.5370691,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="915">
+            <name>Заброшенный частный дом (ru)</name>
+            <description/>
+            <Point id="914">
+                <coordinates>86.1042134,51.048765,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="917">
+            <name>Заброшенный пастуший домик (ru)</name>
+            <description/>
+            <Point id="916">
+                <coordinates>85.7995266,51.1281007,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="919">
+            <name>Заброшенный частный дом (ru)</name>
+            <description/>
+            <Point id="918">
+                <coordinates>85.9238165,51.0001515,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="921">
+            <name>Заброшенный самодельный автомобиль (ru)</name>
+            <description/>
+            <Point id="920">
+                <coordinates>85.9090059,51.5355353,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

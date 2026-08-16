@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="701">
+        <Placemark id="703">
+            <name>Заброшенные склады (ru)</name>
+            <description/>
+            <Point id="702">
+                <coordinates>-179.5046496,68.8868173,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="705">
+            <name>Заброшенная часть посёлка (ru)</name>
+            <description/>
+            <Point id="704">
+                <coordinates>-179.4886852,68.9160497,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="707">
+            <name>Передающая Шмидтовской ГМО (ru)</name>
+            <description/>
+            <Point id="706">
+                <coordinates>-179.4609403,68.916621,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="709">
+            <name>Заброшенный автопарк войсковой части 21003 (ru)</name>
+            <description/>
+            <Point id="708">
+                <coordinates>-179.4009179,68.8898105,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="711">
+            <name>Заброшенная школа (ru)</name>
+            <description/>
+            <Point id="710">
+                <coordinates>-179.4062885,68.8919758,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="713">
+            <name>Геологическая ул. (ru), 6</name>
+            <description/>
+            <Point id="712">
+                <coordinates>-179.4220126,68.8949674,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="715">
+            <name>Заброшенный клуб (ru)</name>
+            <description/>
+            <Point id="714">
+                <coordinates>-179.4043525,68.8888803,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="717">
+            <name>Заброшенный магазин «Мясо-Рыба» (ru)</name>
+            <description/>
+            <Point id="716">
+                <coordinates>-179.4057976,68.8937223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="719">
+            <name>Заброшенная столовая (ru)</name>
+            <description/>
+            <Point id="718">
+                <coordinates>-179.4079156,68.8887336,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="721">
+            <name>Полярная ул. (ru), 19</name>
+            <description/>
+            <Point id="720">
+                <coordinates>-179.4152691,68.8945183,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="723">
+            <name>Полярная ул. (ru), 23</name>
+            <description/>
+            <Point id="722">
+                <coordinates>-179.4176361,68.8955405,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="725">
+            <name>Бывшая столовая в\ч 21003 (ru)</name>
+            <description/>
+            <Point id="724">
+                <coordinates>-179.4150853,68.8916478,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="727">
+            <name>Дом офицерского состава (ДОС) (ru)</name>
+            <description/>
+            <Point id="726">
+                <coordinates>-179.4059306,68.8904015,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="729">
+            <name>Заброшенная казарма (ru)</name>
+            <description/>
+            <Point id="728">
+                <coordinates>-179.4068456,68.8882281,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="731">
+            <name>Геологическая ул. (ru), 4</name>
+            <description/>
+            <Point id="730">
+                <coordinates>-179.4216982,68.8954249,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="733">
+            <name>Геологическая ул. (ru), 2</name>
+            <description/>
+            <Point id="732">
+                <coordinates>-179.4208004,68.8956941,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="735">
+            <name>Заброшенный клуб войсковой части 21003 (ru)</name>
+            <description/>
+            <Point id="734">
+                <coordinates>-179.413981,68.8911131,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="737">
+            <name>Красноармейский пер. (ru), 3а</name>
+            <description/>
+            <Point id="736">
+                <coordinates>-179.4124495,68.8898969,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="739">
+            <name>Пограничная ул. (ru), 13</name>
+            <description/>
+            <Point id="738">
+                <coordinates>-179.4236405,68.8939589,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="741">
+            <name>Заброшенный штаб (ru)</name>
+            <description/>
+            <Point id="740">
+                <coordinates>-179.4075051,68.8911193,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="743">
+            <name>Заброшенная администрация бывшего Шмидтовского района (ru)</name>
+            <description/>
+            <Point id="742">
+                <coordinates>-179.4107123,68.891856,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="745">
+            <name>Набережная ул. (ru), 16</name>
+            <description/>
+            <Point id="744">
+                <coordinates>-179.4113637,68.8949823,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="747">
+            <name>Дом офицерского состава (ДОС) (ru)</name>
+            <description/>
+            <Point id="746">
+                <coordinates>-179.4039099,68.8902747,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="749">
+            <name>Школьная ул. (ru), 3</name>
+            <description/>
+            <Point id="748">
+                <coordinates>-179.4031011,68.8905134,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="751">
+            <name>Заброшенная больница (ru)</name>
+            <description/>
+            <Point id="750">
+                <coordinates>-179.4200251,68.8936173,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="753">
+            <name>Заброшенная столовая (ru)</name>
+            <description/>
+            <Point id="752">
+                <coordinates>-179.4124912,68.8926819,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="755">
+            <name>Заброшенное общежитие УРСа (ru)</name>
+            <description/>
+            <Point id="754">
+                <coordinates>-179.4043689,68.8928468,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="757">
+            <name>Полярная ул. (ru), 7</name>
+            <description/>
+            <Point id="756">
+                <coordinates>-179.4089256,68.8917515,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="759">
+            <name>Школьная ул. (ru), 28</name>
+            <description/>
+            <Point id="758">
+                <coordinates>-179.4137802,68.8946256,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="761">
+            <name>Заброшенная пекарня (ru)</name>
+            <description/>
+            <Point id="760">
+                <coordinates>-179.4039756,68.8909214,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="763">
+            <name>Школьная ул. (ru), 34</name>
+            <description/>
+            <Point id="762">
+                <coordinates>-179.4162567,68.8957271,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="765">
+            <name>Заброшенный детский сад «Солнышко» (ru)</name>
+            <description/>
+            <Point id="764">
+                <coordinates>-179.4139876,68.8940245,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="767">
+            <name>Полярная ул. (ru), 11</name>
+            <description/>
+            <Point id="766">
+                <coordinates>-179.4106059,68.8924734,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="769">
+            <name>Пограничная ул. (ru), 1</name>
+            <description/>
+            <Point id="768">
+                <coordinates>-179.4130825,68.8892335,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="771">
+            <name>Набережная ул. (ru), 37</name>
+            <description/>
+            <Point id="770">
+                <coordinates>-179.4082162,68.89474,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="773">
+            <name>Заброшенная музыкальная школа (ru)</name>
+            <description/>
+            <Point id="772">
+                <coordinates>-179.4046152,68.8918729,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="775">
+            <name>Заброшенное общежитие (ru)</name>
+            <description/>
+            <Point id="774">
+                <coordinates>-179.4116404,68.8901342,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="777">
+            <name>Заброшенный магазин &quot;Военторг&quot; (ru)</name>
+            <description/>
+            <Point id="776">
+                <coordinates>-179.411027,68.8897729,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="779">
+            <name>Школьная ул. (ru), 30</name>
+            <description/>
+            <Point id="778">
+                <coordinates>-179.4146612,68.8950239,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="781">
+            <name>Школьная ул. (ru), 14</name>
+            <description/>
+            <Point id="780">
+                <coordinates>-179.4095984,68.8927779,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="783">
+            <name>Заброшенное здание полиции и управления ЖКХ (ru)</name>
+            <description/>
+            <Point id="782">
+                <coordinates>-179.4080281,68.8941198,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="785">
+            <name>Пограничная ул. (ru), 11</name>
+            <description/>
+            <Point id="784">
+                <coordinates>-179.4222492,68.8933506,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="787">
+            <name>Набережная ул. (ru), 41</name>
+            <description/>
+            <Point id="786">
+                <coordinates>-179.4088975,68.895043,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="789">
+            <name>Школьная ул. (ru), 13</name>
+            <description/>
+            <Point id="788">
+                <coordinates>-179.4078846,68.8926316,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="791">
+            <name>Заброшенный детсад &quot;Медвежонок&quot; (ru)</name>
+            <description/>
+            <Point id="790">
+                <coordinates>-179.4098113,68.8921112,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="793">
+            <name>Школьная ул. (ru), 26</name>
+            <description/>
+            <Point id="792">
+                <coordinates>-179.412988,68.8942531,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="795">
+            <name>Полярная ул. (ru), 21</name>
+            <description/>
+            <Point id="794">
+                <coordinates>-179.4163794,68.8949978,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="797">
+            <name>Набережная ул. (ru), 35</name>
+            <description/>
+            <Point id="796">
+                <coordinates>-179.4089595,68.8945185,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="799">
+            <name>Школьная ул. (ru), 12</name>
+            <description/>
+            <Point id="798">
+                <coordinates>-179.4087456,68.8924017,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="801">
+            <name>Полярная ул. (ru), 14</name>
+            <description/>
+            <Point id="800">
+                <coordinates>-179.4195378,68.8952506,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="803">
+            <name>Набережная ул. (ru), 31</name>
+            <description/>
+            <Point id="802">
+                <coordinates>-179.4074821,68.8942837,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="805">
+            <name>Заброшенный штаб войсковой части 21003 (ru)</name>
+            <description/>
+            <Point id="804">
+                <coordinates>-179.404318,68.8924708,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="807">
+            <name>Полярная ул. (ru), 5</name>
+            <description/>
+            <Point id="806">
+                <coordinates>-179.4083375,68.8914506,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="809">
+            <name>Школьная ул. (ru), 32</name>
+            <description/>
+            <Point id="808">
+                <coordinates>-179.4154259,68.895363,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="811">
+            <name>Заброшенный шахтный ствол (ru)</name>
+            <description/>
+            <Point id="810">
+                <coordinates>-179.3978837,68.8865337,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="813">
+            <name>Antonov An-2TP</name>
+            <description/>
+            <Point id="812">
+                <coordinates>-179.3789948,68.8674751,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="815">
+            <name>Antonov An-2TP</name>
+            <description/>
+            <Point id="814">
+                <coordinates>-179.3800503,68.8679913,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="817">
+            <name>Antonov An-2TP</name>
+            <description/>
+            <Point id="816">
+                <coordinates>-179.3793529,68.867649,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="819">
+            <name>Antonov An-2TP</name>
+            <description/>
+            <Point id="818">
+                <coordinates>-179.3796882,68.867813,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="821">
+            <name>Antonov An-28</name>
+            <description/>
+            <Point id="820">
+                <coordinates>-179.3820063,68.8672957,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="823">
+            <name>Mil Mi-8</name>
+            <description/>
+            <Point id="822">
+                <coordinates>-179.3805744,68.8681951,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="825">
+            <name>Mil Mi-8T</name>
+            <description/>
+            <Point id="824">
+                <coordinates>-179.3786786,68.8673122,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

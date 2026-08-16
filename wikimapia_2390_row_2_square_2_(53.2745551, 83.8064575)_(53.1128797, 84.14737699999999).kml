@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1413">
+        <Placemark id="1415">
+            <name>Брошенная стройплощадка (ru)</name>
+            <description/>
+            <Point id="1414">
+                <coordinates>83.9856574,53.2549185,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1417">
+            <name>Заброшенные иловые поля (ru)</name>
+            <description/>
+            <Point id="1416">
+                <coordinates>83.9726578,53.248782,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1419">
+            <name>ulitsa Lenina, 73</name>
+            <description/>
+            <Point id="1418">
+                <coordinates>83.8922004,53.1699066,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1421">
+            <name>Фундамент здания (ru)</name>
+            <description/>
+            <Point id="1420">
+                <coordinates>83.8149027,53.264676,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1423">
+            <name>Фундамент здания (ru)</name>
+            <description/>
+            <Point id="1422">
+                <coordinates>83.8187034,53.2655625,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1425">
+            <name>Фундамент здания (ru)</name>
+            <description/>
+            <Point id="1424">
+                <coordinates>83.8262916,53.266441,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1427">
+            <name>Фундамент здания (ru)</name>
+            <description/>
+            <Point id="1426">
+                <coordinates>83.8237892,53.265894,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1429">
+            <name>Заброшенная землянка (ru)</name>
+            <description/>
+            <Point id="1428">
+                <coordinates>83.9341092,53.1992912,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1431">
+            <name>Землянка (ru)</name>
+            <description/>
+            <Point id="1430">
+                <coordinates>83.9260075,53.2004809,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1433">
+            <name>Остов железобетонного сооружения (ru)</name>
+            <description/>
+            <Point id="1432">
+                <coordinates>83.8142131,53.2638131,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1435">
+            <name>Вагончик (ru)</name>
+            <description/>
+            <Point id="1434">
+                <coordinates>84.0149308,53.201436,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="861">
+        <Placemark id="863">
+            <name>Заброшенная ВПП (ru)</name>
+            <description/>
+            <Point id="862">
+                <coordinates>135.7594514,48.1216712,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="719">
+        <Placemark id="721">
+            <name>Школьное подземное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="720">
+                <coordinates>86.7524636,53.8784953,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="723">
+            <name>Заброшенное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="722">
+                <coordinates>87.0905112,53.7663988,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

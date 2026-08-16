@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="317">
+        <Placemark id="319">
+            <name>Заброшенное ЗС ГО птицефабрики «Красный ключ» (ru)</name>
+            <description/>
+            <Point id="318">
+                <coordinates>51.8251128,55.6812146,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="321">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="320">
+                <coordinates>51.957575,55.6139067,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="323">
+            <name>Бомбоубежище ПАО «Нижнекамскнефтехим» (ru)</name>
+            <description/>
+            <Point id="322">
+                <coordinates>51.9063663,55.5999899,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="325">
+            <name>титул 113/2, секция 9341 (ru)</name>
+            <description/>
+            <Point id="324">
+                <coordinates>51.9029438,55.5693024,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="327">
+            <name>титул 113/1 (ru)</name>
+            <description/>
+            <Point id="326">
+                <coordinates>51.9246643,55.5783021,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

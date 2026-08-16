@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="223">
+        <Placemark id="225">
+            <name>Бывший песчаный карьер (ru)</name>
+            <description/>
+            <Point id="224">
+                <coordinates>62.2940253,56.3214031,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="227">
+            <name>Бывший пионерлагерь &quot;Звёздный&quot; от Шадринского телефонного завода (ru)</name>
+            <description/>
+            <Point id="226">
+                <coordinates>63.2761859,56.2048419,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="229">
+            <name>Карьер (ru)</name>
+            <description/>
+            <Point id="228">
+                <coordinates>62.2485458,56.3281095,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="231">
+            <name>Заброшенная свиноферма (ru)</name>
+            <description/>
+            <Point id="230">
+                <coordinates>62.4787062,56.2890991,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="233">
+            <name>Отработанный карьер (ru)</name>
+            <description/>
+            <Point id="232">
+                <coordinates>62.252671,56.3480837,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="235">
+            <name>Бывший детский лагерь «Берёзка» (ru)</name>
+            <description/>
+            <Point id="234">
+                <coordinates>62.2398407,56.3569297,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="237">
+            <name>Отработанный карьер (ru)</name>
+            <description/>
+            <Point id="236">
+                <coordinates>62.240821,56.3501497,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="239">
+            <name>Бывшая свиноферма (ru)</name>
+            <description/>
+            <Point id="238">
+                <coordinates>62.1570878,56.2380555,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="241">
+            <name>Закрытый пост ДПС (ru)</name>
+            <description/>
+            <Point id="240">
+                <coordinates>62.3045182,56.3298273,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="243">
+            <name>Храм Святых апостолов Петра и Павла (ru)</name>
+            <description/>
+            <Point id="242">
+                <coordinates>62.2440451,55.8214531,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="245">
+            <name>Бывшая лесопилка (ru)</name>
+            <description/>
+            <Point id="244">
+                <coordinates>62.5558519,56.0886314,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="247">
+            <name>Заброшенная церковь Космы и Дамиана (ru)</name>
+            <description/>
+            <Point id="246">
+                <coordinates>62.7887839,56.1836614,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="249">
+            <name>Заброшенный детский сад (ru)</name>
+            <description/>
+            <Point id="248">
+                <coordinates>62.2442604,55.8274562,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="251">
+            <name>Церковь Иконы Божией Матери Знамение (ru)</name>
+            <description/>
+            <Point id="250">
+                <coordinates>63.2642259,56.1606216,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="253">
+            <name>Церковь Покрова Пресвятой Богородицы (ru)</name>
+            <description/>
+            <Point id="252">
+                <coordinates>62.7503416,56.1033355,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="255">
+            <name>Бывший сельский клуб и кинотеатр (ru)</name>
+            <description/>
+            <Point id="254">
+                <coordinates>62.2730653,55.9825309,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="257">
+            <name>Бывший продуктовый магазин и медпункт (ru)</name>
+            <description/>
+            <Point id="256">
+                <coordinates>62.2743943,55.9828911,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="259">
+            <name>Бывшая начальная школа (ru)</name>
+            <description/>
+            <Point id="258">
+                <coordinates>62.2744531,55.9821759,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="261">
+            <name>Останки школы (ru)</name>
+            <description/>
+            <Point id="260">
+                <coordinates>63.2292552,56.3247382,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="263">
+            <name>Бывшая АЗС (ru)</name>
+            <description/>
+            <Point id="262">
+                <coordinates>62.2663931,55.9829854,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="265">
+            <name>Бывшая котельная (ru)</name>
+            <description/>
+            <Point id="264">
+                <coordinates>62.2753088,55.9830231,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

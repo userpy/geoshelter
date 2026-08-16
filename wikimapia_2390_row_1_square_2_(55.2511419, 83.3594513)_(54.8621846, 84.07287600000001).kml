@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="157">
+        <Placemark id="159">
+            <name>Буготакский льнозавод (ru)</name>
+            <description/>
+            <Point id="158">
+                <coordinates>83.8023269,55.1585414,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="161">
+            <name>Дойка (ru)</name>
+            <description/>
+            <Point id="160">
+                <coordinates>83.6378001,55.1643455,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="163">
+            <name>АЗС (ru)</name>
+            <description/>
+            <Point id="162">
+                <coordinates>83.8512343,55.1173961,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="165">
+            <name>Старый мост (ru)</name>
+            <description/>
+            <Point id="164">
+                <coordinates>83.4070652,55.0381273,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="167">
+            <name>Недострой (ru)</name>
+            <description/>
+            <Point id="166">
+                <coordinates>83.8021298,55.1476064,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="169">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="168">
+                <coordinates>83.7509644,55.15879,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="171">
+            <name>Разрушенная насосная станция (ru)</name>
+            <description/>
+            <Point id="170">
+                <coordinates>83.3767247,54.985194,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="173">
+            <name>Заброшенное сооружение (ru)</name>
+            <description/>
+            <Point id="172">
+                <coordinates>83.3765209,55.2015122,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="175">
+            <name>Заброшенный дачный дом (ru)</name>
+            <description/>
+            <Point id="174">
+                <coordinates>83.36662,54.9919303,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="177">
+            <name>Заброшенный дачный домик (ru)</name>
+            <description/>
+            <Point id="176">
+                <coordinates>83.456795,55.0338494,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="179">
+            <name>Заброшенная насосная станция (ru)</name>
+            <description/>
+            <Point id="178">
+                <coordinates>83.3621606,54.9993778,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="181">
+            <name>Заброшенный дачный домик (ru)</name>
+            <description/>
+            <Point id="180">
+                <coordinates>83.366285,54.9882719,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

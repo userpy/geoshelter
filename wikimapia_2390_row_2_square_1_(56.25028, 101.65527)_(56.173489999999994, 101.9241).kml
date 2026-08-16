@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="103">
+        <Placemark id="105">
+            <name>Бывший пионерлагерь «Таёжный родник» (ru)</name>
+            <description/>
+            <Point id="104">
+                <coordinates>101.8314169,56.2267459,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="107">
+            <name>Военно-спортивный лагерь «Варяг» (ru)</name>
+            <description/>
+            <Point id="106">
+                <coordinates>101.916883,56.2254488,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="109">
+            <name>Незавершенный объект (ru)</name>
+            <description/>
+            <Point id="108">
+                <coordinates>101.667223,56.2016313,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="111">
+            <name>Сооружение № 61 (ru)</name>
+            <description/>
+            <Point id="110">
+                <coordinates>101.6554835,56.1923307,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="113">
+            <name>Cтарая геодезическая вышка (ru)</name>
+            <description/>
+            <Point id="112">
+                <coordinates>101.6676121,56.1876993,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="115">
+            <name>Эстакада (ru)</name>
+            <description/>
+            <Point id="114">
+                <coordinates>101.7050018,56.1751146,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

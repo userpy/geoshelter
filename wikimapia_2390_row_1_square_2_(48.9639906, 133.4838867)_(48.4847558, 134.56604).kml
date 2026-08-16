@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="711">
+        <Placemark id="713">
+            <name>Старые торфоразработки (ru)</name>
+            <description/>
+            <Point id="712">
+                <coordinates>134.3583082,48.6099437,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="715">
+            <name>Заброшенный завод (ru)</name>
+            <description/>
+            <Point id="714">
+                <coordinates>134.4743095,48.5546282,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="717">
+            <name>Недействующий аэродром Новокуровка (ru)</name>
+            <description/>
+            <Point id="716">
+                <coordinates>134.3096208,48.8285646,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="719">
+            <name>Недействующая взлётно-посадочная полоса ВПП 12/30 (ru)</name>
+            <description/>
+            <Point id="718">
+                <coordinates>134.3095349,48.8285646,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="721">
+            <name>Старая дорога (ru)</name>
+            <description/>
+            <Point id="720">
+                <coordinates>134.3961139,48.7468512,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="723">
+            <name>Старое брошенное инское кладбище (ru)</name>
+            <description/>
+            <Point id="722">
+                <coordinates>133.8230144,48.6104391,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="725">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="724">
+                <coordinates>134.4550314,48.5694251,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="727">
+            <name>Печка — остатки (ru)</name>
+            <description/>
+            <Point id="726">
+                <coordinates>134.4094741,48.6887541,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="729">
+            <name>ulitsa Tridtsati let Pobedy, 27</name>
+            <description/>
+            <Point id="728">
+                <coordinates>133.8099816,48.5958225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="731">
+            <name>ulitsa Tridtsati let Pobedy, 25</name>
+            <description/>
+            <Point id="730">
+                <coordinates>133.8105795,48.5959397,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="733">
+            <name>Брошенный (законсервированный) пост электрической централизации остановочного пункта Лумку-Корани (ru)</name>
+            <description/>
+            <Point id="732">
+                <coordinates>134.3133348,48.6036505,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="735">
+            <name>Предположительно окоп (ru)</name>
+            <description/>
+            <Point id="734">
+                <coordinates>134.5104645,48.6796095,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

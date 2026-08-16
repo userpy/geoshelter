@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="697">
+        <Placemark id="699">
+            <name>Убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="698">
+                <coordinates>132.9029148,48.7967068,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="701">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="700">
+                <coordinates>132.8996238,48.7998119,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="703">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="702">
+                <coordinates>132.9073469,48.7855878,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="705">
+            <name>Запасной пункт связи гражданской обороны (ru)</name>
+            <description/>
+            <Point id="704">
+                <coordinates>132.8785482,48.8105375,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

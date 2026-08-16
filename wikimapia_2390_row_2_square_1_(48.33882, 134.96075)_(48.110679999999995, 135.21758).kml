@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="977">
+        <Placemark id="979">
+            <name>Заброшенная территория бывшего асфальтового завода (ru)</name>
+            <description/>
+            <Point id="978">
+                <coordinates>135.0505649,48.2640071,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="981">
+            <name>Заброшенный карьер (ru)</name>
+            <description/>
+            <Point id="980">
+                <coordinates>135.0344556,48.2128097,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="983">
+            <name>Территория части (ru)</name>
+            <description/>
+            <Point id="982">
+                <coordinates>135.1581107,48.2717397,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="985">
+            <name>Заброшенная дорога лесхоза (ru)</name>
+            <description/>
+            <Point id="984">
+                <coordinates>135.0862973,48.3257264,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="987">
+            <name>Заброшенная лесовозная дорога (ru)</name>
+            <description/>
+            <Point id="986">
+                <coordinates>135.0810133,48.3330422,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="989">
+            <name>Заброшенный бункер (ru)</name>
+            <description/>
+            <Point id="988">
+                <coordinates>135.0275784,48.3266467,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="991">
+            <name>Бункер (ru)</name>
+            <description/>
+            <Point id="990">
+                <coordinates>135.1581778,48.2715157,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="993">
+            <name>Заброшенный бункер (ru)</name>
+            <description/>
+            <Point id="992">
+                <coordinates>135.02729,48.3273181,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="995">
+            <name>Затопленный бункер (ru)</name>
+            <description/>
+            <Point id="994">
+                <coordinates>135.0273223,48.3270248,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="997">
+            <name>Старые ворота (ru)</name>
+            <description/>
+            <Point id="996">
+                <coordinates>135.1557289,48.2736901,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="999">
+            <name>Дот (ru)</name>
+            <description/>
+            <Point id="998">
+                <coordinates>135.1555385,48.2738124,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1001">
+            <name>Дот (ru)</name>
+            <description/>
+            <Point id="1000">
+                <coordinates>135.1555023,48.2737071,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1003">
+            <name>Дот (ru)</name>
+            <description/>
+            <Point id="1002">
+                <coordinates>135.157282,48.2713737,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1005">
+            <name>Сортир (ru)</name>
+            <description/>
+            <Point id="1004">
+                <coordinates>135.1014894,48.3017566,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

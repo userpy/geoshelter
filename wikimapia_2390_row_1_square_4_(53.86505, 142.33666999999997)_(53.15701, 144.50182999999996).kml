@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1627">
+        <Placemark id="1629">
+            <name>Бывшая позиция ЗРДН С-75 (ru)</name>
+            <description/>
+            <Point id="1628">
+                <coordinates>143.0235171,53.59537,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1631">
+            <name>С-75 (ru)</name>
+            <description/>
+            <Point id="1630">
+                <coordinates>142.9737144,53.3842231,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1633">
+            <name>Бывшие стартовые позиции С-75 (ru)</name>
+            <description/>
+            <Point id="1632">
+                <coordinates>143.0231193,53.5949122,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1635">
+            <name>Запасная (ложная) позиция ЗРДН (ru)</name>
+            <description/>
+            <Point id="1634">
+                <coordinates>143.0431351,53.5830901,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1637">
+            <name>Ликвидированный Охинский мясомолкомбинат (ru)</name>
+            <description/>
+            <Point id="1636">
+                <coordinates>142.9644925,53.5939833,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1639">
+            <name>Бывшая позиция С-75 (ru)</name>
+            <description/>
+            <Point id="1638">
+                <coordinates>143.00067,53.3390221,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1641">
+            <name>Бывшие позиции С-75 (ru)</name>
+            <description/>
+            <Point id="1640">
+                <coordinates>142.866675,53.6883114,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1643">
+            <name>Бывшие позиции С-75 (ru)</name>
+            <description/>
+            <Point id="1642">
+                <coordinates>142.9922196,53.6156211,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1645">
+            <name>Дальний приводной радиомаяк (ДПРМ) (ru)</name>
+            <description/>
+            <Point id="1644">
+                <coordinates>142.8198248,53.5381268,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1647">
+            <name>Резервуары (ru)</name>
+            <description/>
+            <Point id="1646">
+                <coordinates>142.5039624,53.5633045,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1649">
+            <name>Заброшенное локомотивное депо колеи 750 мм (ru)</name>
+            <description/>
+            <Point id="1648">
+                <coordinates>142.9391401,53.582229,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1651">
+            <name>Ближний приводной радиомаяк (БПРМ) (ru)</name>
+            <description/>
+            <Point id="1650">
+                <coordinates>142.8561526,53.5259772,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1653">
+            <name>Ближний приводной радиомаяк (БПРМ) (ru)</name>
+            <description/>
+            <Point id="1652">
+                <coordinates>142.9026997,53.5101269,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1655">
+            <name>Бывшая железнодорожная станция Уркт (ru)</name>
+            <description/>
+            <Point id="1654">
+                <coordinates>142.9896569,53.5407951,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1657">
+            <name>Казарма (ru)</name>
+            <description/>
+            <Point id="1656">
+                <coordinates>143.0260652,53.5953161,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1659">
+            <name>Столовая (ru)</name>
+            <description/>
+            <Point id="1658">
+                <coordinates>143.0255824,53.5959958,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1661">
+            <name>Дальний приводной радиомаяк (ДПРМ) (ru)</name>
+            <description/>
+            <Point id="1660">
+                <coordinates>142.968151,53.4880024,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1663">
+            <name>Заброшенное локомотивное депо колеи 1520 мм (ru)</name>
+            <description/>
+            <Point id="1662">
+                <coordinates>142.9465725,53.5788658,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1665">
+            <name>Pozycja startowa (pl)</name>
+            <description/>
+            <Point id="1664">
+                <coordinates>143.0419107,53.5829876,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1667">
+            <name>SNR-75 (pl)</name>
+            <description/>
+            <Point id="1666">
+                <coordinates>143.043182,53.5830767,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1669">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1668">
+                <coordinates>143.0424954,53.5824334,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1671">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1670">
+                <coordinates>143.0436809,53.5824589,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1673">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1672">
+                <coordinates>143.044094,53.5830831,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1675">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1674">
+                <coordinates>143.0424257,53.5836022,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1677">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1676">
+                <coordinates>143.0436058,53.5836595,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1679">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1678">
+                <coordinates>143.0217458,53.5947977,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1681">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1680">
+                <coordinates>143.0228348,53.5957464,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1683">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1682">
+                <coordinates>143.0220033,53.5953931,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1685">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1684">
+                <coordinates>143.0239453,53.5955236,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1687">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1686">
+                <coordinates>143.0243744,53.5949155,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1689">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1688">
+                <coordinates>143.0237468,53.5942947,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1691">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1690">
+                <coordinates>143.0227812,53.5941896,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1693">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1692">
+                <coordinates>142.9927244,53.6151496,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1695">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1694">
+                <coordinates>142.9918929,53.6152006,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1697">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1696">
+                <coordinates>142.9915442,53.6157415,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1699">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1698">
+                <coordinates>142.9923488,53.6161457,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1701">
+            <name>SNR-75 (pl)</name>
+            <description/>
+            <Point id="1700">
+                <coordinates>142.9923757,53.615635,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1703">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1702">
+                <coordinates>143.0013396,53.3394487,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1705">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1704">
+                <coordinates>143.0016078,53.3388305,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1707">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1706">
+                <coordinates>143.0008273,53.338419,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1709">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1708">
+                <coordinates>142.9998804,53.3386736,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1711">
+            <name>Stanowisko startowe S-75 (pl)</name>
+            <description/>
+            <Point id="1710">
+                <coordinates>142.9996873,53.3392517,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1713">
+            <name>SNR-75 (pl)</name>
+            <description/>
+            <Point id="1712">
+                <coordinates>143.0007709,53.339074,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1715">
+            <name>Брошенный вагон колеи 1524 мм. (ru)</name>
+            <description/>
+            <Point id="1714">
+                <coordinates>142.7576163,53.5800125,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1717">
+            <name>Орбита (заброшена) (ru)</name>
+            <description/>
+            <Point id="1716">
+                <coordinates>142.9241036,53.6289591,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

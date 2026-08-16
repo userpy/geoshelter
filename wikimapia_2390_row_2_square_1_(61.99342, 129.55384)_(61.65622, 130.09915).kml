@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="289">
+        <Placemark id="291">
+            <name>Замороженное строительство подходов к мосту через реку Лену (ru)</name>
+            <description/>
+            <Point id="290">
+                <coordinates>129.7782968,61.7492934,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="293">
+            <name>Развалины второй очереди птицефабрики (ru)</name>
+            <description/>
+            <Point id="292">
+                <coordinates>129.6120964,61.9757332,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="295">
+            <name>Пункт базирования строителей (ru)</name>
+            <description/>
+            <Point id="294">
+                <coordinates>129.7897069,61.7333027,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="297">
+            <name>Бывшая школа для девиантных подростков (ru)</name>
+            <description/>
+            <Point id="296">
+                <coordinates>129.6555978,61.9199627,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="299">
+            <name>Бывший вахтовый городок (ru)</name>
+            <description/>
+            <Point id="298">
+                <coordinates>129.8107033,61.7800865,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="301">
+            <name>Заброшенная котельная птицефабрики (ru)</name>
+            <description/>
+            <Point id="300">
+                <coordinates>129.6108727,61.9730751,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="303">
+            <name>Бывшая АЗС &quot;Тохтоо&quot; (ru)</name>
+            <description/>
+            <Point id="302">
+                <coordinates>129.9211326,61.9484687,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="305">
+            <name>Заброшенный корпус «Красная Якутия» (ru)</name>
+            <description/>
+            <Point id="304">
+                <coordinates>129.6690427,61.9842676,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="307">
+            <name>Заброшенный дом с деревянным фундаментом (ru)</name>
+            <description/>
+            <Point id="306">
+                <coordinates>129.8634731,61.8580261,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="309">
+            <name>ул. Иванова (ru), 9 корпус 2</name>
+            <description/>
+            <Point id="308">
+                <coordinates>129.8412684,61.8749503,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="311">
+            <name>ул. Иванова (ru), 9 корпус 3</name>
+            <description/>
+            <Point id="310">
+                <coordinates>129.841391,61.8741028,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="313">
+            <name>ул. Иванова (ru), 9 корпус 1</name>
+            <description/>
+            <Point id="312">
+                <coordinates>129.8427093,61.8750517,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="315">
+            <name>Транспортная ул. (ru), 2</name>
+            <description/>
+            <Point id="314">
+                <coordinates>129.671491,61.9855784,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="317">
+            <name>Заброшенная АЗС (ru)</name>
+            <description/>
+            <Point id="316">
+                <coordinates>129.6179544,61.9441792,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="319">
+            <name>ул. Строда (ru), 33</name>
+            <description/>
+            <Point id="318">
+                <coordinates>129.8462515,61.8856299,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="321">
+            <name>ул. Строда (ru), 7</name>
+            <description/>
+            <Point id="320">
+                <coordinates>129.8535945,61.8793412,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="323">
+            <name>ул. Строда (ru), 24</name>
+            <description/>
+            <Point id="322">
+                <coordinates>129.8492576,61.8830667,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="325">
+            <name>Бывший магазин Кушнарёвых (ru)</name>
+            <description/>
+            <Point id="324">
+                <coordinates>129.8447093,61.8878976,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="327">
+            <name>Бывший магазин «Холбос» (ru)</name>
+            <description/>
+            <Point id="326">
+                <coordinates>129.5996357,61.857493,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="329">
+            <name>Здание, где с марта по май 1922 г. располагался штаб отряда И. Я. Строда (ru)</name>
+            <description/>
+            <Point id="328">
+                <coordinates>129.8496957,61.8827354,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

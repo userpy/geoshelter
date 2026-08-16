@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="391">
+        <Placemark id="393">
+            <name>Заброшенная Маккавеевская птицефабрика (ru)</name>
+            <description/>
+            <Point id="392">
+                <coordinates>113.946821,51.7654693,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

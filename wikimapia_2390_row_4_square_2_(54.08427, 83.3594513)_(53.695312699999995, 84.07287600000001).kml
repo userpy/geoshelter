@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="83">
+        <Placemark id="85">
+            <name>Тальменский деревообрабатывающий комбинат (ru)</name>
+            <description/>
+            <Point id="84">
+                <coordinates>83.5875891,53.8163842,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="87">
+            <name>Поля фильтрации (ru)</name>
+            <description/>
+            <Point id="86">
+                <coordinates>84.0312534,53.7437334,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="89">
+            <name>Иловые поля (ru)</name>
+            <description/>
+            <Point id="88">
+                <coordinates>83.4876864,53.8468099,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="91">
+            <name>Заброшенные здания птицефабрики (ru)</name>
+            <description/>
+            <Point id="90">
+                <coordinates>84.0237593,53.7098151,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="93">
+            <name>Бывший разъезд Перуново (ru)</name>
+            <description/>
+            <Point id="92">
+                <coordinates>83.4636336,53.911296,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="95">
+            <name>Разобранная двухпутная вставка (ru)</name>
+            <description/>
+            <Point id="94">
+                <coordinates>83.4563755,53.9324344,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="97">
+            <name>Разобранный железнодорожный разъезд Огоньки (ru)</name>
+            <description/>
+            <Point id="96">
+                <coordinates>83.4289473,54.011961,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="99">
+            <name>Заброшенная железнодорожная насыпь (ru)</name>
+            <description/>
+            <Point id="98">
+                <coordinates>83.6205974,53.7589708,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="101">
+            <name>Заброшенный стадион (ru)</name>
+            <description/>
+            <Point id="100">
+                <coordinates>83.4785413,53.7279138,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="103">
+            <name>Территория бывшего пионерлагеря (ru)</name>
+            <description/>
+            <Point id="102">
+                <coordinates>83.5114252,53.8350481,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="105">
+            <name>Кладбище (ru)</name>
+            <description/>
+            <Point id="104">
+                <coordinates>84.0036877,53.7083223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="107">
+            <name>Заброшенное здание котельной (ru)</name>
+            <description/>
+            <Point id="106">
+                <coordinates>83.6181355,53.8275711,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="109">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="108">
+                <coordinates>83.6172503,53.8261098,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="111">
+            <name>Заброшеное здание угольной (ru)</name>
+            <description/>
+            <Point id="110">
+                <coordinates>83.6177962,53.8271555,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="113">
+            <name>Заброшенная котельная (ru)</name>
+            <description/>
+            <Point id="112">
+                <coordinates>83.5590357,53.8173684,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="115">
+            <name>Заброшеное здание (ru)</name>
+            <description/>
+            <Point id="114">
+                <coordinates>83.5832427,53.816237,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="117">
+            <name>Заброшенная теплица (ru)</name>
+            <description/>
+            <Point id="116">
+                <coordinates>83.5592167,53.8172069,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="119">
+            <name>Пустое здание (ru)</name>
+            <description/>
+            <Point id="118">
+                <coordinates>83.618444,53.8264304,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

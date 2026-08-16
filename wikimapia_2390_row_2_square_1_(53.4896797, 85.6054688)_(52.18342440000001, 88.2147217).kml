@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="891">
+        <Placemark id="893">
+            <name>Former culture center</name>
+            <description/>
+            <Point id="892">
+                <coordinates>85.9614876,52.5615264,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="895">
+            <name>Старый мост (ru)</name>
+            <description/>
+            <Point id="894">
+                <coordinates>85.90698,53.2641312,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="897">
+            <name>Старый мост (ru)</name>
+            <description/>
+            <Point id="896">
+                <coordinates>85.9016283,53.2588701,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

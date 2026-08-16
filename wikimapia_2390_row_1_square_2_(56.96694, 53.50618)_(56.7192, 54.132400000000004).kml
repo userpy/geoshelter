@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="25">
+        <Placemark id="27">
+            <name>СНТ «Березники» (ru)</name>
+            <description/>
+            <Point id="26">
+                <coordinates>54.0680551,56.9612154,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>СНТ «Суходол» (ru)</name>
+            <description/>
+            <Point id="28">
+                <coordinates>53.5872959,56.7331353,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Бывший пионерский лагерь (ru)</name>
+            <description/>
+            <Point id="30">
+                <coordinates>53.7395381,56.7887892,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Заброшенное СНТ «Юриха» (ru)</name>
+            <description/>
+            <Point id="32">
+                <coordinates>54.0903496,56.7300698,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>Заброшенная база отдыха «Нефтяник» (ru)</name>
+            <description/>
+            <Point id="34">
+                <coordinates>53.7429713,56.7977556,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>Ангар (ru)</name>
+            <description/>
+            <Point id="36">
+                <coordinates>53.5239626,56.8275829,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>Брошенный склад (ru)</name>
+            <description/>
+            <Point id="38">
+                <coordinates>53.5264795,56.8326073,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>Заброшенный цех производства комбикорма (ru)</name>
+            <description/>
+            <Point id="40">
+                <coordinates>54.0870318,56.7791845,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>Заброшенный гравзавод (ru)</name>
+            <description/>
+            <Point id="42">
+                <coordinates>54.0306216,56.7475202,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>Заброшенное промышленное здание (ru)</name>
+            <description/>
+            <Point id="44">
+                <coordinates>54.1005769,56.7373209,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>Заброшенный завод (ru)</name>
+            <description/>
+            <Point id="46">
+                <coordinates>54.0875648,56.7768678,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="49">
+            <name>Толкач БТП-613 (ru)</name>
+            <description/>
+            <Point id="48">
+                <coordinates>54.1267285,56.7819456,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="51">
+            <name>Недостроенное здание (ru)</name>
+            <description/>
+            <Point id="50">
+                <coordinates>53.9323085,56.8583301,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="53">
+            <name>Заброшенный детский сад (ru)</name>
+            <description/>
+            <Point id="52">
+                <coordinates>53.805786,56.893195,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="55">
+            <name>Цистерны ГСМ (ru)</name>
+            <description/>
+            <Point id="54">
+                <coordinates>53.5197536,56.8321683,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

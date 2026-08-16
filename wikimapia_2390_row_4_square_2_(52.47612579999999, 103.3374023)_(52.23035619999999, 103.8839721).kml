@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="17">
+        <Placemark id="19">
+            <name>Заброшенная военная часть ПВО (ru)</name>
+            <description/>
+            <Point id="18">
+                <coordinates>103.5149377,52.4595616,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>Руины турбазы &quot;Березка&quot; (ru)</name>
+            <description/>
+            <Point id="20">
+                <coordinates>103.5821022,52.4317357,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>Бывший полевой стан Юрты (ru)</name>
+            <description/>
+            <Point id="22">
+                <coordinates>103.3688913,52.3690226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>Турбаза «Лесная поляна» (ru)</name>
+            <description/>
+            <Point id="24">
+                <coordinates>103.6618584,52.4501444,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>Бывшая турбаза им. Евтушенко (ru)</name>
+            <description/>
+            <Point id="26">
+                <coordinates>103.5868053,52.4314372,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>Бывший полевой стан (ru)</name>
+            <description/>
+            <Point id="28">
+                <coordinates>103.6731021,52.3202779,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Stanowisko startowe (pl)</name>
+            <description/>
+            <Point id="30">
+                <coordinates>103.5117539,52.4577759,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Stanowisko startowe (pl)</name>
+            <description/>
+            <Point id="32">
+                <coordinates>103.5107883,52.4575145,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>Stanowisko startowe (pl)</name>
+            <description/>
+            <Point id="34">
+                <coordinates>103.5098495,52.4577972,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>Stanowisko startowe (pl)</name>
+            <description/>
+            <Point id="36">
+                <coordinates>103.5098495,52.4583839,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>Stanowisko startowe (pl)</name>
+            <description/>
+            <Point id="38">
+                <coordinates>103.5107668,52.4587975,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>Stanowisko startowe (pl)</name>
+            <description/>
+            <Point id="40">
+                <coordinates>103.511593,52.4584984,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>Недостроенный бассейн (ru)</name>
+            <description/>
+            <Point id="42">
+                <coordinates>103.7274605,52.4297463,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>Мост (ru)</name>
+            <description/>
+            <Point id="44">
+                <coordinates>103.3822419,52.4666286,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>Колодец (ru)</name>
+            <description/>
+            <Point id="46">
+                <coordinates>103.6860197,52.4501232,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

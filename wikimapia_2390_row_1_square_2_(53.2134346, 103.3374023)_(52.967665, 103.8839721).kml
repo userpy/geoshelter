@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="55">
+        <Placemark id="57">
+            <name>Заброшенная позиция С-75 (ru)</name>
+            <description/>
+            <Point id="56">
+                <coordinates>103.6783326,53.1195101,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="59">
+            <name>Dawna strefa ogniowa S-75 (pl)</name>
+            <description/>
+            <Point id="58">
+                <coordinates>103.6777261,53.1210383,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="61">
+            <name>Недостроенный пятиэтажный дом (ru)</name>
+            <description/>
+            <Point id="60">
+                <coordinates>103.3440192,53.0684194,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>Старый дом (ru)</name>
+            <description/>
+            <Point id="62">
+                <coordinates>103.5412233,53.1906524,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>Вход в убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="2">
+                <coordinates>101.7296966,56.3082722,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>бункер (ru)</name>
+            <description/>
+            <Point id="4">
+                <coordinates>101.7504886,56.3137135,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

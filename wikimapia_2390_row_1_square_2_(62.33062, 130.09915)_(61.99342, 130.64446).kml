@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="143">
+        <Placemark id="145">
+            <name>Недействующая чайная «Суола» (ru)</name>
+            <description/>
+            <Point id="144">
+                <coordinates>130.1381581,62.0975557,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

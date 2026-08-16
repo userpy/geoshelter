@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="105">
+        <Placemark id="107">
+            <name>Часть Малиновских садов совхоза «Сибирский садовод» (ru)</name>
+            <description/>
+            <Point id="106">
+                <coordinates>102.8945588,53.1977455,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="109">
+            <name>Недействующий Восточно-Сибирский огнеупорный завод (ru)</name>
+            <description/>
+            <Point id="108">
+                <coordinates>103.2855606,52.9789839,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="111">
+            <name>Бывшая шахта им. Кирова (ru)</name>
+            <description/>
+            <Point id="110">
+                <coordinates>103.1297457,53.1327173,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="113">
+            <name>Садоводство &quot;Дружба&quot; (Дачи на баках) (ru)</name>
+            <description/>
+            <Point id="112">
+                <coordinates>103.1433175,53.1435911,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="115">
+            <name>Садоводство &quot;Рябина&quot; (ru)</name>
+            <description/>
+            <Point id="114">
+                <coordinates>103.1360863,53.1470405,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="117">
+            <name>Садоводство &quot;Юбилейный&quot; (не действует) (ru)</name>
+            <description/>
+            <Point id="116">
+                <coordinates>103.1557631,53.0875548,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="119">
+            <name>Садоводство «Шахтер» (ru)</name>
+            <description/>
+            <Point id="118">
+                <coordinates>103.0987446,53.1236919,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="121">
+            <name>Садоводство &quot;Машиностроитель&quot; (ru)</name>
+            <description/>
+            <Point id="120">
+                <coordinates>103.1060939,53.1477868,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="123">
+            <name>Садоводство &quot;Ромашка -1&quot; (ru)</name>
+            <description/>
+            <Point id="122">
+                <coordinates>103.1046134,53.1186891,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="125">
+            <name>СНТ «Угольщик-2» (ru)</name>
+            <description/>
+            <Point id="124">
+                <coordinates>103.1717865,53.1689379,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="127">
+            <name>Садоводство &quot;Аист&quot; (не действует) (ru)</name>
+            <description/>
+            <Point id="126">
+                <coordinates>103.1183838,53.1109327,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="129">
+            <name>Садоводство &quot;Автомобилист&quot; (ru)</name>
+            <description/>
+            <Point id="128">
+                <coordinates>103.0990611,53.1214707,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="131">
+            <name>Садоводческое товарищество &quot;Железнодорожник&quot; (ru)</name>
+            <description/>
+            <Point id="130">
+                <coordinates>103.104608,53.1255816,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="133">
+            <name>СНТ «Угольщик-1» (ru)</name>
+            <description/>
+            <Point id="132">
+                <coordinates>103.1740826,53.1694083,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="135">
+            <name>Садоводство «Облепиха» (ru)</name>
+            <description/>
+            <Point id="134">
+                <coordinates>103.1021779,53.1245935,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="137">
+            <name>Бывшая обогатительная фабрика (ru)</name>
+            <description/>
+            <Point id="136">
+                <coordinates>103.1746565,53.1143008,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="139">
+            <name>Очистные сооружения КРЗ (ru)</name>
+            <description/>
+            <Point id="138">
+                <coordinates>103.1893551,53.1293896,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="141">
+            <name>Бывший молокозавод (ныне развалины) (ru)</name>
+            <description/>
+            <Point id="140">
+                <coordinates>103.1575519,53.1207884,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="143">
+            <name>Заброшенная АЗС (ru)</name>
+            <description/>
+            <Point id="142">
+                <coordinates>103.1729775,53.1213404,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="145">
+            <name>Станция &quot;Ново-Южная&quot; (развалины) (ru)</name>
+            <description/>
+            <Point id="144">
+                <coordinates>102.9991153,53.1359681,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="147">
+            <name>База горноспасателей (ru)</name>
+            <description/>
+            <Point id="146">
+                <coordinates>103.144573,53.122575,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="149">
+            <name>Остов Спасо-Преображенского храма (1876) (ru)</name>
+            <description/>
+            <Point id="148">
+                <coordinates>103.0452399,53.0314262,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,29 @@
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+
+SRC_DIR = Path(__file__).resolve().parents[1]
+PROJECT_DIR = (
+    SRC_DIR.parent if (SRC_DIR.parent / "pyproject.toml").is_file() else Path.cwd()
+)
+ASSETS_DIR = SRC_DIR / "assets"
+ICON_FILE = ASSETS_DIR / "app_icon.svg"
+load_dotenv(PROJECT_DIR / ".env")
+
+DEFAULT_SETTINGS = {
+    "api_keys": os.getenv("WIKIMAPIA_API_KEY", ""),
+    "categories": "44690, 2390",
+    "top_point": "55.838340, 49.206620",
+    "bottom_point": "55.795710, 49.305150",
+    "square_count": 2,
+    "row_count": 1,
+    "vertical_direction": "down",
+    "direction": "right",
+    "max_pages": 10,
+    "results_per_page": 100,
+    "request_delay": 10.0,
+    "include_detailed_description": False,
+    "output_dir": "",
+}

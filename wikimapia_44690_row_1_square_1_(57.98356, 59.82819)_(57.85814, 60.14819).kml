@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="257">
+        <Placemark id="259">
+            <name>Убежище ГО НТМК (ru)</name>
+            <description/>
+            <Point id="258">
+                <coordinates>60.0364664,57.9279002,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="261">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="260">
+                <coordinates>59.9173387,57.9208595,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="263">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="262">
+                <coordinates>60.1050262,57.9217399,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="265">
+            <name>Бомбоубежище № 112 (ru)</name>
+            <description/>
+            <Point id="264">
+                <coordinates>60.0601744,57.9125111,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="267">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="266">
+                <coordinates>59.9593113,57.9120166,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="269">
+            <name>Заброшенное убежище НТМК (ru)</name>
+            <description/>
+            <Point id="268">
+                <coordinates>60.0285726,57.9307513,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="15">
+        <Placemark id="17">
+            <name>Штаб связи РВСН (ru)</name>
+            <description/>
+            <Point id="16">
+                <coordinates>73.583286,55.0997048,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="18">
+                <coordinates>73.5874101,55.0040203,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

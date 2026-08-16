@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="2705">
+        <Placemark id="2707">
+            <name>Бывший военный ЖБИ (ru)</name>
+            <description/>
+            <Point id="2706">
+                <coordinates>64.227941,67.4974676,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2709">
+            <name>Недостроенный завод ЖБИ (ru)</name>
+            <description/>
+            <Point id="2708">
+                <coordinates>64.1905509,67.4995616,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2711">
+            <name>Заброшенное лагерное кладбище (ru)</name>
+            <description/>
+            <Point id="2710">
+                <coordinates>64.1543841,67.4931394,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

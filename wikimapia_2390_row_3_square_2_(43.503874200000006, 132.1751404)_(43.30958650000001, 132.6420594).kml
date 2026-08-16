@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1767">
+        <Placemark id="1769">
+            <name>Заброшенное хранилище топлива «Площадка № 450» (ru)</name>
+            <description/>
+            <Point id="1768">
+                <coordinates>132.572885,43.3598488,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1771">
+            <name>Недействующая шахта «Артём» (ru)</name>
+            <description/>
+            <Point id="1770">
+                <coordinates>132.3750185,43.3469727,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1773">
+            <name>Недействующая взлётно-посадочная полоса ВПП 05/23 (ru)</name>
+            <description/>
+            <Point id="1772">
+                <coordinates>132.4234539,43.4241098,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1775">
+            <name>Заброшенный завод по производству комбикорма (ru)</name>
+            <description/>
+            <Point id="1774">
+                <coordinates>132.2795802,43.45295,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1777">
+            <name>Бывший колхоз (ru)</name>
+            <description/>
+            <Point id="1776">
+                <coordinates>132.2462134,43.4449,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1779">
+            <name>Заброшенная территория военных складов (ru)</name>
+            <description/>
+            <Point id="1778">
+                <coordinates>132.2210599,43.4070053,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1781">
+            <name>Недействующая взлётно-посадочная полоса аэродрома Штыково. (ru)</name>
+            <description/>
+            <Point id="1780">
+                <coordinates>132.4192186,43.4239858,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1783">
+            <name>Недействующая взлётно-посадочная полоса аэродрома Новороссия. (ru)</name>
+            <description/>
+            <Point id="1782">
+                <coordinates>132.5622099,43.3476906,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1785">
+            <name>Заброшенная часть ВПП (ru)</name>
+            <description/>
+            <Point id="1784">
+                <coordinates>132.5628295,43.3484318,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1787">
+            <name>Склад (ru)</name>
+            <description/>
+            <Point id="1786">
+                <coordinates>132.322348,43.4741717,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1789">
+            <name>Старый карьер (ru)</name>
+            <description/>
+            <Point id="1788">
+                <coordinates>132.2267701,43.3690712,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1791">
+            <name>кэч</name>
+            <description/>
+            <Point id="1790">
+                <coordinates>132.3498916,43.3260283,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1793">
+            <name>Батарея № 510 АСБО, батарея № 7 ВЛОР (ru)</name>
+            <description/>
+            <Point id="1792">
+                <coordinates>132.2155961,43.3429351,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1795">
+            <name>Бывшая угольная шахта (ru)</name>
+            <description/>
+            <Point id="1794">
+                <coordinates>132.3837553,43.4759825,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1797">
+            <name>Батарея № 4 ВЛОР (ru)</name>
+            <description/>
+            <Point id="1796">
+                <coordinates>132.2232404,43.3453481,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1799">
+            <name>Бывший рыбхоз (ru)</name>
+            <description/>
+            <Point id="1798">
+                <coordinates>132.3063405,43.3679666,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1801">
+            <name>Заброшенное кладбище (ru)</name>
+            <description/>
+            <Point id="1800">
+                <coordinates>132.2997571,43.3815595,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1803">
+            <name>Подземное хранилище (ru)</name>
+            <description/>
+            <Point id="1802">
+                <coordinates>132.1939855,43.3511225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1805">
+            <name>Заброшенный кирпичный завод (ru)</name>
+            <description/>
+            <Point id="1804">
+                <coordinates>132.3410376,43.3249464,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1807">
+            <name>Сборное убежище (ru)</name>
+            <description/>
+            <Point id="1806">
+                <coordinates>132.2086568,43.3170006,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1809">
+            <name>Заброшенный карьер (ru)</name>
+            <description/>
+            <Point id="1808">
+                <coordinates>132.4372028,43.4170207,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1811">
+            <name>Батарея № 2 ВЛОР (ru)</name>
+            <description/>
+            <Point id="1810">
+                <coordinates>132.2831126,43.3240361,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1813">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1812">
+                <coordinates>132.3306068,43.4139447,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1815">
+            <name>Батарея № 511 АСБО / Батарея № 8 ВЛОР (ru)</name>
+            <description/>
+            <Point id="1814">
+                <coordinates>132.1925908,43.3251952,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1817">
+            <name>Территория с заброшенной сельхозтехникой (ru)</name>
+            <description/>
+            <Point id="1816">
+                <coordinates>132.2354256,43.3878752,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1819">
+            <name>Тракторный парк (ru)</name>
+            <description/>
+            <Point id="1818">
+                <coordinates>132.314766,43.4672061,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1821">
+            <name>Складской корпус (ru)</name>
+            <description/>
+            <Point id="1820">
+                <coordinates>132.281286,43.4583393,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1823">
+            <name>Заброшенный элеватор (ru)</name>
+            <description/>
+            <Point id="1822">
+                <coordinates>132.2768416,43.4620501,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1825">
+            <name>Групповое место стоянки самолётов (ru)</name>
+            <description/>
+            <Point id="1824">
+                <coordinates>132.5599461,43.3478993,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1827">
+            <name>Сберно распределительныф пункт </name>
+            <description/>
+            <Point id="1826">
+                <coordinates>132.2861221,43.3636126,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1829">
+            <name>Градирня (ru)</name>
+            <description/>
+            <Point id="1828">
+                <coordinates>132.3071505,43.3674655,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1831">
+            <name>Градирня (ru)</name>
+            <description/>
+            <Point id="1830">
+                <coordinates>132.3078104,43.367056,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1833">
+            <name>Градирня (ru)</name>
+            <description/>
+            <Point id="1832">
+                <coordinates>132.3084487,43.3666348,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1835">
+            <name>Заброшеное здание завода по произв. комбикорма (ru)</name>
+            <description/>
+            <Point id="1834">
+                <coordinates>132.2801301,43.4533102,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1837">
+            <name>КНП батареи № 510 (ru)</name>
+            <description/>
+            <Point id="1836">
+                <coordinates>132.2197777,43.351888,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1839">
+            <name>Убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="1838">
+                <coordinates>132.319624,43.3688075,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1841">
+            <name>Командно-наблюдательный пункт (ru)</name>
+            <description/>
+            <Point id="1840">
+                <coordinates>132.1925667,43.3283854,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1843">
+            <name>Недостроенный санаторий ЖБИ-3 (ru)</name>
+            <description/>
+            <Point id="1842">
+                <coordinates>132.2786844,43.4638875,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1845">
+            <name>бомбоубежище (ru)</name>
+            <description/>
+            <Point id="1844">
+                <coordinates>132.2006105,43.3960361,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1847">
+            <name>Щебёночные склады (ru)</name>
+            <description/>
+            <Point id="1846">
+                <coordinates>132.248209,43.3816862,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1849">
+            <name>Учебно-жилой корпус (ru)</name>
+            <description/>
+            <Point id="1848">
+                <coordinates>132.210008,43.3950203,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1851">
+            <name>Бывший магазин №5 (ru)</name>
+            <description/>
+            <Point id="1850">
+                <coordinates>132.2866103,43.4669225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1853">
+            <name>Заброшенное кладбище села Шевелёвка (ru)</name>
+            <description/>
+            <Point id="1852">
+                <coordinates>132.2732931,43.3242566,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1855">
+            <name>Развалины (ru)</name>
+            <description/>
+            <Point id="1854">
+                <coordinates>132.2704849,43.453427,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1857">
+            <name>Заброшенный цех (ru)</name>
+            <description/>
+            <Point id="1856">
+                <coordinates>132.3088457,43.3675552,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1859">
+            <name>Убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="1858">
+                <coordinates>132.3208252,43.3695372,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1861">
+            <name>Водослив (ru)</name>
+            <description/>
+            <Point id="1860">
+                <coordinates>132.1876836,43.336677,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1863">
+            <name>КП 1063-го опулаб (ru)</name>
+            <description/>
+            <Point id="1862">
+                <coordinates>132.2028475,43.3498508,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1865">
+            <name>Убежище птицефабрики (ru)</name>
+            <description/>
+            <Point id="1864">
+                <coordinates>132.285827,43.3827584,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1867">
+            <name>Развалины (ru)</name>
+            <description/>
+            <Point id="1866">
+                <coordinates>132.356589,43.3294701,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1869">
+            <name>Заброшенная мастерская (ru)</name>
+            <description/>
+            <Point id="1868">
+                <coordinates>132.3643809,43.3529898,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1871">
+            <name>Котельная на ЖБИ-3 (ru)</name>
+            <description/>
+            <Point id="1870">
+                <coordinates>132.2769461,43.4598745,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1873">
+            <name>Заброшенное здание водоканала (ru)</name>
+            <description/>
+            <Point id="1872">
+                <coordinates>132.3544131,43.3788441,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1875">
+            <name>Заброшеное здание для хранения комб. завода по произв. комбикорма (ru)</name>
+            <description/>
+            <Point id="1874">
+                <coordinates>132.2803768,43.4526034,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1877">
+            <name>Пустующее здание (ru)</name>
+            <description/>
+            <Point id="1876">
+                <coordinates>132.2874669,43.4661192,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1879">
+            <name>Бывшая швейная фабрика (ru)</name>
+            <description/>
+            <Point id="1878">
+                <coordinates>132.2187343,43.3646792,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1881">
+            <name>Развалины (ru)</name>
+            <description/>
+            <Point id="1880">
+                <coordinates>132.3556147,43.3290736,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1883">
+            <name>Корпус с гаражом (ru)</name>
+            <description/>
+            <Point id="1882">
+                <coordinates>132.2818466,43.458131,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1885">
+            <name>Склад (ru)</name>
+            <description/>
+            <Point id="1884">
+                <coordinates>132.3099213,43.3671681,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1887">
+            <name>Карьер с бомбоубежищем (ru)</name>
+            <description/>
+            <Point id="1886">
+                <coordinates>132.3081992,43.3743939,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1889">
+            <name>Здание свинофермы (ru)</name>
+            <description/>
+            <Point id="1888">
+                <coordinates>132.1909908,43.4077161,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1891">
+            <name>Реактивный склад (ru)</name>
+            <description/>
+            <Point id="1890">
+                <coordinates>132.2485899,43.3823061,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1893">
+            <name>Заброшенное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="1892">
+                <coordinates>132.2371422,43.3757519,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1895">
+            <name>Заброшенное место рынка (ru)</name>
+            <description/>
+            <Point id="1894">
+                <coordinates>132.3595958,43.3225219,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1897">
+            <name>Фортификационное сооружение</name>
+            <description/>
+            <Point id="1896">
+                <coordinates>132.2871065,43.3623762,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1899">
+            <name>Развалины гаражей (ru)</name>
+            <description/>
+            <Point id="1898">
+                <coordinates>132.2020348,43.3671185,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1901">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1900">
+                <coordinates>132.209259,43.3951255,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1903">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1902">
+                <coordinates>132.2348986,43.3653479,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1905">
+            <name>Здание (ru)</name>
+            <description/>
+            <Point id="1904">
+                <coordinates>132.2682022,43.4555045,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1907">
+            <name>Заброшенное производственное здание (ru)</name>
+            <description/>
+            <Point id="1906">
+                <coordinates>132.2381508,43.3848886,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1909">
+            <name>Бывшие мастерские (ru)</name>
+            <description/>
+            <Point id="1908">
+                <coordinates>132.2111165,43.3953874,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1911">
+            <name>Котельная (ru)</name>
+            <description/>
+            <Point id="1910">
+                <coordinates>132.2431048,43.3802149,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1913">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="1912">
+                <coordinates>132.3266261,43.4195797,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1915">
+            <name>Заводская ул. (ru), 26а</name>
+            <description/>
+            <Point id="1914">
+                <coordinates>132.2112399,43.3949014,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1917">
+            <name>Старое кладбище (ru)</name>
+            <description/>
+            <Point id="1916">
+                <coordinates>132.3159764,43.3766994,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1919">
+            <name>Старая школа (ru)</name>
+            <description/>
+            <Point id="1918">
+                <coordinates>132.3571364,43.3228755,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1921">
+            <name>Заброшеное управления Автобары №3 (ru)</name>
+            <description/>
+            <Point id="1920">
+                <coordinates>132.2814081,43.4564518,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1923">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1922">
+                <coordinates>132.2081529,43.3993375,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1925">
+            <name>Заброшенный ангар (ru)</name>
+            <description/>
+            <Point id="1924">
+                <coordinates>132.1977374,43.41113,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1927">
+            <name>Баня (ru)</name>
+            <description/>
+            <Point id="1926">
+                <coordinates>132.3182146,43.3685405,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1929">
+            <name>Подземный склад (ru)</name>
+            <description/>
+            <Point id="1928">
+                <coordinates>132.280999,43.460296,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1931">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1930">
+                <coordinates>132.2801139,43.459651,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1933">
+            <name>Недействующий круглосуточный ресторан «Лесная фея» (ru)</name>
+            <description/>
+            <Point id="1932">
+                <coordinates>132.3675205,43.3469084,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1935">
+            <name>Заброшенный склад (ru)</name>
+            <description/>
+            <Point id="1934">
+                <coordinates>132.1891185,43.4097393,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1937">
+            <name>Бывшая средняя школа № 1 (ru)</name>
+            <description/>
+            <Point id="1936">
+                <coordinates>132.3608824,43.3200922,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1939">
+            <name>Мост через реку Кневичанку (Батальянзу) (ru)</name>
+            <description/>
+            <Point id="1938">
+                <coordinates>132.2494858,43.3937422,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1941">
+            <name>Заброшенный детский сад-ясли «Берёзка» (ru)</name>
+            <description/>
+            <Point id="1940">
+                <coordinates>132.4336527,43.4716447,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1943">
+            <name>Развалины казарм (ru)</name>
+            <description/>
+            <Point id="1942">
+                <coordinates>132.2965665,43.4603261,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1945">
+            <name>ул. Бабушкина (ru), 4/1</name>
+            <description/>
+            <Point id="1944">
+                <coordinates>132.2381204,43.3758118,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1947">
+            <name>Здание овощехранилища (ru)</name>
+            <description/>
+            <Point id="1946">
+                <coordinates>132.1897505,43.4059395,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1949">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1948">
+                <coordinates>132.2803683,43.4591226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1951">
+            <name>Почтовая ул. (ru), 6</name>
+            <description/>
+            <Point id="1950">
+                <coordinates>132.4387739,43.4719488,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1953">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="1952">
+                <coordinates>132.2190937,43.3762823,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1955">
+            <name>Топливный резервуар (ru)</name>
+            <description/>
+            <Point id="1954">
+                <coordinates>132.1926655,43.3832122,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1957">
+            <name>Корпус хлебозавода (ru)</name>
+            <description/>
+            <Point id="1956">
+                <coordinates>132.2109317,43.3651139,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1959">
+            <name>Бывший магазин «Детский Мир» (ru)</name>
+            <description/>
+            <Point id="1958">
+                <coordinates>132.3160401,43.3695651,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1961">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="1960">
+                <coordinates>132.1930467,43.3545716,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1963">
+            <name>Пороховой погреб батареи № 511 (ru)</name>
+            <description/>
+            <Point id="1962">
+                <coordinates>132.1916118,43.3235191,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1965">
+            <name>Волочаевская ул. (ru), 21</name>
+            <description/>
+            <Point id="1964">
+                <coordinates>132.1883504,43.3774683,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1967">
+            <name>Заброшенный подземный склад (ru)</name>
+            <description/>
+            <Point id="1966">
+                <coordinates>132.2207989,43.4072576,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1969">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="1968">
+                <coordinates>132.2126819,43.3663319,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1971">
+            <name>Мост через ручей Восточный (ru)</name>
+            <description/>
+            <Point id="1970">
+                <coordinates>132.24929,43.3344003,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1973">
+            <name>Здание (ru)</name>
+            <description/>
+            <Point id="1972">
+                <coordinates>132.3544272,43.3209336,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1975">
+            <name>Заброшенный полуподземный ангар (ru)</name>
+            <description/>
+            <Point id="1974">
+                <coordinates>132.221173,43.4069546,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1977">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1976">
+                <coordinates>132.2973194,43.3512482,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1979">
+            <name>Старый топливный резервуар (ru)</name>
+            <description/>
+            <Point id="1978">
+                <coordinates>132.1923205,43.3836139,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1981">
+            <name>Пороховой погреб батареи № 511 (ru)</name>
+            <description/>
+            <Point id="1980">
+                <coordinates>132.1964907,43.3272342,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1983">
+            <name>Сборное убежище (ru)</name>
+            <description/>
+            <Point id="1982">
+                <coordinates>132.2981239,43.3468371,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1985">
+            <name>Дворик для дальномера (ru)</name>
+            <description/>
+            <Point id="1984">
+                <coordinates>132.2284423,43.3689775,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1987">
+            <name>Сгоревшее здание (ru)</name>
+            <description/>
+            <Point id="1986">
+                <coordinates>132.3174156,43.3688387,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1989">
+            <name>Автомобильный мост (ru)</name>
+            <description/>
+            <Point id="1988">
+                <coordinates>132.2579884,43.3766019,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1991">
+            <name>Коммунальное здание с навесом (ru)</name>
+            <description/>
+            <Point id="1990">
+                <coordinates>132.2035443,43.3732544,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1993">
+            <name>Заброшенное подземное убежище личного состава (ru)</name>
+            <description/>
+            <Point id="1992">
+                <coordinates>132.2200928,43.4074194,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1995">
+            <name>Здание (ru)</name>
+            <description/>
+            <Point id="1994">
+                <coordinates>132.3471854,43.3242352,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1997">
+            <name>Заброшенный продуктовый магазин (ru)</name>
+            <description/>
+            <Point id="1996">
+                <coordinates>132.6247616,43.3398652,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1999">
+            <name>СПС</name>
+            <description/>
+            <Point id="1998">
+                <coordinates>132.2865513,43.3290371,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2001">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="2000">
+                <coordinates>132.1924714,43.3583599,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2003">
+            <name>Здание перекачивающей станции (ru)</name>
+            <description/>
+            <Point id="2002">
+                <coordinates>132.2234104,43.41686,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2005">
+            <name>Заброшенный фундамент (ru)</name>
+            <description/>
+            <Point id="2004">
+                <coordinates>132.2052449,43.376031,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2007">
+            <name>Пороховой погреб батареи № 511 (ru)</name>
+            <description/>
+            <Point id="2006">
+                <coordinates>132.1939427,43.3256089,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2009">
+            <name>Элемент вентиляционной конструкции (ru)</name>
+            <description/>
+            <Point id="2008">
+                <coordinates>132.1964692,43.3450008,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2011">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="2010">
+                <coordinates>132.2111033,43.3617239,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2013">
+            <name>Центральная ул. (ru), 1а</name>
+            <description/>
+            <Point id="2012">
+                <coordinates>132.438716,43.4707524,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2015">
+            <name>Брошенное здание (ru)</name>
+            <description/>
+            <Point id="2014">
+                <coordinates>132.3507606,43.3233551,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2017">
+            <name>СПС (ru)</name>
+            <description/>
+            <Point id="2016">
+                <coordinates>132.2849125,43.3640376,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2019">
+            <name>СПС</name>
+            <description/>
+            <Point id="2018">
+                <coordinates>132.2827611,43.3635216,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2021">
+            <name>СПС</name>
+            <description/>
+            <Point id="2020">
+                <coordinates>132.2867953,43.3651218,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2023">
+            <name>СПС (ru)</name>
+            <description/>
+            <Point id="2022">
+                <coordinates>132.2833889,43.3637062,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2025">
+            <name>Заброшенное хранилище (ru)</name>
+            <description/>
+            <Point id="2024">
+                <coordinates>132.2962009,43.4594394,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2027">
+            <name>Гараж (ru)</name>
+            <description/>
+            <Point id="2026">
+                <coordinates>132.1980572,43.3939703,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2029">
+            <name>ул. Воровского (ru), 50</name>
+            <description/>
+            <Point id="2028">
+                <coordinates>132.1977775,43.3493667,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2031">
+            <name>Водонапорная башня (ru)</name>
+            <description/>
+            <Point id="2030">
+                <coordinates>132.3423257,43.325381,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2033">
+            <name>Перерезанное ответвление старой трассировки ширококолейной железной дороги на Находку (ru)</name>
+            <description/>
+            <Point id="2032">
+                <coordinates>132.3810065,43.321715,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2035">
+            <name>Заброшенное сборное пулемётное сооружение СПС-2М Владивостокского оборонительного района (ru)</name>
+            <description/>
+            <Point id="2034">
+                <coordinates>132.2010531,43.3475258,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2037">
+            <name>Заросший общественный туалет (ru)</name>
+            <description/>
+            <Point id="2036">
+                <coordinates>132.3113804,43.369082,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2039">
+            <name>Сборное пулеметное сооружение (развалины) (ru)</name>
+            <description/>
+            <Point id="2038">
+                <coordinates>132.2405795,43.3812135,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2041">
+            <name>Бывшая ТП (ru)</name>
+            <description/>
+            <Point id="2040">
+                <coordinates>132.3472602,43.3230906,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2043">
+            <name>Кладовая (ru)</name>
+            <description/>
+            <Point id="2042">
+                <coordinates>132.3081926,43.3677658,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2045">
+            <name>Заброшенное сборное пулемётное сооружение СПС-2М Владивостокского оборонительного района (ru)</name>
+            <description/>
+            <Point id="2044">
+                <coordinates>132.2024055,43.3480475,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2047">
+            <name>Кирпичное здание индивидуальной бани (ru)</name>
+            <description/>
+            <Point id="2046">
+                <coordinates>132.2011388,43.3734315,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2049">
+            <name>Деревянный колодец (ru)</name>
+            <description/>
+            <Point id="2048">
+                <coordinates>132.2048536,43.4905553,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2051">
+            <name>СПС (ru)</name>
+            <description/>
+            <Point id="2050">
+                <coordinates>132.204897,43.3508702,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="2053">
+            <name>Вход в убежище (ru)</name>
+            <description/>
+            <Point id="2052">
+                <coordinates>132.2075806,43.3641301,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

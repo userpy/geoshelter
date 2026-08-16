@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1143">
+        <Placemark id="1145">
+            <name>Защитное сооружение ГО (убежище) (ru)</name>
+            <description/>
+            <Point id="1144">
+                <coordinates>131.9391795,43.8003589,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1147">
+            <name>Заброшенное заводское убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="1146">
+                <coordinates>131.8547484,43.8669726,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1149">
+            <name>Убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="1148">
+                <coordinates>131.9464148,43.8009293,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1151">
+            <name>Защитное сооружение ГО (убежище) (ru)</name>
+            <description/>
+            <Point id="1150">
+                <coordinates>131.9429495,43.8058955,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1153">
+            <name>Защитное сооружение ГО (убежище) (ru)</name>
+            <description/>
+            <Point id="1152">
+                <coordinates>131.9475079,43.8166958,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1155">
+            <name>Защитное сооружение гражданской обороны (ru)</name>
+            <description/>
+            <Point id="1154">
+                <coordinates>131.9526484,43.8127408,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1157">
+            <name>Защитное сооружение ГО (убежище) (ru)</name>
+            <description/>
+            <Point id="1156">
+                <coordinates>131.9549993,43.8567707,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1159">
+            <name>Заброшенное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="1158">
+                <coordinates>131.9540024,43.8009733,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1161">
+            <name>Защитное сооружение ГО (ru)</name>
+            <description/>
+            <Point id="1160">
+                <coordinates>131.9529072,43.8064268,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1163">
+            <name>Заглублённое сооружение (ru)</name>
+            <description/>
+            <Point id="1162">
+                <coordinates>131.9464191,43.8061445,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1165">
+            <name>Защитное сооружение ГО (ru)</name>
+            <description/>
+            <Point id="1164">
+                <coordinates>131.9527905,43.8055838,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1167">
+            <name>Убежище (ru)</name>
+            <description/>
+            <Point id="1166">
+                <coordinates>131.976401,43.8145692,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1169">
+            <name>Заброшенное защитное сооружение ГО (убежище) (ru)</name>
+            <description/>
+            <Point id="1168">
+                <coordinates>131.9842944,43.778614,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1171">
+            <name>Защитное сооружение гражданской обороны (убежище) (ru)</name>
+            <description/>
+            <Point id="1170">
+                <coordinates>131.9488075,43.8098027,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

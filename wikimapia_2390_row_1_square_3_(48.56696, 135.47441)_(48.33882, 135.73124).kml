@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="869">
+        <Placemark id="871">
+            <name>Dawna pozycja ogniowa S-200 (pl)</name>
+            <description/>
+            <Point id="870">
+                <coordinates>135.5418759,48.5373058,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="873">
+            <name>Подсобное хозяйство войсковой части 34091 (заброшено) (ru)</name>
+            <description/>
+            <Point id="872">
+                <coordinates>135.4797264,48.4703658,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="875">
+            <name>Полуразрушенное здание (ru)</name>
+            <description/>
+            <Point id="874">
+                <coordinates>135.5219983,48.5362222,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="877">
+            <name>ДПРМ аэродрома — 10 участок (заброшен) (ru)</name>
+            <description/>
+            <Point id="876">
+                <coordinates>135.4779045,48.4685269,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

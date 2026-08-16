@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="401">
+        <Placemark id="403">
+            <name>Kupino air base</name>
+            <description/>
+            <Point id="402">
+                <coordinates>77.3591136,54.3527271,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="405">
+            <name>Заброшенная база хранения вооружения (ru)</name>
+            <description/>
+            <Point id="404">
+                <coordinates>77.3639255,54.3721958,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="407">
+            <name>Бывшая ТЭЧ полка (ru)</name>
+            <description/>
+            <Point id="406">
+                <coordinates>77.3542645,54.3566128,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="409">
+            <name>Бывший ДПРМ (ru)</name>
+            <description/>
+            <Point id="408">
+                <coordinates>77.4317103,54.3831987,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="411">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="410">
+                <coordinates>78.6601781,54.7002595,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

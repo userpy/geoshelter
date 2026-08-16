@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1373">
+        <Placemark id="1375">
+            <name>СНТ «Связист» (ru)</name>
+            <description/>
+            <Point id="1374">
+                <coordinates>78.3511796,55.3728763,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1377">
+            <name>Заброшенная стройбаза (ru)</name>
+            <description/>
+            <Point id="1376">
+                <coordinates>78.2803371,55.3451443,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1379">
+            <name>Заброшенный аэропорт Барабинск (ru)</name>
+            <description/>
+            <Point id="1378">
+                <coordinates>78.2982086,55.36049,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1381">
+            <name>Заброшенное СТ &quot;Мебельщик&quot; (ru)</name>
+            <description/>
+            <Point id="1380">
+                <coordinates>78.3035945,55.3413275,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1383">
+            <name>Бывшее ООО «Завод „Сибпромсвязь“» (ru)</name>
+            <description/>
+            <Point id="1382">
+                <coordinates>78.3347347,55.3563653,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1385">
+            <name>Заброшенное строительное депо (ru)</name>
+            <description/>
+            <Point id="1384">
+                <coordinates>78.3711902,55.3550577,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1387">
+            <name>Заброшенная взлётно-посадочная полоса ВПП 04/22 (ru)</name>
+            <description/>
+            <Point id="1386">
+                <coordinates>78.2984774,55.3607313,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1389">
+            <name>Заброшенный хлебокомбинат (ru)</name>
+            <description/>
+            <Point id="1388">
+                <coordinates>78.322083,55.3563828,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1391">
+            <name>Барабинская межрайбаза (ru)</name>
+            <description/>
+            <Point id="1390">
+                <coordinates>78.3873036,55.3512669,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1393">
+            <name>Заброшенная стоянка самолётов и вертолётов (ru)</name>
+            <description/>
+            <Point id="1392">
+                <coordinates>78.299677,55.3591488,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1395">
+            <name>Бывший парк (ru)</name>
+            <description/>
+            <Point id="1394">
+                <coordinates>78.357822,55.3574532,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1397">
+            <name>Бывший главный корпус (ru)</name>
+            <description/>
+            <Point id="1396">
+                <coordinates>78.3216743,55.3561589,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1399">
+            <name>Заброшенный склад (ru)</name>
+            <description/>
+            <Point id="1398">
+                <coordinates>78.3892696,55.3552178,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1401">
+            <name>Заброшенный склад (ru)</name>
+            <description/>
+            <Point id="1400">
+                <coordinates>78.3893689,55.3560229,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1403">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1402">
+                <coordinates>78.3467418,55.3566694,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1405">
+            <name>Заброшенный морг (ru)</name>
+            <description/>
+            <Point id="1404">
+                <coordinates>78.3589606,55.3578982,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1407">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1406">
+                <coordinates>78.3063411,55.3579334,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1409">
+            <name>Заброшенное СТО (ru)</name>
+            <description/>
+            <Point id="1408">
+                <coordinates>78.3383411,55.3474466,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1411">
+            <name>Заброшенное строительное управление № 6 (ru)</name>
+            <description/>
+            <Point id="1410">
+                <coordinates>78.3704704,55.3547904,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1413">
+            <name>Заброшенный гриль-бар City (ru)</name>
+            <description/>
+            <Point id="1412">
+                <coordinates>78.3468642,55.3571935,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1415">
+            <name>ул. Краскома (ru), 97</name>
+            <description/>
+            <Point id="1414">
+                <coordinates>78.3637028,55.3577286,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1417">
+            <name>Недостроенное здание (ru)</name>
+            <description/>
+            <Point id="1416">
+                <coordinates>78.3565789,55.3496954,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1419">
+            <name>Заброшенные поезда (ru)</name>
+            <description/>
+            <Point id="1418">
+                <coordinates>78.4054701,55.3587994,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1421">
+            <name>Заброшенная дымовая труба (ru)</name>
+            <description/>
+            <Point id="1420">
+                <coordinates>78.3211685,55.3564097,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

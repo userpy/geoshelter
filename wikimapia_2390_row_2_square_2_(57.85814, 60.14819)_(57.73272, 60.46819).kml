@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="551">
+        <Placemark id="553">
+            <name>Заброшенная АЗС (ru)</name>
+            <description/>
+            <Point id="552">
+                <coordinates>60.2652078,57.7472951,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="555">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="554">
+                <coordinates>60.2741709,57.7435685,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="557">
+            <name>Заброшенный магазин (ru)</name>
+            <description/>
+            <Point id="556">
+                <coordinates>60.1774195,57.7735521,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

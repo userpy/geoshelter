@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="2">
+                <coordinates>73.3097713,54.8953535,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Заброшенное убежище (ru)</name>
+            <description/>
+            <Point id="4">
+                <coordinates>73.311083,54.8948293,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="6">
+                <coordinates>73.4067876,54.8490456,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>Убежище палаточного городка (ru)</name>
+            <description/>
+            <Point id="8">
+                <coordinates>73.4671385,54.8807694,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="10">
+                <coordinates>73.3699955,54.9044097,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Заброшенное бомбоубежище птицефабрики (ru)</name>
+            <description/>
+            <Point id="12">
+                <coordinates>73.487923,54.9049174,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

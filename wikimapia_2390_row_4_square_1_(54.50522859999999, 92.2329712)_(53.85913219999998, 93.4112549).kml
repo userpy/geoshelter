@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="305">
+        <Placemark id="307">
+            <name>Брошеный карьер Мульга (ru)</name>
+            <description/>
+            <Point id="306">
+                <coordinates>93.2904051,54.1629357,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="309">
+            <name>Заброшенный карьер (ru)</name>
+            <description/>
+            <Point id="308">
+                <coordinates>93.2267831,54.212672,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

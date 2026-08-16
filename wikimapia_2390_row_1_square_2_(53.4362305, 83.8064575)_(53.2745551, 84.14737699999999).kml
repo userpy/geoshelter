@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="995">
+        <Placemark id="997">
+            <name>A tract of a razed railroad arc</name>
+            <description/>
+            <Point id="996">
+                <coordinates>84.0676199,53.4242903,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="999">
+            <name>СНТ &quot;Черёмушки&quot; (ru)</name>
+            <description/>
+            <Point id="998">
+                <coordinates>83.98476,53.413097,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1001">
+            <name>Заброшенные фермы (ru)</name>
+            <description/>
+            <Point id="1000">
+                <coordinates>83.9776575,53.3590424,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1003">
+            <name>Остатки грунтовых работ (ru)</name>
+            <description/>
+            <Point id="1002">
+                <coordinates>83.8257813,53.3676838,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1005">
+            <name>Стройплощадка (ru)</name>
+            <description/>
+            <Point id="1004">
+                <coordinates>83.8224757,53.3726865,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1007">
+            <name>Кладбище (ru)</name>
+            <description/>
+            <Point id="1006">
+                <coordinates>83.9482525,53.3808021,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1009">
+            <name>Водохранилище (ru)</name>
+            <description/>
+            <Point id="1008">
+                <coordinates>84.1432893,53.434925,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1011">
+            <name>Barnaulskoye shosse, 31</name>
+            <description/>
+            <Point id="1010">
+                <coordinates>83.950307,53.3709118,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1013">
+            <name>Футбольное поле (ru)</name>
+            <description/>
+            <Point id="1012">
+                <coordinates>83.9635384,53.3903574,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1015">
+            <name>Заброшенные подкрановые площадки (ru)</name>
+            <description/>
+            <Point id="1014">
+                <coordinates>83.9194867,53.4268166,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1017">
+            <name>Недостроенные склады (ru)</name>
+            <description/>
+            <Point id="1016">
+                <coordinates>83.9585661,53.3966443,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1019">
+            <name>Грунтовые работы (ru)</name>
+            <description/>
+            <Point id="1018">
+                <coordinates>83.8424876,53.3503671,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1021">
+            <name>Кладбище (ru)</name>
+            <description/>
+            <Point id="1020">
+                <coordinates>84.1048715,53.3365896,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1023">
+            <name>Недостроенный железнодорожный путь (ru)</name>
+            <description/>
+            <Point id="1022">
+                <coordinates>83.8189059,53.3712235,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1025">
+            <name>Недостроенный склад (ru)</name>
+            <description/>
+            <Point id="1024">
+                <coordinates>83.9590708,53.3965024,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1027">
+            <name>Недостроенный производственный корпус (ru)</name>
+            <description/>
+            <Point id="1026">
+                <coordinates>83.9882442,53.3918225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1029">
+            <name>Развалины (ru)</name>
+            <description/>
+            <Point id="1028">
+                <coordinates>83.9668777,53.3917682,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1031">
+            <name>Бывшая школа № 4 (ru)</name>
+            <description/>
+            <Point id="1030">
+                <coordinates>83.914884,53.4054277,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1033">
+            <name>Заброшенная стройка (ru)</name>
+            <description/>
+            <Point id="1032">
+                <coordinates>83.9842688,53.3541853,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1035">
+            <name>Заброшенная пожарная часть (ru)</name>
+            <description/>
+            <Point id="1034">
+                <coordinates>83.9875361,53.3936843,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1037">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1036">
+                <coordinates>83.9699166,53.3841473,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1039">
+            <name>Закрытый и разобранный железнодорожный переезд (ru)</name>
+            <description/>
+            <Point id="1038">
+                <coordinates>84.0503785,53.3678895,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1041">
+            <name>Железнодорожный мост (ru)</name>
+            <description/>
+            <Point id="1040">
+                <coordinates>84.077642,53.4321446,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1043">
+            <name>Кирпичное здание (ru)</name>
+            <description/>
+            <Point id="1042">
+                <coordinates>84.1204658,53.3396778,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1045">
+            <name>Железнодорожный путепровод (ru)</name>
+            <description/>
+            <Point id="1044">
+                <coordinates>83.8473732,53.3681516,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1047">
+            <name>Заброшенный жилой дом (ru)</name>
+            <description/>
+            <Point id="1046">
+                <coordinates>83.9297356,53.409534,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1049">
+            <name>Заброшенный жилой дом (ru)</name>
+            <description/>
+            <Point id="1048">
+                <coordinates>83.9293724,53.4103736,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1051">
+            <name>Заброшенное административное здание (ru)</name>
+            <description/>
+            <Point id="1050">
+                <coordinates>83.9883219,53.3914437,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1053">
+            <name>Остов автомобильного моста (ru)</name>
+            <description/>
+            <Point id="1052">
+                <coordinates>83.8588451,53.3640863,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1055">
+            <name>ulitsa Chkalova, 116а</name>
+            <description/>
+            <Point id="1054">
+                <coordinates>83.965896,53.3774064,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1057">
+            <name>Железнодорожный мост (ru)</name>
+            <description/>
+            <Point id="1056">
+                <coordinates>84.0631275,53.4096605,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1059">
+            <name>Пшеничная мельница (ru)</name>
+            <description/>
+            <Point id="1058">
+                <coordinates>83.9357683,53.3851175,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1061">
+            <name>Заброшенный продуктовый магазин «Максима-1» (ru)</name>
+            <description/>
+            <Point id="1060">
+                <coordinates>83.929532,53.4099843,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1063">
+            <name>ulitsa Devyatogo Yanvarya, 23</name>
+            <description/>
+            <Point id="1062">
+                <coordinates>83.9390715,53.3944767,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1065">
+            <name>Очистное сооружение (ru)</name>
+            <description/>
+            <Point id="1064">
+                <coordinates>83.942499,53.3698124,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1067">
+            <name>Очистное сооружение (ru)</name>
+            <description/>
+            <Point id="1066">
+                <coordinates>83.9424991,53.3700337,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1069">
+            <name>Неиспользуемый железнодорожный путепровод (ru)</name>
+            <description/>
+            <Point id="1068">
+                <coordinates>83.9308774,53.375006,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1071">
+            <name>Фрагмент старого моста (ru)</name>
+            <description/>
+            <Point id="1070">
+                <coordinates>83.9808822,53.4140217,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1073">
+            <name>Строение (ru)</name>
+            <description/>
+            <Point id="1072">
+                <coordinates>83.9423944,53.369574,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1075">
+            <name>Брод (ru)</name>
+            <description/>
+            <Point id="1074">
+                <coordinates>83.8674698,53.3562679,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1077">
+            <name>Заброшенное здание насосной станции (ru)</name>
+            <description/>
+            <Point id="1076">
+                <coordinates>84.0206479,53.4145776,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1079">
+            <name>Плотина на р.Чесноковка (ru)</name>
+            <description/>
+            <Point id="1078">
+                <coordinates>84.0205647,53.4149217,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1081">
+            <name>Металлоконструкция (ru)</name>
+            <description/>
+            <Point id="1080">
+                <coordinates>83.9294485,53.3434709,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1083">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1082">
+                <coordinates>83.9909963,53.3579302,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1085">
+            <name>Ограничитель высоты (ru)</name>
+            <description/>
+            <Point id="1084">
+                <coordinates>83.8300085,53.3684856,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1087">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1086">
+                <coordinates>84.0984749,53.3315187,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1089">
+            <name>Ограничитель высоты (ru)</name>
+            <description/>
+            <Point id="1088">
+                <coordinates>83.8300998,53.3684698,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1091">
+            <name>Деревянные сваи (ru)</name>
+            <description/>
+            <Point id="1090">
+                <coordinates>84.0917109,53.3457251,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1093">
+            <name>Неизвестные руины в лесу (ru)</name>
+            <description/>
+            <Point id="1092">
+                <coordinates>83.806841,53.3421577,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1095">
+            <name>Смотровая яма (ru)</name>
+            <description/>
+            <Point id="1094">
+                <coordinates>83.8402034,53.3666789,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1097">
+            <name>Сваи (ru)</name>
+            <description/>
+            <Point id="1096">
+                <coordinates>83.9935745,53.3459211,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1099">
+            <name>Указатель велотрассы (ru)</name>
+            <description/>
+            <Point id="1098">
+                <coordinates>84.0982281,53.3316418,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1101">
+            <name>Недействующий магазин (ru)</name>
+            <description/>
+            <Point id="1100">
+                <coordinates>84.1000372,53.3386585,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1103">
+            <name>Железобетонная плита (ru)</name>
+            <description/>
+            <Point id="1102">
+                <coordinates>83.9937135,53.3459791,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1105">
+            <name>Дымовая труба (ru)</name>
+            <description/>
+            <Point id="1104">
+                <coordinates>83.9214882,53.4262508,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1107">
+            <name>Заброшенный столб (ru)</name>
+            <description/>
+            <Point id="1106">
+                <coordinates>83.8638299,53.3721713,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1109">
+            <name>Заброшенный высоковольтный столб (ru)</name>
+            <description/>
+            <Point id="1108">
+                <coordinates>83.8543644,53.3733458,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1111">
+            <name>Покосившийся дом (ru)</name>
+            <description/>
+            <Point id="1110">
+                <coordinates>83.9140968,53.4165151,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1113">
+            <name>Заброшенный столб (ru)</name>
+            <description/>
+            <Point id="1112">
+                <coordinates>83.8630051,53.3720937,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1115">
+            <name>Заброшенный столб (ru)</name>
+            <description/>
+            <Point id="1114">
+                <coordinates>83.8621696,53.372012,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

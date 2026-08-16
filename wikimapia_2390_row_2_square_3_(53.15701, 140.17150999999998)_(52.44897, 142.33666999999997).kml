@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1569">
+        <Placemark id="1571">
+            <name>Заброшенный Николаевский судостроительный завод (ru)</name>
+            <description/>
+            <Point id="1570">
+                <coordinates>140.7371504,53.1346387,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1573">
+            <name>Завод крупнопанельного домостроения «Мобиль» (заброшенный) (ru)</name>
+            <description/>
+            <Point id="1572">
+                <coordinates>140.7457811,53.150696,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1575">
+            <name>Полузаброшенная территория с складскими помещениями «Нижнеамурского ТОРГа» (ru)</name>
+            <description/>
+            <Point id="1574">
+                <coordinates>140.6868409,53.1453224,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1577">
+            <name>Недействующая автоколонна № 7 (ru)</name>
+            <description/>
+            <Point id="1576">
+                <coordinates>140.7505407,53.149825,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1579">
+            <name>Бывшие позиции С-75 (ru)</name>
+            <description/>
+            <Point id="1578">
+                <coordinates>141.1215197,53.0392648,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1581">
+            <name>Кладбище (ru)</name>
+            <description/>
+            <Point id="1580">
+                <coordinates>140.7989791,53.0729436,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1583">
+            <name>Брошенная автозаправочная станция (ru)</name>
+            <description/>
+            <Point id="1582">
+                <coordinates>140.6874887,53.1436372,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1585">
+            <name>Бывшее кладбище (ru)</name>
+            <description/>
+            <Point id="1584">
+                <coordinates>141.2502217,53.0435467,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1587">
+            <name>Заброшенное здание лесозавода (ru)</name>
+            <description/>
+            <Point id="1586">
+                <coordinates>140.7204688,53.1336902,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1589">
+            <name>Заброшенный старый клуб (ru)</name>
+            <description/>
+            <Point id="1588">
+                <coordinates>141.2518889,53.0427828,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1591">
+            <name>Склады или конюшни (ru)</name>
+            <description/>
+            <Point id="1590">
+                <coordinates>140.8711313,53.1130878,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1593">
+            <name>Бывший винный завод (ru)</name>
+            <description/>
+            <Point id="1592">
+                <coordinates>140.6992463,53.1414765,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1595">
+            <name>Заброшенная полуподземная постройка (ru)</name>
+            <description/>
+            <Point id="1594">
+                <coordinates>140.8628127,53.1152986,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1597">
+            <name>Заброшенная дизельная котельная (ru)</name>
+            <description/>
+            <Point id="1596">
+                <coordinates>141.0962395,53.0072447,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1599">
+            <name>Заброшенный эллинг (ru)</name>
+            <description/>
+            <Point id="1598">
+                <coordinates>140.7619066,53.10176,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1601">
+            <name>Бывшее здание Оремифской библиотеки (ru)</name>
+            <description/>
+            <Point id="1600">
+                <coordinates>141.095772,53.0096531,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1603">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1602">
+                <coordinates>141.0982811,53.0084556,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1605">
+            <name>ул. Ленина (ru), 10</name>
+            <description/>
+            <Point id="1604">
+                <coordinates>140.7170195,53.1388648,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1607">
+            <name>«Каземат» (ru)</name>
+            <description/>
+            <Point id="1606">
+                <coordinates>140.8591701,53.1160073,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1609">
+            <name>Заброшенный жилой дом (ru)</name>
+            <description/>
+            <Point id="1608">
+                <coordinates>140.8680225,53.1029623,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1611">
+            <name>Почтовая ул. (ru), 1</name>
+            <description/>
+            <Point id="1610">
+                <coordinates>141.0961445,53.0109476,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1613">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1612">
+                <coordinates>140.8640971,53.1040134,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1615">
+            <name>Заброшенное здание (ru)</name>
+            <description/>
+            <Point id="1614">
+                <coordinates>141.2537793,53.0432966,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1617">
+            <name>Каземат (ru)</name>
+            <description/>
+            <Point id="1616">
+                <coordinates>140.8906354,53.0913672,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1619">
+            <name>Закрытый магазин (ru)</name>
+            <description/>
+            <Point id="1618">
+                <coordinates>141.2476408,53.0424507,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1621">
+            <name>Брошенное подземное овощехранилище (ru)</name>
+            <description/>
+            <Point id="1620">
+                <coordinates>140.6845718,53.141071,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1623">
+            <name>Заброшенная деревянная постройка (ru)</name>
+            <description/>
+            <Point id="1622">
+                <coordinates>140.7213595,53.1371208,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="1625">
+            <name>Заброшенные ворота «База отдыха судостроительного завода» (ru)</name>
+            <description/>
+            <Point id="1624">
+                <coordinates>141.0267351,53.0315294,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

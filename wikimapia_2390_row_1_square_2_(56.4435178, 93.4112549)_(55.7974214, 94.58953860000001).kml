@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="271">
+        <Placemark id="273">
+            <name>Парк вооружения и военной техники в/ч 96856 (ru)</name>
+            <description/>
+            <Point id="272">
+                <coordinates>93.5360849,56.2884894,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="275">
+            <name>Заброшенная птицеферма (ru)</name>
+            <description/>
+            <Point id="274">
+                <coordinates>93.4579897,56.2617551,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="277">
+            <name>Территория бывшего пионерского лагеря № 3 «Солнечный» (начало 1980-х) (ru)</name>
+            <description/>
+            <Point id="276">
+                <coordinates>93.6632322,56.4051104,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="279">
+            <name>Заброшенный завод ЖБИ, полигон Монолит (ru)</name>
+            <description/>
+            <Point id="278">
+                <coordinates>93.4763429,56.2282425,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="281">
+            <name>&quot;Изумруд&quot;, заброшенные участки (ru)</name>
+            <description/>
+            <Point id="280">
+                <coordinates>93.4191458,55.8546606,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="283">
+            <name>Заброшенные очистные сооружения (ru)</name>
+            <description/>
+            <Point id="282">
+                <coordinates>93.6468493,55.8659021,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="285">
+            <name>Бывшая ПС 110/6/6 кВ &quot;ЗПК&quot; (ru)</name>
+            <description/>
+            <Point id="284">
+                <coordinates>93.6343368,56.3616954,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="287">
+            <name>Checkpoint</name>
+            <description/>
+            <Point id="286">
+                <coordinates>93.5870039,56.3461248,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="289">
+            <name>Заброшенная детская больница (ru)</name>
+            <description/>
+            <Point id="288">
+                <coordinates>93.5409774,56.2469456,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="291">
+            <name>Заброшенная, недостроенная больница (ru)</name>
+            <description/>
+            <Point id="290">
+                <coordinates>93.5449522,56.2483767,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="293">
+            <name>Недостроенный ангар (ru)</name>
+            <description/>
+            <Point id="292">
+                <coordinates>93.4977587,55.9885295,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="295">
+            <name>Недостроенное здание (ru)</name>
+            <description/>
+            <Point id="294">
+                <coordinates>93.4415061,56.199282,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="297">
+            <name>Бывшее караульное помещение (ru)</name>
+            <description/>
+            <Point id="296">
+                <coordinates>93.5870537,56.3462644,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="299">
+            <name>Заброшенная водонапорная башня (ru)</name>
+            <description/>
+            <Point id="298">
+                <coordinates>93.4685147,56.2261108,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

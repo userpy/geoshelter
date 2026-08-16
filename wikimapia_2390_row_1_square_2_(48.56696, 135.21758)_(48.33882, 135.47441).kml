@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="879">
+        <Placemark id="881">
+            <name>Недействующий молокозавод (ru)</name>
+            <description/>
+            <Point id="880">
+                <coordinates>135.2879512,48.3742044,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="883">
+            <name>Птицефабрика (ru)</name>
+            <description/>
+            <Point id="882">
+                <coordinates>135.2380085,48.4678992,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="885">
+            <name>Чернореченский укрепрайон (ru)</name>
+            <description/>
+            <Point id="884">
+                <coordinates>135.3232383,48.486787,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="887">
+            <name>SA-10 missile site</name>
+            <description/>
+            <Point id="886">
+                <coordinates>135.433638,48.3874015,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="889">
+            <name>POL (GSM)</name>
+            <description/>
+            <Point id="888">
+                <coordinates>135.2209603,48.4036402,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="891">
+            <name>Заброшенный отдельный радиопеленгаторный пункт (ОРПУ) (ru)</name>
+            <description/>
+            <Point id="890">
+                <coordinates>135.2535652,48.3825385,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="893">
+            <name>Заброшенное фермерское хозяйство (ru)</name>
+            <description/>
+            <Point id="892">
+                <coordinates>135.3033792,48.5589662,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="895">
+            <name>Разрушенные очистные сооружения водоотведения (ru)</name>
+            <description/>
+            <Point id="894">
+                <coordinates>135.322006,48.3779137,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="897">
+            <name>Брошенный плац (ru)</name>
+            <description/>
+            <Point id="896">
+                <coordinates>135.2177297,48.4109243,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="899">
+            <name>Брошенный караульный городок (ru)</name>
+            <description/>
+            <Point id="898">
+                <coordinates>135.2227144,48.4097261,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="901">
+            <name>Старая столовая (ru)</name>
+            <description/>
+            <Point id="900">
+                <coordinates>135.4617664,48.4974904,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="903">
+            <name>Затапливаемый участок (ru)</name>
+            <description/>
+            <Point id="902">
+                <coordinates>135.2701292,48.5577342,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="905">
+            <name>Заброшенный элеватор (ru)</name>
+            <description/>
+            <Point id="904">
+                <coordinates>135.3925023,48.4769538,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="907">
+            <name>Заброшенная теплица (ru)</name>
+            <description/>
+            <Point id="906">
+                <coordinates>135.2772534,48.4548929,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="909">
+            <name>Развалины (ru)</name>
+            <description/>
+            <Point id="908">
+                <coordinates>135.3868385,48.3521731,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="911">
+            <name>Cтарая санчасть (ru)</name>
+            <description/>
+            <Point id="910">
+                <coordinates>135.3727599,48.4508771,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="913">
+            <name>Подземная дизельная (ru)</name>
+            <description/>
+            <Point id="912">
+                <coordinates>135.3893948,48.3494245,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="915">
+            <name>Брошенный газгольдер (ru)</name>
+            <description/>
+            <Point id="914">
+                <coordinates>135.2177919,48.4083623,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="917">
+            <name>Небольшой бункер (ru)</name>
+            <description/>
+            <Point id="916">
+                <coordinates>135.3860756,48.3519224,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="919">
+            <name>Один из входов в подземное сооружение (ru)</name>
+            <description/>
+            <Point id="918">
+                <coordinates>135.3838162,48.3506483,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="921">
+            <name>Неиспользуемая водонапорная башня (ru)</name>
+            <description/>
+            <Point id="920">
+                <coordinates>135.2205807,48.4451784,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="923">
+            <name>Небольшой бункер (Не связан с основными) (ru)</name>
+            <description/>
+            <Point id="922">
+                <coordinates>135.384396,48.351108,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="925">
+            <name>Неиспользуемая будка широкополосного антенного усилителя (ШАУ) (ru)</name>
+            <description/>
+            <Point id="924">
+                <coordinates>135.3091237,48.4724795,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="267">
+        <Placemark id="269">
+            <name>Аэродром (ru)</name>
+            <description/>
+            <Point id="268">
+                <coordinates>64.8136066,56.256034,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="271">
+            <name>Карьеры (ru)</name>
+            <description/>
+            <Point id="270">
+                <coordinates>64.8795621,56.2719194,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="273">
+            <name>Бывший кирпичный завод (ru)</name>
+            <description/>
+            <Point id="272">
+                <coordinates>64.8786985,56.2711508,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="275">
+            <name>Заброшенная свиноферма (ru)</name>
+            <description/>
+            <Point id="274">
+                <coordinates>65.4073238,56.3430094,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="277">
+            <name>Старый школьный стадион (ru)</name>
+            <description/>
+            <Point id="276">
+                <coordinates>64.8593463,56.2777599,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="279">
+            <name>Бывший колхозный сад (ru)</name>
+            <description/>
+            <Point id="278">
+                <coordinates>65.0857167,55.9098224,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="281">
+            <name>Бывший пионерский лагерь (ru)</name>
+            <description/>
+            <Point id="280">
+                <coordinates>64.889556,56.2678473,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="283">
+            <name>Нефтебаза (бывшая) (ru)</name>
+            <description/>
+            <Point id="282">
+                <coordinates>64.8638659,56.2651826,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="285">
+            <name>Бывший хлебозавод (ru)</name>
+            <description/>
+            <Point id="284">
+                <coordinates>65.5801941,55.8207818,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="287">
+            <name>заброшенный участок (ru)</name>
+            <description/>
+            <Point id="286">
+                <coordinates>64.8383635,56.2725046,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="289">
+            <name>Территория бывшего детского сада (ru)</name>
+            <description/>
+            <Point id="288">
+                <coordinates>65.4187854,56.340719,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="291">
+            <name>Молокозавод (ru)</name>
+            <description/>
+            <Point id="290">
+                <coordinates>65.6861775,56.008729,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="293">
+            <name>Заброшенное здание детского сада (ru)</name>
+            <description/>
+            <Point id="292">
+                <coordinates>65.4149913,55.9571205,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="295">
+            <name>заброшенные участки (ru)</name>
+            <description/>
+            <Point id="294">
+                <coordinates>64.8384305,56.2732939,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="297">
+            <name>Корпуса (ru)</name>
+            <description/>
+            <Point id="296">
+                <coordinates>64.8900335,56.2673558,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="299">
+            <name>Законсервированное здание (ru)</name>
+            <description/>
+            <Point id="298">
+                <coordinates>65.4933076,56.2215295,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="301">
+            <name>Церковь Николая Чудотворца и Екатерины (ru)</name>
+            <description/>
+            <Point id="300">
+                <coordinates>64.8174159,56.2927814,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="303">
+            <name>Мельница (ru)</name>
+            <description/>
+            <Point id="302">
+                <coordinates>65.697929,56.0119962,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="305">
+            <name>дом</name>
+            <description/>
+            <Point id="304">
+                <coordinates>64.8442335,56.2773042,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="307">
+            <name>Кузница (ru)</name>
+            <description/>
+            <Point id="306">
+                <coordinates>64.8367756,56.2754355,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="309">
+            <name>Заброшенный участок (ru)</name>
+            <description/>
+            <Point id="308">
+                <coordinates>64.8429071,56.2706043,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="311">
+            <name>Заброшенный участок (ru)</name>
+            <description/>
+            <Point id="310">
+                <coordinates>64.8396589,56.2734354,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="313">
+            <name>заброшенный участок (ru)</name>
+            <description/>
+            <Point id="312">
+                <coordinates>64.8387926,56.2732612,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="315">
+            <name>Заброшенная котельная ДК (ru)</name>
+            <description/>
+            <Point id="314">
+                <coordinates>64.8420891,56.2732463,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="317">
+            <name>ул. Мира (ru), 5</name>
+            <description/>
+            <Point id="316">
+                <coordinates>65.3086217,56.3613122,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="319">
+            <name>ул. Мира (ru), 3</name>
+            <description/>
+            <Point id="318">
+                <coordinates>65.3076435,56.3607883,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="321">
+            <name>ул. 50 лет Октября (ru), 5</name>
+            <description/>
+            <Point id="320">
+                <coordinates>65.3064423,56.3631431,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="323">
+            <name>Комсомольская ул. (ru), 4</name>
+            <description/>
+            <Point id="322">
+                <coordinates>65.3162205,56.3633771,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="841">
+        <Placemark id="843">
+            <name>Убежище ГО № 123 (ru)</name>
+            <description/>
+            <Point id="842">
+                <coordinates>55.0725746,51.7740075,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="845">
+            <name>Вход в бомбоубежище (ru)</name>
+            <description/>
+            <Point id="844">
+                <coordinates>55.0764704,51.776984,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="847">
+            <name>Вход в бомбоубежище (ru)</name>
+            <description/>
+            <Point id="846">
+                <coordinates>55.1203883,51.8486593,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="849">
+            <name>Вентшахта подшкольного бомбоубежища (ru)</name>
+            <description/>
+            <Point id="848">
+                <coordinates>55.1247646,51.7962104,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

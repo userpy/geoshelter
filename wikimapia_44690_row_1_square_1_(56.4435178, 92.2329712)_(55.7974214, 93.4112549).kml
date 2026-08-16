@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>Убежище &quot;Янтарное&quot; (ru)</name>
+            <description/>
+            <Point id="2">
+                <coordinates>93.023064,56.1073352,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="4">
+                <coordinates>92.9851993,56.2083493,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="6">
+                <coordinates>93.0450166,56.0604852,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>Заброшенное бомбоубежище Сивинита (ru)</name>
+            <description/>
+            <Point id="8">
+                <coordinates>93.0100572,56.018136,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="10">
+                <coordinates>92.9792314,55.9980523,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="12">
+                <coordinates>93.0154613,56.0868125,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="14">
+                <coordinates>92.9850584,56.2047301,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>Заброшенное убежище завода (ru)</name>
+            <description/>
+            <Point id="16">
+                <coordinates>93.3587238,56.1340512,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="18">
+                <coordinates>92.9903867,56.0789034,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>Заброшенное бомбоубежище № 2Б (ru)</name>
+            <description/>
+            <Point id="20">
+                <coordinates>92.8360224,56.0017091,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>Бомбоубежище № 4 (ru)</name>
+            <description/>
+            <Point id="22">
+                <coordinates>93.0385726,56.0442502,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>Заброшенное бомбоубежище КИСК (ru)</name>
+            <description/>
+            <Point id="24">
+                <coordinates>92.9865485,56.1272797,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>Убежище № 3 (ru)</name>
+            <description/>
+            <Point id="26">
+                <coordinates>93.0353888,56.0350823,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>Заброшенное убежище № 3 шинного завода (ru)</name>
+            <description/>
+            <Point id="28">
+                <coordinates>93.0393841,56.0131628,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="30">
+                <coordinates>92.9710091,56.0015771,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="32">
+                <coordinates>93.0441383,56.0334168,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>Заброшенное убежище № 1 шинного завода (ru)</name>
+            <description/>
+            <Point id="34">
+                <coordinates>93.0384827,56.0129275,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="36">
+                <coordinates>92.9081341,55.9994031,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>Заброшенное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="38">
+                <coordinates>93.0509134,56.0367893,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>Объект 35561 (ru)</name>
+            <description/>
+            <Point id="40">
+                <coordinates>92.9692978,56.0009851,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>Бомбоубежище под цехом (ru)</name>
+            <description/>
+            <Point id="42">
+                <coordinates>93.016722,56.018971,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>Заброшенное убежище № 2 шинного завода (ru)</name>
+            <description/>
+            <Point id="44">
+                <coordinates>93.0389923,56.0130549,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>Поддомное убежище (ru)</name>
+            <description/>
+            <Point id="46">
+                <coordinates>92.8395849,55.9776567,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="49">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="48">
+                <coordinates>93.0416022,56.0489788,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="51">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="50">
+                <coordinates>93.0419817,56.0401907,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="53">
+            <name>Бомбоубежище КЖБМК (ru)</name>
+            <description/>
+            <Point id="52">
+                <coordinates>93.0156518,56.01351,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="55">
+            <name>Недостроенное убежище (ru)</name>
+            <description/>
+            <Point id="54">
+                <coordinates>92.9785488,56.2022631,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="57">
+            <name>Заброшенное бомбоубежище № 3А (ru)</name>
+            <description/>
+            <Point id="56">
+                <coordinates>92.8418741,56.0058048,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="59">
+            <name>Заброшенное убежище № 5 (ru)</name>
+            <description/>
+            <Point id="58">
+                <coordinates>93.0586261,56.0345019,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="61">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="60">
+                <coordinates>93.0170543,56.0209825,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>Заброшенное бомбоубежище № 1 (ru)</name>
+            <description/>
+            <Point id="62">
+                <coordinates>92.9768891,55.9924503,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="65">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="64">
+                <coordinates>92.9726023,56.0192573,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="67">
+            <name>Бомбоубежище под зданием (ru)</name>
+            <description/>
+            <Point id="66">
+                <coordinates>92.9824326,56.0013011,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="69">
+            <name>Заброшенное бомбоубежище под административным зданием (ru)</name>
+            <description/>
+            <Point id="68">
+                <coordinates>92.9772707,56.0009734,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="71">
+            <name>Заброшенное бомбоубежище № 440 (ru)</name>
+            <description/>
+            <Point id="70">
+                <coordinates>93.007522,55.9859601,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="73">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="72">
+                <coordinates>92.9077103,55.9799025,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="75">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="74">
+                <coordinates>93.0414774,56.0447887,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="77">
+            <name>Заброшенное убежище цементного завода (ru)</name>
+            <description/>
+            <Point id="76">
+                <coordinates>92.9145016,55.9742371,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="79">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="78">
+                <coordinates>93.0407344,56.0421691,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="81">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="80">
+                <coordinates>93.0666915,56.0409548,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="83">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="82">
+                <coordinates>92.9814388,56.003171,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="85">
+            <name>Заброшенное убежище недостроенного предприятия (ru)</name>
+            <description/>
+            <Point id="84">
+                <coordinates>92.9711525,56.1382353,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="87">
+            <name>Заброшенное бомбоубежище № 1 (ru)</name>
+            <description/>
+            <Point id="86">
+                <coordinates>92.971787,56.0010841,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="89">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="88">
+                <coordinates>92.9244929,56.1107617,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="91">
+            <name>Убежище ГО (ru)</name>
+            <description/>
+            <Point id="90">
+                <coordinates>93.0474198,56.02445,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="93">
+            <name>Бомбоубежище № 1 (ru)</name>
+            <description/>
+            <Point id="92">
+                <coordinates>92.9854903,56.122471,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="95">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="94">
+                <coordinates>92.9390117,56.0098904,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="97">
+            <name>Бомбоубежище завода «Красцветмет» (ru)</name>
+            <description/>
+            <Point id="96">
+                <coordinates>92.999002,56.0180482,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="99">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="98">
+                <coordinates>92.8541882,56.0115878,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="101">
+            <name>Убежище № 2 (ru)</name>
+            <description/>
+            <Point id="100">
+                <coordinates>93.0330338,56.035714,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="103">
+            <name>Заброшенное бомбоубежище № 2 (ru)</name>
+            <description/>
+            <Point id="102">
+                <coordinates>92.9870999,55.9979106,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="105">
+            <name>Заброшенное бомбоубежище № 210 (ru)</name>
+            <description/>
+            <Point id="104">
+                <coordinates>92.8887658,55.975359,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="107">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="106">
+                <coordinates>92.855206,56.0115383,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="109">
+            <name>Бомбоубежище родильного дома № 4 (ru)</name>
+            <description/>
+            <Point id="108">
+                <coordinates>92.9642231,56.0152589,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="111">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="110">
+                <coordinates>92.9827947,56.0798007,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="113">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="112">
+                <coordinates>92.9032498,56.0655038,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="115">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="114">
+                <coordinates>92.9753583,56.0162222,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="117">
+            <name>Заброшенное убежище ГО № 1 (ru)</name>
+            <description/>
+            <Point id="116">
+                <coordinates>92.8653394,55.9798942,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="119">
+            <name>Заброшенное убежище СТЗ № 3 (ru)</name>
+            <description/>
+            <Point id="118">
+                <coordinates>93.0578322,56.0256019,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="121">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="120">
+                <coordinates>92.8216918,56.0300622,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="123">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="122">
+                <coordinates>92.9238465,56.0737824,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="125">
+            <name>ЗС ГО № 326-24/у (ru)</name>
+            <description/>
+            <Point id="124">
+                <coordinates>92.9997202,56.0206766,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="127">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="126">
+                <coordinates>92.9751852,55.9966629,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="129">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="128">
+                <coordinates>93.0314982,56.0381813,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="131">
+            <name>Заброшенное бомбоубежище № 4 (ru)</name>
+            <description/>
+            <Point id="130">
+                <coordinates>92.9849123,55.9972951,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="133">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="132">
+                <coordinates>92.998779,56.0811928,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="135">
+            <name>Заброшенное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="134">
+                <coordinates>92.8502554,56.0138299,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="137">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="136">
+                <coordinates>93.0463054,56.0489989,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="139">
+            <name>Заброшенное бомбоубежище № 5 завода «Сибэлектросталь» (ru)</name>
+            <description/>
+            <Point id="138">
+                <coordinates>92.9799449,55.990804,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="141">
+            <name>Убежище депо (ru)</name>
+            <description/>
+            <Point id="140">
+                <coordinates>92.8280755,56.0071515,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="143">
+            <name>Заброшенное бомбоубежище КЖБМК (ru)</name>
+            <description/>
+            <Point id="142">
+                <coordinates>93.0091769,56.013654,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="145">
+            <name>Заброшенное бомбоубежище № 212 (ru)</name>
+            <description/>
+            <Point id="144">
+                <coordinates>92.8854211,55.975894,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="147">
+            <name>Убежище № 7 (ru)</name>
+            <description/>
+            <Point id="146">
+                <coordinates>92.8290219,56.0105815,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="149">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="148">
+                <coordinates>93.048879,56.0398947,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="151">
+            <name>Бомбоубежище № 211 (ru)</name>
+            <description/>
+            <Point id="150">
+                <coordinates>92.8884144,55.9765949,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="153">
+            <name>Убежище ГО (ru)</name>
+            <description/>
+            <Point id="152">
+                <coordinates>92.9391369,55.9781968,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="155">
+            <name>Заброшенное бомбоубежище № 3 (ru)</name>
+            <description/>
+            <Point id="154">
+                <coordinates>92.9747744,55.9954563,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="157">
+            <name>Бомбоубежище №209 (ru)</name>
+            <description/>
+            <Point id="156">
+                <coordinates>92.8964396,55.977301,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="159">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="158">
+                <coordinates>92.9216605,56.0009177,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="161">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="160">
+                <coordinates>92.9036186,56.0323964,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="163">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="162">
+                <coordinates>92.9168056,55.9797022,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="165">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="164">
+                <coordinates>92.9533199,55.9982946,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="167">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="166">
+                <coordinates>93.0691793,56.0247557,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="169">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="168">
+                <coordinates>93.0158442,56.0279316,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="171">
+            <name>Заброшенное поддомное убежище (ru)</name>
+            <description/>
+            <Point id="170">
+                <coordinates>92.8143197,56.0232785,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="173">
+            <name>Заброшенное поддомное убежище (ru)</name>
+            <description/>
+            <Point id="172">
+                <coordinates>92.8160632,56.0239328,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="175">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="174">
+                <coordinates>93.0765674,56.0359622,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="177">
+            <name>Бомбоубежище № 182-24 (ru)</name>
+            <description/>
+            <Point id="176">
+                <coordinates>92.9204628,56.033647,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="179">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="178">
+                <coordinates>92.9553567,56.0015634,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="181">
+            <name>Заброшенное поддомное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="180">
+                <coordinates>92.8210495,56.0193473,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="183">
+            <name>Заброшенное убежище завода КРАМЗ (ru)</name>
+            <description/>
+            <Point id="182">
+                <coordinates>92.9967234,56.0772366,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="185">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="184">
+                <coordinates>93.0049953,56.02287,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="187">
+            <name>Заброшенное поддомное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="186">
+                <coordinates>92.8416522,55.9780724,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="189">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="188">
+                <coordinates>92.974533,55.9982566,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="191">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="190">
+                <coordinates>92.8535443,55.9762569,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="193">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="192">
+                <coordinates>92.9084854,56.0319094,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="195">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="194">
+                <coordinates>92.8223328,55.9798904,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="197">
+            <name>Убежище № 67 (ru)</name>
+            <description/>
+            <Point id="196">
+                <coordinates>92.9370562,56.0028385,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="199">
+            <name>Убежище № 69 (ru)</name>
+            <description/>
+            <Point id="198">
+                <coordinates>92.9383739,56.0031723,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="201">
+            <name>Заброшенное бомбоубежище ЖБИ (ru)</name>
+            <description/>
+            <Point id="200">
+                <coordinates>93.1054869,56.0234867,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="203">
+            <name>Заброшенное поддомное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="202">
+                <coordinates>92.9356388,56.0012329,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="205">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="204">
+                <coordinates>92.9033598,56.0255059,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="207">
+            <name>Заброшенное убежище ГО (ru)</name>
+            <description/>
+            <Point id="206">
+                <coordinates>92.9489962,56.069586,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="209">
+            <name>Заброшенное поддомное убежище (ru)</name>
+            <description/>
+            <Point id="208">
+                <coordinates>92.8158862,56.0245451,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="211">
+            <name>Убежище гражданской обороны № 3 локомотивного депо железнодорожной станции Красноярск (ru)</name>
+            <description/>
+            <Point id="210">
+                <coordinates>92.817914,56.0100494,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="213">
+            <name>Заброшенное поддомное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="212">
+                <coordinates>92.9357099,56.0007026,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="215">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="214">
+                <coordinates>92.9676456,56.0162837,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="217">
+            <name>Заброшенное поддомное убежище гражданской обороны (ru)</name>
+            <description/>
+            <Point id="216">
+                <coordinates>92.827071,56.0237791,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="219">
+            <name>Заброшенный поддомник (ru)</name>
+            <description/>
+            <Point id="218">
+                <coordinates>92.8588646,56.0137101,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="221">
+            <name>Бомбоубежище (ru)</name>
+            <description/>
+            <Point id="220">
+                <coordinates>92.9823602,56.1982196,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="223">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="222">
+                <coordinates>92.9473949,55.9888828,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="225">
+            <name>Поддомное убежище (ru)</name>
+            <description/>
+            <Point id="224">
+                <coordinates>92.9720659,55.9931997,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="227">
+            <name>Заброшенное бомбоубежище РТИ (ru)</name>
+            <description/>
+            <Point id="226">
+                <coordinates>93.0151408,56.011467,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="229">
+            <name>Заброшенное бомбоубежище (ru)</name>
+            <description/>
+            <Point id="228">
+                <coordinates>93.0706961,56.1063918,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="231">
+            <name>Вход в бомбоубежище (ru)</name>
+            <description/>
+            <Point id="230">
+                <coordinates>92.8309924,55.9989718,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="233">
+            <name>Заброшенное бомбоубежище № 6 (ru)</name>
+            <description/>
+            <Point id="232">
+                <coordinates>92.9925942,55.9923544,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="235">
+            <name>Бомбоубежище под цехом (ru)</name>
+            <description/>
+            <Point id="234">
+                <coordinates>93.0352707,56.0348076,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="237">
+            <name>Вход в бомбоубежище (ru)</name>
+            <description/>
+            <Point id="236">
+                <coordinates>92.8303755,55.9984536,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="239">
+            <name>Заброшенный наклонный вход в бомбоубежище (ru)</name>
+            <description/>
+            <Point id="238">
+                <coordinates>93.0581339,56.0437071,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

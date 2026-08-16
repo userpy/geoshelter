@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="371">
+        <Placemark id="373">
+            <name>Остатки ж/д моста ветки Селихино - Черный мыс (ru)</name>
+            <description/>
+            <Point id="372">
+                <coordinates>137.884316,50.6243055,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
