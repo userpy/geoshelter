@@ -2,15 +2,19 @@ from PyQt6.QtCore import QSize, Qt
 from PyQt6.QtGui import QColor, QPainter, QPen
 from PyQt6.QtWidgets import QWidget
 
+from presentation.theme import DEEP_TEAL, MINT, PRIMARY, SOFT_MINT, TEXT
+
 
 class DownloadGridWidget(QWidget):
     """Компактная карта состояния областей загрузки."""
 
-    PENDING_COLOR = QColor("#ffffff")
-    PROCESSING_COLOR = QColor("#42a5f5")
+    PENDING_COLOR = QColor(SOFT_MINT)
+    PROCESSING_COLOR = QColor(MINT)
     EMPTY_COLOR = QColor("#fbc02d")
-    COMPLETED_COLOR = QColor("#43a047")
-    BORDER_COLOR = QColor("#455a64")
+    COMPLETED_COLOR = QColor(PRIMARY)
+    BORDER_COLOR = QColor(DEEP_TEAL)
+    TEXT_COLOR = QColor(TEXT)
+    COMPLETED_TEXT_COLOR = QColor("#FFFFFF")
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -82,8 +86,6 @@ class DownloadGridWidget(QWidget):
         area = self.rect().adjusted(4, 4, -4, -4)
         cell_width = area.width() / self._columns
         cell_height = area.height() / self._rows
-        painter.setPen(QPen(self.BORDER_COLOR, 1))
-
         for row in range(self._rows):
             for column in range(self._columns):
                 left = round(area.left() + column * cell_width)
@@ -115,9 +117,15 @@ class DownloadGridWidget(QWidget):
                         f"Добавленные места: {place_count}"
                     )
                 painter.fillRect(left, top, right - left, bottom - top, color)
+                painter.setPen(QPen(self.BORDER_COLOR, 1))
                 painter.drawRect(left, top, right - left, bottom - top)
 
                 if cell_width >= 65 and cell_height >= 30:
+                    painter.setPen(
+                        self.COMPLETED_TEXT_COLOR
+                        if place_count is not None and place_count > 0
+                        else self.TEXT_COLOR
+                    )
                     painter.drawText(
                         left + 3,
                         top + 2,

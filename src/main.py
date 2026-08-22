@@ -5,12 +5,14 @@ from PyQt6.QtWidgets import QApplication
 
 from infrastructure.app_settings import ICON_FILE
 from presentation.main_window import MainWindow
+from presentation.theme import apply_theme
 
 
 def main() -> int:
     app = QApplication(sys.argv)
     app.setApplicationName("GeoShelter")
     app.setWindowIcon(QIcon(str(ICON_FILE)))
+    apply_theme(app)
     window = MainWindow()
     window.show()
     return app.exec()
@@ -18,4 +20,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

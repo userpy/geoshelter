@@ -39,6 +39,7 @@ from presentation.category_browser import CategoryBrowserWidget
 from presentation.download_grid import DownloadGridWidget
 from presentation.download_worker import DownloadWorker
 from presentation.kml_merger import KmlMergerWidget
+from presentation.theme import APP_STYLE_SHEET
 
 MAX_CATEGORIES = 15
 
@@ -54,6 +55,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("GeoShelter — Wikimapia в KML")
         self.setWindowIcon(QIcon(str(ICON_FILE)))
         self.resize(760, 850)
+        self.setStyleSheet(APP_STYLE_SHEET)
         self._build_ui()
         self._load_saved_settings()
         self.api_key_timer = QTimer(self)
@@ -91,11 +93,17 @@ class MainWindow(QMainWindow):
             self._toggle_api_key_visibility
         )
         self.add_api_key_button = QPushButton("+")
-        self.add_api_key_button.setFixedWidth(38)
+        self.add_api_key_button.setObjectName("addActionButton")
+        self.add_api_key_button.setFixedWidth(42)
+        self.add_api_key_button.setAccessibleName("Добавить API-ключ")
         self.add_api_key_button.setToolTip("Добавить API-ключ")
         self.add_api_key_button.clicked.connect(self._add_api_key)
         self.remove_api_key_button = QPushButton("−")
-        self.remove_api_key_button.setFixedWidth(38)
+        self.remove_api_key_button.setObjectName("removeActionButton")
+        self.remove_api_key_button.setFixedWidth(42)
+        self.remove_api_key_button.setAccessibleName(
+            "Удалить выбранный API-ключ"
+        )
         self.remove_api_key_button.setToolTip("Удалить выбранный API-ключ")
         self.remove_api_key_button.clicked.connect(self._remove_api_key)
         api_key_input_row = QHBoxLayout()
@@ -117,11 +125,17 @@ class MainWindow(QMainWindow):
         self.category_input.setPlaceholderText("ID категории")
         self.category_input.returnPressed.connect(self._add_category)
         self.add_category_button = QPushButton("+")
-        self.add_category_button.setFixedWidth(38)
+        self.add_category_button.setObjectName("addActionButton")
+        self.add_category_button.setFixedWidth(42)
+        self.add_category_button.setAccessibleName("Добавить категорию")
         self.add_category_button.setToolTip("Добавить категорию")
         self.add_category_button.clicked.connect(self._add_category)
         self.remove_category_button = QPushButton("−")
-        self.remove_category_button.setFixedWidth(38)
+        self.remove_category_button.setObjectName("removeActionButton")
+        self.remove_category_button.setFixedWidth(42)
+        self.remove_category_button.setAccessibleName(
+            "Удалить выбранную категорию"
+        )
         self.remove_category_button.setToolTip("Удалить выбранную категорию")
         self.remove_category_button.clicked.connect(self._remove_category)
         self.category_browser_button = QPushButton("📖")
@@ -140,7 +154,13 @@ class MainWindow(QMainWindow):
             self.add_category_button,
             self.remove_category_button,
         ):
-            button.setFixedSize(38, category_button_height)
+            button.setFixedSize(
+                42 if button in (
+                    self.add_category_button,
+                    self.remove_category_button,
+                ) else 38,
+                category_button_height,
+            )
         category_input_row = QHBoxLayout()
         category_input_row.setContentsMargins(0, 0, 0, 0)
         category_input_row.addWidget(self.category_input, 1)
@@ -268,20 +288,7 @@ class MainWindow(QMainWindow):
 
         buttons = QHBoxLayout()
         self.start_button = QPushButton("Начать загрузку")
-        self.start_button.setStyleSheet(
-            """
-            QPushButton {
-                background-color: #1976d2;
-                color: white;
-                border: 1px solid #1565c0;
-                border-radius: 4px;
-                padding: 5px 12px;
-            }
-            QPushButton:hover { background-color: #1e88e5; }
-            QPushButton:pressed { background-color: #0d47a1; }
-            QPushButton:disabled { background-color: #90caf9; }
-            """
-        )
+        self.start_button.setObjectName("primaryButton")
         self.stop_button = QPushButton("Остановить")
         self.stop_button.setEnabled(False)
         self.start_button.clicked.connect(self._start_download)
@@ -597,22 +604,12 @@ class MainWindow(QMainWindow):
         button_symbols = (
             QAbstractSpinBox.ButtonSymbols.NoButtons
             if locked
-            else QAbstractSpinBox.ButtonSymbols.UpDownArrows
+            else QAbstractSpinBox.ButtonSymbols.PlusMinus
         )
         for field in (self.square_count, self.row_count):
             field.setReadOnly(locked)
             field.setButtonSymbols(button_symbols)
-            field.setStyleSheet("")
-            palette = field.palette()
-            palette.setColor(
-                QPalette.ColorRole.Base,
-                QColor("#e2e5e9" if locked else "#ffffff"),
-            )
-            palette.setColor(
-                QPalette.ColorRole.Text,
-                QColor("#5f6368" if locked else "#202124"),
-            )
-            field.setPalette(palette)
+            self._set_field_locked_appearance(field, locked)
         self.direction_button.setEnabled(not locked)
         self.vertical_direction_button.setEnabled(not locked)
 
@@ -630,7 +627,7 @@ class MainWindow(QMainWindow):
         button_symbols = (
             QAbstractSpinBox.ButtonSymbols.NoButtons
             if locked
-            else QAbstractSpinBox.ButtonSymbols.UpDownArrows
+            else QAbstractSpinBox.ButtonSymbols.PlusMinus
         )
         for field in (
             self.max_pages,
@@ -639,17 +636,14 @@ class MainWindow(QMainWindow):
         ):
             field.setReadOnly(locked)
             field.setButtonSymbols(button_symbols)
-            field.setStyleSheet("")
-            palette = field.palette()
-            palette.setColor(
-                QPalette.ColorRole.Base,
-                QColor("#e2e5e9" if locked else "#ffffff"),
-            )
-            palette.setColor(
-                QPalette.ColorRole.Text,
-                QColor("#5f6368" if locked else "#202124"),
-            )
-            field.setPalette(palette)
+            self._set_field_locked_appearance(field, locked)
+
+    @staticmethod
+    def _set_field_locked_appearance(field, locked):
+        field.setProperty("locked", locked)
+        field.style().unpolish(field)
+        field.style().polish(field)
+        field.update()
 
     def _load_saved_settings(self):
         saved_api_keys = self.saved_settings.value("api_keys", "", type=str)

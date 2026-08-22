@@ -75,11 +75,17 @@ class KmlMergerWidget(QWidget):
         self.category_name_input = QLineEdit()
         self.category_name_input.setPlaceholderText("Название категории")
         add_mapping_button = QPushButton("+")
-        add_mapping_button.setFixedWidth(38)
+        add_mapping_button.setObjectName("addActionButton")
+        add_mapping_button.setFixedWidth(42)
+        add_mapping_button.setAccessibleName("Добавить соответствие")
         add_mapping_button.setToolTip("Добавить соответствие")
         add_mapping_button.clicked.connect(self._add_category_mapping)
         remove_mapping_button = QPushButton("−")
-        remove_mapping_button.setFixedWidth(38)
+        remove_mapping_button.setObjectName("removeActionButton")
+        remove_mapping_button.setFixedWidth(42)
+        remove_mapping_button.setAccessibleName(
+            "Удалить выбранные соответствия"
+        )
         remove_mapping_button.setToolTip("Удалить выбранные соответствия")
         remove_mapping_button.clicked.connect(self._remove_category_mappings)
         self.category_name_input.returnPressed.connect(self._add_category_mapping)
@@ -140,6 +146,7 @@ class KmlMergerWidget(QWidget):
         layout.addLayout(output_row)
 
         merge_button = QPushButton("Создать KMZ")
+        merge_button.setObjectName("primaryButton")
         merge_button.clicked.connect(self._merge)
         layout.addWidget(merge_button, 0, Qt.AlignmentFlag.AlignLeft)
 

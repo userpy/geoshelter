@@ -13,6 +13,8 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
+from presentation.theme import MUTED_TEXT
+
 
 class CategoryBrowserWidget(QWidget):
     back_requested = pyqtSignal()
@@ -50,7 +52,7 @@ class CategoryBrowserWidget(QWidget):
         self.status_label = QLabel(
             "Начните вводить название категории"
         )
-        self.status_label.setStyleSheet("color: #5f6368;")
+        self.status_label.setStyleSheet(f"color: {MUTED_TEXT};")
         layout.addWidget(self.status_label)
 
         self.category_list = QListWidget()
@@ -139,7 +141,7 @@ class CategoryBrowserWidget(QWidget):
         request.setTransferTimeout(15_000)
 
         self.status_label.setText("Загрузка категорий…")
-        self.status_label.setStyleSheet("color: #5f6368;")
+        self.status_label.setStyleSheet(f"color: {MUTED_TEXT};")
         reply = self._network.get(request)
         self._active_reply = reply
         reply.finished.connect(
@@ -207,7 +209,7 @@ class CategoryBrowserWidget(QWidget):
         self.category_list.clear()
         self._add_buttons.clear()
         self._category_rows.clear()
-        self.status_label.setStyleSheet("color: #5f6368;")
+        self.status_label.setStyleSheet(f"color: {MUTED_TEXT};")
         for category in categories:
             category_id = category["id"]
             row = QWidget()
@@ -215,7 +217,7 @@ class CategoryBrowserWidget(QWidget):
             row_layout.setContentsMargins(8, 4, 8, 4)
             name_label = QLabel(category["name"])
             id_label = QLabel(f"ID: {category_id}")
-            id_label.setStyleSheet("color: #5f6368;")
+            id_label.setStyleSheet(f"color: {MUTED_TEXT};")
             add_button = QPushButton()
             add_button.setFixedWidth(115)
             add_button.clicked.connect(
