@@ -38,6 +38,11 @@ QWidget {{
     font-size: 13px;
 }}
 
+QScrollArea#downloadScrollArea {{
+    background-color: {BACKGROUND};
+    border: none;
+}}
+
 QGroupBox {{
     background-color: {SURFACE};
     border: 1px solid {BORDER};
@@ -54,6 +59,28 @@ QGroupBox::title {{
     left: 12px;
     padding: 0 5px;
     background-color: {SURFACE};
+}}
+
+QGroupBox#wikimapiaGroup {{
+    margin-top: 0;
+    padding-top: 0;
+}}
+
+QLabel#wikimapiaTitle {{
+    color: {DEEP_TEAL};
+    font-size: 17px;
+    font-weight: 700;
+}}
+
+QLabel#wikimapiaSubtitle {{
+    color: {MUTED_TEXT};
+    font-size: 11px;
+}}
+
+QLabel#pageTitle {{
+    color: {DEEP_TEAL};
+    font-size: 17px;
+    font-weight: 700;
 }}
 
 QLineEdit,
@@ -264,7 +291,7 @@ QPushButton#primaryButton:disabled {{
 QTabWidget::pane {{
     background-color: {BACKGROUND};
     border: 1px solid {BORDER};
-    border-radius: 7px;
+    border-radius: 0;
     top: -1px;
 }}
 

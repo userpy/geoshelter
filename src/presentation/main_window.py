@@ -21,6 +21,7 @@ from PyQt6.QtWidgets import (
     QPlainTextEdit,
     QProgressBar,
     QPushButton,
+    QScrollArea,
     QSpinBox,
     QStackedWidget,
     QTabWidget,
@@ -33,6 +34,7 @@ from domain.models import MAX_AREAS, DownloadSettings
 from infrastructure.app_settings import (
     DEFAULT_SETTINGS,
     ICON_FILE,
+    WIKIMAPIA_MARK_FILE,
     create_user_settings,
 )
 from presentation.category_browser import CategoryBrowserWidget
@@ -49,38 +51,111 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.thread = None
         self.worker = None
+        self._initial_height_applied = False
         self._selected_api_key_index = None
         self._control_enabled_states = {}
         self.saved_settings = create_user_settings()
         self.setWindowTitle("GeoShelter — Wikimapia в KML")
         self.setWindowIcon(QIcon(str(ICON_FILE)))
-        self.resize(760, 850)
         self.setStyleSheet(APP_STYLE_SHEET)
         self._build_ui()
+        available = self.screen().availableGeometry()
+        minimum = self.minimumSizeHint()
+        self.resize(
+            max(minimum.width(), min(810, available.width() - 40)),
+            max(minimum.height(), min(850, available.height() - 40)),
+        )
         self._load_saved_settings()
         self.api_key_timer = QTimer(self)
         self.api_key_timer.setInterval(1_000)
         self.api_key_timer.timeout.connect(self._tick_api_key_timers)
         self.api_key_timer.start()
 
+    def showEvent(self, event):
+        super().showEvent(event)
+        if not self._initial_height_applied:
+            self._initial_height_applied = True
+            QTimer.singleShot(0, self._fit_to_available_height)
+
+    def _fit_to_available_height(self):
+        available = self.screen().availableGeometry()
+        window_handle = self.windowHandle()
+        margins = window_handle.frameMargins() if window_handle else None
+        frame_height = (
+            margins.top() + margins.bottom() if margins is not None else 0
+        )
+        frame_width = (
+            margins.left() + margins.right() if margins is not None else 0
+        )
+        content_height = max(
+            self.minimumSizeHint().height(),
+            available.height() - frame_height,
+        )
+        self.resize(self.width(), content_height)
+        centered_x = available.left() + (
+            available.width() - self.width() - frame_width
+        ) // 2
+        self.move(max(available.left(), centered_x), available.top())
+
     def _build_ui(self):
         central = QWidget()
         central_layout = QVBoxLayout(central)
         self.main_stack = QStackedWidget()
         tabs = QTabWidget()
-        download_tab = QWidget()
-        root = QVBoxLayout(download_tab)
+        download_tab = QScrollArea()
+        download_tab.setObjectName("downloadScrollArea")
+        download_tab.setWidgetResizable(True)
+        download_tab.setFrameShape(QScrollArea.Shape.NoFrame)
+        download_tab.setHorizontalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAlwaysOff
+        )
+        download_content = QWidget()
+        root = QVBoxLayout(download_content)
+        root.setSpacing(3)
+        download_tab.setWidget(download_content)
         tabs.addTab(download_tab, "Загрузка мест")
         tabs.addTab(KmlMergerWidget(), "Объединение KML в KMZ")
 
-        api_group = QGroupBox("Wikimapia")
-        api_layout = QHBoxLayout(api_group)
+        api_group = QGroupBox()
+        api_group.setObjectName("wikimapiaGroup")
+        api_layout = QVBoxLayout(api_group)
+        api_layout.setContentsMargins(9, 0, 9, 9)
+        brand_row = QHBoxLayout()
+        brand_row.setSpacing(9)
+        wikimapia_mark = QLabel()
+        wikimapia_mark.setObjectName("wikimapiaMark")
+        wikimapia_mark.setPixmap(QIcon(str(WIKIMAPIA_MARK_FILE)).pixmap(34, 34))
+        wikimapia_mark.setFixedSize(36, 36)
+        wikimapia_mark.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        wikimapia_mark.setToolTip("Wikimapia")
+        brand_text = QWidget()
+        brand_text_layout = QVBoxLayout(brand_text)
+        brand_text_layout.setContentsMargins(0, 0, 0, 0)
+        brand_text_layout.setSpacing(0)
+        brand_title = QLabel("Wikimapia")
+        brand_title.setObjectName("wikimapiaTitle")
+        brand_subtitle = QLabel("Источник геоданных")
+        brand_subtitle.setObjectName("wikimapiaSubtitle")
+        brand_text_layout.addWidget(brand_title)
+        brand_text_layout.addWidget(brand_subtitle)
+        brand_row.addWidget(wikimapia_mark)
+        brand_row.addWidget(brand_text)
+        brand_row.addStretch()
+        api_layout.addLayout(brand_row)
+        api_fields_layout = QHBoxLayout()
+        api_fields_layout.setContentsMargins(0, 0, 0, 0)
         api_key_column = QWidget()
-        api_key_form = QFormLayout(api_key_column)
-        api_key_form.setContentsMargins(0, 0, 0, 0)
+        api_key_grid = QGridLayout(api_key_column)
+        api_key_grid.setContentsMargins(0, 0, 0, 0)
+        api_key_grid.setHorizontalSpacing(6)
+        api_key_grid.setVerticalSpacing(4)
+        api_key_grid.setColumnStretch(1, 1)
         categories_column = QWidget()
-        categories_form = QFormLayout(categories_column)
-        categories_form.setContentsMargins(0, 0, 0, 0)
+        categories_grid = QGridLayout(categories_column)
+        categories_grid.setContentsMargins(0, 0, 0, 0)
+        categories_grid.setHorizontalSpacing(6)
+        categories_grid.setVerticalSpacing(4)
+        categories_grid.setColumnStretch(1, 1)
         self.api_key_input = QLineEdit()
         self.api_key_input.setEchoMode(QLineEdit.EchoMode.Password)
         self.api_key_input.setPlaceholderText("WIKIMAPIA_API_KEY")
@@ -115,12 +190,6 @@ class MainWindow(QMainWindow):
         self.api_key_list = QListWidget()
         self.api_key_list.setMaximumHeight(72)
         self.api_key_list.currentRowChanged.connect(self._select_api_key)
-        api_key_container = QWidget()
-        api_key_layout = QVBoxLayout(api_key_container)
-        api_key_layout.setContentsMargins(0, 0, 0, 0)
-        api_key_layout.setSpacing(4)
-        api_key_layout.addLayout(api_key_input_row)
-        api_key_layout.addWidget(self.api_key_list)
         self.category_input = QLineEdit()
         self.category_input.setPlaceholderText("ID категории")
         self.category_input.returnPressed.connect(self._add_category)
@@ -169,16 +238,27 @@ class MainWindow(QMainWindow):
         category_input_row.addWidget(self.category_browser_button)
         self.category_list = QListWidget()
         self.category_list.setMaximumHeight(72)
-        category_container = QWidget()
-        category_layout = QVBoxLayout(category_container)
-        category_layout.setContentsMargins(0, 0, 0, 0)
-        category_layout.setSpacing(4)
-        category_layout.addLayout(category_input_row)
-        category_layout.addWidget(self.category_list)
-        api_key_form.addRow("API-ключи:", api_key_container)
-        categories_form.addRow("ID категорий:", category_container)
-        api_layout.addWidget(api_key_column, 1)
-        api_layout.addWidget(categories_column, 1)
+        api_key_label = QLabel("API-ключи:")
+        category_id_label = QLabel("ID категорий:")
+        api_key_grid.addWidget(
+            api_key_label,
+            0,
+            0,
+            Qt.AlignmentFlag.AlignVCenter,
+        )
+        api_key_grid.addLayout(api_key_input_row, 0, 1)
+        api_key_grid.addWidget(self.api_key_list, 1, 1)
+        categories_grid.addWidget(
+            category_id_label,
+            0,
+            0,
+            Qt.AlignmentFlag.AlignVCenter,
+        )
+        categories_grid.addLayout(category_input_row, 0, 1)
+        categories_grid.addWidget(self.category_list, 1, 1)
+        api_fields_layout.addWidget(api_key_column, 1)
+        api_fields_layout.addWidget(categories_column, 1)
+        api_layout.addLayout(api_fields_layout)
         root.addWidget(api_group)
 
         coords_group = QGroupBox("Область поиска")
@@ -279,10 +359,14 @@ class MainWindow(QMainWindow):
         settings_buttons = QHBoxLayout()
         save_settings_button = QPushButton("Сохранить настройки")
         restore_defaults_button = QPushButton("По умолчанию")
+        self.log_toggle_button = QPushButton("📖 Журнал загрузки")
+        self.log_toggle_button.setToolTip("Открыть журнал загрузки")
+        self.log_toggle_button.clicked.connect(self._open_download_log)
         save_settings_button.clicked.connect(self._save_settings)
         restore_defaults_button.clicked.connect(self._restore_defaults)
         settings_buttons.addWidget(save_settings_button)
         settings_buttons.addWidget(restore_defaults_button)
+        settings_buttons.addWidget(self.log_toggle_button)
         settings_buttons.addStretch()
         root.addLayout(settings_buttons)
 
@@ -302,15 +386,28 @@ class MainWindow(QMainWindow):
         self.download_grid = DownloadGridWidget()
         grid_layout.addWidget(self.download_grid)
         root.addWidget(grid_group)
+        root.addSpacing(16)
+
+        self.log_page = QWidget()
+        log_layout = QVBoxLayout(self.log_page)
+        log_header = QHBoxLayout()
+        self.log_back_button = QPushButton("← Назад")
+        self.log_back_button.clicked.connect(self._close_download_log)
+        log_title = QLabel("📖 Журнал загрузки")
+        log_title.setObjectName("pageTitle")
+        log_header.addWidget(self.log_back_button)
+        log_header.addWidget(log_title)
+        log_header.addStretch()
+        log_layout.addLayout(log_header)
 
         self.progress_bar = QProgressBar()
         self.progress_bar.setValue(0)
-        root.addWidget(self.progress_bar)
+        log_layout.addWidget(self.progress_bar)
 
         self.log_view = QPlainTextEdit()
         self.log_view.setReadOnly(True)
         self.log_view.setPlaceholderText("Здесь появится журнал загрузки…")
-        root.addWidget(self.log_view, 1)
+        log_layout.addWidget(self.log_view, 1)
 
         self.category_browser = CategoryBrowserWidget()
         self.category_browser.back_requested.connect(self._close_category_browser)
@@ -322,6 +419,7 @@ class MainWindow(QMainWindow):
         )
         self.main_stack.addWidget(tabs)
         self.main_stack.addWidget(self.category_browser)
+        self.main_stack.addWidget(self.log_page)
         central_layout.addWidget(self.main_stack)
         self.setCentralWidget(central)
 
@@ -359,6 +457,12 @@ class MainWindow(QMainWindow):
             self.download_grid.set_grid(
                 self.row_count.value(), self.square_count.value()
             )
+
+    def _open_download_log(self):
+        self.main_stack.setCurrentWidget(self.log_page)
+
+    def _close_download_log(self):
+        self.main_stack.setCurrentIndex(0)
 
     def _choose_output_dir(self):
         directory = QFileDialog.getExistingDirectory(
@@ -595,6 +699,9 @@ class MainWindow(QMainWindow):
         self.grid_lock_button.setChecked(not locked)
         self.grid_lock_button.setText(
             "🔒 Разблокировать" if locked else "🔓 Заблокировать"
+        )
+        self.grid_lock_button.setAccessibleName(
+            "Разблокировать сетку" if locked else "Заблокировать сетку"
         )
         self.grid_lock_button.setToolTip(
             "Разрешить изменение сетки"
@@ -926,7 +1033,12 @@ class MainWindow(QMainWindow):
             *self.findChildren(QPushButton),
             *self.findChildren(QListWidget),
         ]
-        controls = [control for control in controls if control is not self.stop_button]
+        always_enabled = {
+            self.stop_button,
+            self.log_toggle_button,
+            self.log_back_button,
+        }
+        controls = [control for control in controls if control not in always_enabled]
         if locked:
             self._control_enabled_states = {
                 control: control.isEnabled() for control in controls

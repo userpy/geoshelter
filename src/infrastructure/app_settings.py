@@ -10,6 +10,7 @@ PROJECT_DIR = (
 )
 ASSETS_DIR = SRC_DIR / "assets"
 ICON_FILE = ASSETS_DIR / "app_icon.svg"
+WIKIMAPIA_MARK_FILE = ASSETS_DIR / "wikimapia_mark.svg"
 load_dotenv(PROJECT_DIR / ".env")
 
 ORGANIZATION_NAME = "GeoShelter"
