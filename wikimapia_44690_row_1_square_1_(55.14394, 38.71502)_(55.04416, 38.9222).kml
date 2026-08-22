@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="9">
+        <Placemark id="11">
+            <name>Заброшенное убежище № 101 завода «Текстильмаш»</name>
+            <description>Для персонала, вместимость около 1600 человек. Был ремонт в 2012 г.</description>
+            <Point id="10">
+                <coordinates>38.7673352,55.100382,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Заброшенное бомбоубежище</name>
+            <description>Видно, что был пожар.</description>
+            <Point id="12">
+                <coordinates>38.8290603,55.0662382,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>Бомбоубежище ОАО «Вторчермет»</name>
+            <description>Стены в копоти.</description>
+            <Point id="14">
+                <coordinates>38.7851916,55.1025454,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>Убежище гражданской обороны</name>
+            <description/>
+            <Point id="16">
+                <coordinates>38.7796082,55.0901359,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>Бомбоубежище</name>
+            <description/>
+            <Point id="18">
+                <coordinates>38.8040092,55.0878148,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>Бомбоубежище трамвайного депо</name>
+            <description>Типовое укрытие, рассчитанное не более чем на 300 человек.</description>
+            <Point id="20">
+                <coordinates>38.7673119,55.0882412,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>Бомбоубежище</name>
+            <description/>
+            <Point id="22">
+                <coordinates>38.7667231,55.0959732,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>Убежище ГО</name>
+            <description>Убежище ЗТС.</description>
+            <Point id="24">
+                <coordinates>38.7978621,55.0708744,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>Убежище</name>
+            <description>Противорадиационное убежище ГО. Пустое.</description>
+            <Point id="26">
+                <coordinates>38.8089976,55.0841631,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>Заброшенное бомбоубежище</name>
+            <description/>
+            <Point id="28">
+                <coordinates>38.8698258,55.0575275,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Штаб ГО РЖД старой постройки</name>
+            <description>Раньше внутри было имущество ГО и своя АТС.</description>
+            <Point id="30">
+                <coordinates>38.8050849,55.0716313,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Бомбоубежище</name>
+            <description/>
+            <Point id="32">
+                <coordinates>38.7992155,55.0704988,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

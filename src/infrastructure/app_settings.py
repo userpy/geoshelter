@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-
+from PyQt6.QtCore import QSettings
 
 SRC_DIR = Path(__file__).resolve().parents[1]
 PROJECT_DIR = (
@@ -11,6 +11,20 @@ PROJECT_DIR = (
 ASSETS_DIR = SRC_DIR / "assets"
 ICON_FILE = ASSETS_DIR / "app_icon.svg"
 load_dotenv(PROJECT_DIR / ".env")
+
+ORGANIZATION_NAME = "GeoShelter"
+APPLICATION_NAME = "GeoShelter"
+
+
+def create_user_settings() -> QSettings:
+    """Return per-user settings in the platform's native storage."""
+    return QSettings(
+        QSettings.Format.NativeFormat,
+        QSettings.Scope.UserScope,
+        ORGANIZATION_NAME,
+        APPLICATION_NAME,
+    )
+
 
 DEFAULT_SETTINGS = {
     "api_keys": os.getenv("WIKIMAPIA_API_KEY", ""),

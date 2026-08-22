@@ -1,7 +1,7 @@
 import re
 from pathlib import Path
 
-from PyQt6.QtCore import QSettings, QThread, QTimer, Qt
+from PyQt6.QtCore import Qt, QThread, QTimer
 from PyQt6.QtGui import QBrush, QColor, QIcon, QPalette, QTextCharFormat, QTextCursor
 from PyQt6.QtWidgets import (
     QAbstractSpinBox,
@@ -29,7 +29,11 @@ from PyQt6.QtWidgets import (
 
 from domain.geometry import build_bbox
 from domain.models import MAX_AREAS, DownloadSettings
-from infrastructure.app_settings import DEFAULT_SETTINGS, ICON_FILE
+from infrastructure.app_settings import (
+    DEFAULT_SETTINGS,
+    ICON_FILE,
+    create_user_settings,
+)
 from presentation.download_grid import DownloadGridWidget
 from presentation.download_worker import DownloadWorker
 from presentation.kml_merger import KmlMergerWidget
@@ -44,7 +48,7 @@ class MainWindow(QMainWindow):
         self.worker = None
         self._selected_api_key_index = None
         self._control_enabled_states = {}
-        self.saved_settings = QSettings("GeoShelter", "GeoShelter")
+        self.saved_settings = create_user_settings()
         self.setWindowTitle("GeoShelter — Wikimapia в KML")
         self.setWindowIcon(QIcon(str(ICON_FILE)))
         self.resize(760, 850)
@@ -504,6 +508,7 @@ class MainWindow(QMainWindow):
             if locked
             else "Защитить параметры от случайного изменения"
         )
+        self.include_detailed_description.setEnabled(not locked)
         button_symbols = (
             QAbstractSpinBox.ButtonSymbols.NoButtons
             if locked
@@ -639,7 +644,12 @@ class MainWindow(QMainWindow):
     def _restore_defaults(self):
         self.saved_settings.clear()
         self.saved_settings.sync()
-        self._apply_settings(DEFAULT_SETTINGS)
+        default_values = {
+            **DEFAULT_SETTINGS,
+            "top_point": "",
+            "bottom_point": "",
+        }
+        self._apply_settings(default_values)
         self._set_request_fields_locked(True)
         self.statusBar().showMessage("Восстановлены настройки по умолчанию", 4_000)
 

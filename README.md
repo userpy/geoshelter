@@ -148,7 +148,10 @@ uv run python src/main.py
 при следующем запуске приложения.
 Строки можно сортировать по файлу или категории нажатием на заголовок столбца.
 
-API-ключ автоматически подставляется из `.env`, если он там задан. После нажатия `Сохранить настройки` параметры, включая API-ключ, хранятся в локальных настройках текущего пользователя.
+API-ключ автоматически подставляется из `.env`, если он там задан. После нажатия `Сохранить настройки` параметры, включая API-ключ, хранятся в локальных настройках текущего пользователя:
+
+- Linux: `$XDG_CONFIG_HOME/GeoShelter/GeoShelter.conf`, а если `XDG_CONFIG_HOME` не задан — `~/.config/GeoShelter/GeoShelter.conf`;
+- Windows: `HKEY_CURRENT_USER\Software\GeoShelter\GeoShelter` в системном реестре.
 
 ## Запуск из командной строки
 
@@ -168,15 +171,29 @@ uv run python src/cli.py
 
 ## Сборка DEB-пакета
 
-Для сборки установочного пакета нужны `uv`, `dpkg` и Python 3.12 или новее.
-Запустите из корня проекта:
+Сборка выполняется в Debian/Ubuntu Linux. Понадобятся Python 3.12
+или новее, `uv` и системная утилита `dpkg-deb`. Установите её:
 
 ```bash
-python3 build_deb.py
+sudo apt update
+sudo apt install dpkg-dev
+```
+
+Затем из корня проекта синхронизируйте окружение и запустите сборку:
+
+```bash
+uv sync --frozen
+uv run --frozen python build_deb.py
 ```
 
 Готовый пакет будет создан в каталоге `build/`, например
-`build/geoshelter_0.1.0_amd64.deb`. Установка и удаление:
+`build/geoshelter_0.1.0_amd64.deb`. Другой каталог можно указать так:
+
+```bash
+uv run --frozen python build_deb.py --output-dir dist
+```
+
+Установка и удаление пакета:
 
 ```bash
 sudo apt install ./build/geoshelter_0.1.0_amd64.deb
@@ -185,6 +202,31 @@ sudo apt remove geoshelter
 
 После установки приложение доступно в пользовательском меню и командами
 `geoshelter` и `geoshelter-cli`.
+
+## Сборка Windows EXE
+
+EXE нужно собирать в Windows: PyInstaller не является
+кросс-компилятором и не создаёт Windows-файл из Linux. Нужны
+Python 3.12 или новее и `uv`.
+
+В PowerShell из корня проекта синхронизируйте `build`-группу и
+запустите сборку:
+
+```powershell
+uv sync --frozen --group build
+uv run --frozen --group build python build_exe.py
+```
+
+Инструменты сборки PyInstaller и Pillow хранятся в `build`-группе
+`pyproject.toml`, а их версии фиксируются в `uv.lock`. Скрипт добавит в сборку
+ресурсы и создаст один файл `build/windows/GeoShelter.exe`. Python и
+зависимости на целевом компьютере не требуются.
+
+Другой каталог результата:
+
+```powershell
+uv run --frozen --group build python build_exe.py --output-dir dist
+```
 
 ## Краткий старт
 

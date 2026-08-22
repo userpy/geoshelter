@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from PyQt6.QtCore import QSettings, Qt
+from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import (
     QFileDialog,
     QGroupBox,
@@ -17,6 +17,7 @@ from PyQt6.QtWidgets import (
 )
 
 from application.merge_kml import category_from_filename, merge_kml_by_category
+from infrastructure.app_settings import create_user_settings
 
 SOURCE_CATEGORY_ROLE = int(Qt.ItemDataRole.UserRole) + 1
 
@@ -24,7 +25,7 @@ SOURCE_CATEGORY_ROLE = int(Qt.ItemDataRole.UserRole) + 1
 class KmlMergerWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.settings = QSettings("GeoShelter", "GeoShelter")
+        self.settings = create_user_settings()
         self._build_ui()
         self._load_category_mappings()
 
