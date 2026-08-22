@@ -22,6 +22,7 @@ from PyQt6.QtWidgets import (
     QProgressBar,
     QPushButton,
     QSpinBox,
+    QStackedWidget,
     QTabWidget,
     QVBoxLayout,
     QWidget,
@@ -34,6 +35,7 @@ from infrastructure.app_settings import (
     ICON_FILE,
     create_user_settings,
 )
+from presentation.category_browser import CategoryBrowserWidget
 from presentation.download_grid import DownloadGridWidget
 from presentation.download_worker import DownloadWorker
 from presentation.kml_merger import KmlMergerWidget
@@ -62,12 +64,12 @@ class MainWindow(QMainWindow):
     def _build_ui(self):
         central = QWidget()
         central_layout = QVBoxLayout(central)
+        self.main_stack = QStackedWidget()
         tabs = QTabWidget()
         download_tab = QWidget()
         root = QVBoxLayout(download_tab)
         tabs.addTab(download_tab, "Загрузка мест")
         tabs.addTab(KmlMergerWidget(), "Объединение KML в KMZ")
-        central_layout.addWidget(tabs)
 
         api_group = QGroupBox("Wikimapia")
         api_layout = QHBoxLayout(api_group)
@@ -122,11 +124,29 @@ class MainWindow(QMainWindow):
         self.remove_category_button.setFixedWidth(38)
         self.remove_category_button.setToolTip("Удалить выбранную категорию")
         self.remove_category_button.clicked.connect(self._remove_category)
+        self.category_browser_button = QPushButton("📖")
+        self.category_browser_button.setToolTip("Открыть справочник категорий")
+        self.category_browser_button.clicked.connect(self._open_category_browser)
+        category_button_height = max(
+            button.sizeHint().height()
+            for button in (
+                self.category_browser_button,
+                self.add_category_button,
+                self.remove_category_button,
+            )
+        )
+        for button in (
+            self.category_browser_button,
+            self.add_category_button,
+            self.remove_category_button,
+        ):
+            button.setFixedSize(38, category_button_height)
         category_input_row = QHBoxLayout()
         category_input_row.setContentsMargins(0, 0, 0, 0)
         category_input_row.addWidget(self.category_input, 1)
         category_input_row.addWidget(self.add_category_button)
         category_input_row.addWidget(self.remove_category_button)
+        category_input_row.addWidget(self.category_browser_button)
         self.category_list = QListWidget()
         self.category_list.setMaximumHeight(72)
         category_container = QWidget()
@@ -191,6 +211,11 @@ class MainWindow(QMainWindow):
             ),
         )
         grid_form.addRow("Всего областей:", self.total_areas_label)
+        self.grid_lock_button = QPushButton()
+        self.grid_lock_button.setCheckable(True)
+        self.grid_lock_button.clicked.connect(self._toggle_grid_fields_lock)
+        grid_form.addRow("Редактирование:", self.grid_lock_button)
+        self._set_grid_fields_locked(True)
         coords_layout.addWidget(coordinates_column, 1)
         coords_layout.addWidget(grid_column, 1)
         root.addWidget(coords_group)
@@ -279,6 +304,18 @@ class MainWindow(QMainWindow):
         self.log_view.setReadOnly(True)
         self.log_view.setPlaceholderText("Здесь появится журнал загрузки…")
         root.addWidget(self.log_view, 1)
+
+        self.category_browser = CategoryBrowserWidget()
+        self.category_browser.back_requested.connect(self._close_category_browser)
+        self.category_browser.category_requested.connect(
+            self._add_category_from_browser
+        )
+        self.category_browser.category_removal_requested.connect(
+            self._remove_category_from_browser
+        )
+        self.main_stack.addWidget(tabs)
+        self.main_stack.addWidget(self.category_browser)
+        central_layout.addWidget(self.main_stack)
         self.setCentralWidget(central)
 
     @staticmethod
@@ -408,12 +445,16 @@ class MainWindow(QMainWindow):
             f"{selected_marker}{shown_key}  —  {count}/{limit}  •  ошибок {errors}  "
             f"•  сброс {timer}"
         )
-        color = (
-            QColor("#c62828")
-            if count >= limit
-            else QColor("#2e7d32")
+        limit_exhausted = count >= limit and seconds > 0
+        item.setToolTip(
+            "Лимит API-ключа исчерпан. "
+            "Ключ станет доступен после окончания таймера."
+            if limit_exhausted
+            else "API-ключ доступен"
         )
-        item.setForeground(QBrush(color))
+        item.setForeground(
+            QBrush(QColor("#c62828" if limit_exhausted else "#2e7d32"))
+        )
 
     def _tick_api_key_timers(self):
         for index in range(self.api_key_list.count()):
@@ -441,22 +482,64 @@ class MainWindow(QMainWindow):
         except ValueError:
             QMessageBox.warning(self, "Неверная категория", "Введите целый ID категории")
             return
+        self._add_category_id(category_id)
+        self.category_input.clear()
+
+    def _add_category_id(self, category_id: int) -> bool:
         if category_id <= 0:
-            QMessageBox.warning(self, "Неверная категория", "ID категории должен быть больше нуля")
-            return
+            QMessageBox.warning(
+                self,
+                "Неверная категория",
+                "ID категории должен быть больше нуля",
+            )
+            return False
         category_text = str(category_id)
-        if not self.category_list.findItems(
+        if self.category_list.findItems(
             category_text, Qt.MatchFlag.MatchExactly
         ):
-            if self.category_list.count() >= MAX_CATEGORIES:
-                QMessageBox.warning(
-                    self,
-                    "Слишком много категорий",
-                    f"Можно добавить не более {MAX_CATEGORIES} категорий",
-                )
-                return
-            self.category_list.addItem(category_text)
-        self.category_input.clear()
+            return True
+        if self.category_list.count() >= MAX_CATEGORIES:
+            QMessageBox.warning(
+                self,
+                "Слишком много категорий",
+                f"Можно добавить не более {MAX_CATEGORIES} категорий",
+            )
+            return False
+        self.category_list.addItem(category_text)
+        return True
+
+    def _open_category_browser(self):
+        api_keys = self._api_keys()
+        api_key = (
+            self._selected_api_key()
+            or self.api_key_input.text().strip()
+            or (api_keys[0] if api_keys else "")
+        )
+        if not api_key:
+            QMessageBox.warning(
+                self,
+                "Нет API-ключа",
+                "Добавьте, пожалуйста, API-ключ Wikimapia",
+            )
+            return
+        self.category_browser.open(api_key, self._category_ids())
+        self.main_stack.setCurrentWidget(self.category_browser)
+
+    def _close_category_browser(self):
+        self.category_browser.cancel_request()
+        self.main_stack.setCurrentIndex(0)
+
+    def _add_category_from_browser(self, category_id: int):
+        if self._add_category_id(category_id):
+            self.category_browser.mark_added(category_id)
+
+    def _remove_category_from_browser(self, category_id: int):
+        category_text = str(category_id)
+        for item in self.category_list.findItems(
+            category_text, Qt.MatchFlag.MatchExactly
+        ):
+            self.category_list.takeItem(self.category_list.row(item))
+        self.category_browser.mark_removed(category_id)
 
     def _remove_category(self):
         for item in self.category_list.selectedItems():
@@ -497,6 +580,41 @@ class MainWindow(QMainWindow):
 
     def _toggle_request_fields_lock(self):
         self._set_request_fields_locked(not self.request_lock_button.isChecked())
+
+    def _toggle_grid_fields_lock(self):
+        self._set_grid_fields_locked(not self.grid_lock_button.isChecked())
+
+    def _set_grid_fields_locked(self, locked):
+        self.grid_lock_button.setChecked(not locked)
+        self.grid_lock_button.setText(
+            "🔒 Разблокировать" if locked else "🔓 Заблокировать"
+        )
+        self.grid_lock_button.setToolTip(
+            "Разрешить изменение сетки"
+            if locked
+            else "Защитить сетку от случайного изменения"
+        )
+        button_symbols = (
+            QAbstractSpinBox.ButtonSymbols.NoButtons
+            if locked
+            else QAbstractSpinBox.ButtonSymbols.UpDownArrows
+        )
+        for field in (self.square_count, self.row_count):
+            field.setReadOnly(locked)
+            field.setButtonSymbols(button_symbols)
+            field.setStyleSheet("")
+            palette = field.palette()
+            palette.setColor(
+                QPalette.ColorRole.Base,
+                QColor("#e2e5e9" if locked else "#ffffff"),
+            )
+            palette.setColor(
+                QPalette.ColorRole.Text,
+                QColor("#5f6368" if locked else "#202124"),
+            )
+            field.setPalette(palette)
+        self.direction_button.setEnabled(not locked)
+        self.vertical_direction_button.setEnabled(not locked)
 
     def _set_request_fields_locked(self, locked):
         self.request_lock_button.setChecked(not locked)
@@ -609,7 +727,8 @@ class MainWindow(QMainWindow):
 
     def _save_settings(self):
         try:
-            self._collect_settings()
+            self._validate_common_settings()
+            self._validated_coordinates(required=False)
         except ValueError as error:
             QMessageBox.warning(self, "Проверьте параметры", str(error))
             return
@@ -638,48 +757,32 @@ class MainWindow(QMainWindow):
         for key, value in values.items():
             self.saved_settings.setValue(key, value)
         self.saved_settings.sync()
+        self._set_grid_fields_locked(True)
         self._set_request_fields_locked(True)
         self.statusBar().showMessage("Настройки сохранены", 4_000)
 
     def _restore_defaults(self):
-        self.saved_settings.clear()
-        self.saved_settings.sync()
-        default_values = {
-            **DEFAULT_SETTINGS,
+        cleared_values = {
+            "categories": "",
             "top_point": "",
             "bottom_point": "",
         }
+        self.saved_settings.clear()
+        for key, value in cleared_values.items():
+            self.saved_settings.setValue(key, value)
+        self.saved_settings.sync()
+        default_values = {
+            **DEFAULT_SETTINGS,
+            **cleared_values,
+        }
         self._apply_settings(default_values)
+        self._set_grid_fields_locked(True)
         self._set_request_fields_locked(True)
         self.statusBar().showMessage("Восстановлены настройки по умолчанию", 4_000)
 
     def _collect_settings(self):
-        api_keys = self._api_keys()
-        if not api_keys:
-            raise ValueError("Укажите хотя бы один API-ключ Wikimapia")
-
-        categories = self._category_ids()
-        if not categories:
-            raise ValueError("Укажите хотя бы одну категорию")
-        if len(categories) > MAX_CATEGORIES:
-            raise ValueError(
-                f"Можно указать не более {MAX_CATEGORIES} категорий"
-            )
-
-        top_point = self._parse_coordinates(
-            self.top_point.text(), "верхней левой точки"
-        )
-        bottom_point = self._parse_coordinates(
-            self.bottom_point.text(), "нижней правой точки"
-        )
-        build_bbox(top_point, bottom_point)
-
-        output_dir_value = self.output_dir.text().strip()
-        if not output_dir_value:
-            raise ValueError("Выберите каталог для KML-файлов")
-        output_dir = Path(output_dir_value).expanduser()
-        if not output_dir.is_dir():
-            raise ValueError("Каталог для KML-файлов не существует")
+        api_keys, categories, output_dir = self._validate_common_settings()
+        top_point, bottom_point = self._validated_coordinates(required=True)
 
         return DownloadSettings(
             api_keys=tuple(api_keys),
@@ -701,6 +804,47 @@ class MainWindow(QMainWindow):
             ),
             output_dir=output_dir,
         )
+
+    def _validate_common_settings(self):
+        api_keys = self._api_keys()
+        if not api_keys:
+            raise ValueError("Укажите хотя бы один API-ключ Wikimapia")
+
+        categories = self._category_ids()
+        if not categories:
+            raise ValueError("Укажите хотя бы одну категорию")
+        if len(categories) > MAX_CATEGORIES:
+            raise ValueError(
+                f"Можно указать не более {MAX_CATEGORIES} категорий"
+            )
+
+        output_dir_value = self.output_dir.text().strip()
+        if not output_dir_value:
+            raise ValueError("Выберите каталог для KML-файлов")
+        output_dir = Path(output_dir_value).expanduser()
+        if not output_dir.is_dir():
+            raise ValueError("Каталог для KML-файлов не существует")
+        return api_keys, categories, output_dir
+
+    def _validated_coordinates(self, required):
+        top_value = self.top_point.text().strip()
+        bottom_value = self.bottom_point.text().strip()
+        if not top_value and not bottom_value:
+            if required:
+                raise ValueError("Укажите координаты области поиска")
+            return None
+        if not top_value or not bottom_value:
+            raise ValueError(
+                "Укажите обе точки области или очистите оба поля"
+        )
+        top_point = self._parse_coordinates(
+            top_value, "верхней левой точки"
+        )
+        bottom_point = self._parse_coordinates(
+            bottom_value, "нижней правой точки"
+        )
+        build_bbox(top_point, bottom_point)
+        return top_point, bottom_point
 
     @staticmethod
     def _parse_coordinates(value, field_name):
