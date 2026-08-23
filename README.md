@@ -1,7 +1,9 @@
 # GeoShelter
 
 GeoShelter загружает объекты заданных категорий из Wikimapia API и сохраняет их в KML-файлы. Проект можно запускать через графический интерфейс PyQt6 или из командной строки. Полученные файлы можно открыть, например, в Google Earth или другой программе с поддержкой KML.
-
+## Cкачать приложение
+Версии для ОС:
+  Linux: https://github.com/userpy/geoshelter/raw/refs/heads/main/build/geoshelter_0.1.0_amd64.deb
 ## Возможности
 
 - Выгрузка объектов по ID категорий Wikimapia.
