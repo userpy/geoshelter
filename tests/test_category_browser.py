@@ -38,6 +38,7 @@ class CategoryBrowserTest(unittest.TestCase):
 
         button = browser._add_buttons[203]
         row = browser._category_rows[203]
+        self.assertEqual(row.objectName(), "categoryRow")
         self.assertEqual(button.text(), "− Удалить")
         self.assertIn("#e8f5e9", row.styleSheet())
 
@@ -49,6 +50,25 @@ class CategoryBrowserTest(unittest.TestCase):
         browser.mark_removed(203)
         self.assertEqual(button.text(), "+ Добавить")
         self.assertEqual(row.styleSheet(), "")
+
+    def test_category_button_has_room_for_full_text(self):
+        browser = CategoryBrowserWidget()
+        browser._show_categories([{"id": 203, "name": "школа"}])
+
+        self.assertEqual(browser.category_list.objectName(), "categoryList")
+        button = browser._add_buttons[203]
+        self.assertEqual(button.objectName(), "categoryToggleButton")
+        widest_text = max(
+            button.fontMetrics().horizontalAdvance(text)
+            for text in ("+ Добавить", "− Удалить")
+        )
+        self.assertGreaterEqual(button.minimumWidth(), widest_text + 30)
+        self.assertEqual(button.minimumHeight(), button.maximumHeight())
+        self.assertGreaterEqual(
+            button.height(), button.fontMetrics().height() + 16
+        )
+        item = browser.category_list.item(0)
+        self.assertGreaterEqual(item.sizeHint().height(), button.height() + 10)
 
 
 if __name__ == "__main__":

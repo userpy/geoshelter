@@ -56,6 +56,7 @@ class CategoryBrowserWidget(QWidget):
         layout.addWidget(self.status_label)
 
         self.category_list = QListWidget()
+        self.category_list.setObjectName("categoryList")
         self.category_list.setAlternatingRowColors(True)
         layout.addWidget(self.category_list, 1)
 
@@ -213,13 +214,29 @@ class CategoryBrowserWidget(QWidget):
         for category in categories:
             category_id = category["id"]
             row = QWidget()
+            row.setObjectName("categoryRow")
             row_layout = QHBoxLayout(row)
             row_layout.setContentsMargins(8, 4, 8, 4)
             name_label = QLabel(category["name"])
             id_label = QLabel(f"ID: {category_id}")
             id_label.setStyleSheet(f"color: {MUTED_TEXT};")
             add_button = QPushButton()
-            add_button.setFixedWidth(115)
+            add_button.setObjectName("categoryToggleButton")
+            button_text_width = max(
+                add_button.fontMetrics().horizontalAdvance(text)
+                for text in ("+ Добавить", "− Удалить")
+            )
+            # Keep enough room for the theme's horizontal padding and border,
+            # including when the OS uses font or display scaling.
+            add_button.setMinimumWidth(button_text_width + 30)
+            add_button.ensurePolished()
+            button_height = max(
+                add_button.sizeHint().height(),
+                add_button.fontMetrics().height() + 16,
+            )
+            # Use the final styled height. A minimum height is reinterpreted by
+            # Qt's style-sheet box model and can grow beyond the list row.
+            add_button.setFixedHeight(button_height)
             add_button.clicked.connect(
                 lambda _checked=False, value=category_id: self._toggle_category(
                     value
@@ -233,7 +250,15 @@ class CategoryBrowserWidget(QWidget):
             row_layout.addWidget(id_label)
             row_layout.addWidget(add_button)
             item = QListWidgetItem()
-            item.setSizeHint(row.sizeHint())
+            margins = row_layout.contentsMargins()
+            row_size = row.sizeHint()
+            # Derive the item height from the fixed button box so its complete
+            # border remains inside the item even with fractional DPI scaling.
+            required_height = (
+                button_height + margins.top() + margins.bottom() + 2
+            )
+            row_size.setHeight(max(row_size.height(), required_height))
+            item.setSizeHint(row_size)
             self.category_list.addItem(item)
             self.category_list.setItemWidget(item, row)
 
@@ -250,7 +275,9 @@ class CategoryBrowserWidget(QWidget):
         row = self._category_rows.get(category_id)
         if row is not None:
             row.setStyleSheet(
-                "background-color: #e8f5e9; border-radius: 4px;"
+                "QWidget#categoryRow {"
+                " background-color: #e8f5e9; border-radius: 4px;"
+                " }"
                 if is_added
                 else ""
             )

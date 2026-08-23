@@ -22,6 +22,7 @@ from PyQt6.QtWidgets import (
     QProgressBar,
     QPushButton,
     QScrollArea,
+    QSizePolicy,
     QSpinBox,
     QStackedWidget,
     QTabWidget,
@@ -44,6 +45,24 @@ from presentation.kml_merger import KmlMergerWidget
 from presentation.theme import APP_STYLE_SHEET
 
 MAX_CATEGORIES = 15
+DOWNLOAD_CONTENT_WIDTH = 810
+
+
+class CenteredPage(QWidget):
+    """Keep page content centered at a readable adaptive width."""
+
+    def __init__(self, content, content_width, parent=None):
+        super().__init__(parent)
+        self._content = content
+        self._content_width = content_width
+        layout = QHBoxLayout(self)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.addWidget(content, 0, Qt.AlignmentFlag.AlignHCenter)
+
+    def resizeEvent(self, event):
+        width = min(self._content_width, event.size().width())
+        self._content.setFixedWidth(width)
+        super().resizeEvent(event)
 
 
 class MainWindow(QMainWindow):
@@ -78,6 +97,8 @@ class MainWindow(QMainWindow):
             QTimer.singleShot(0, self._fit_to_available_height)
 
     def _fit_to_available_height(self):
+        if self.isMaximized() or self.isFullScreen():
+            return
         available = self.screen().availableGeometry()
         window_handle = self.windowHandle()
         margins = window_handle.frameMargins() if window_handle else None
@@ -101,15 +122,40 @@ class MainWindow(QMainWindow):
         central = QWidget()
         central_layout = QVBoxLayout(central)
         self.main_stack = QStackedWidget()
+        self.main_stack.setSizePolicy(
+            QSizePolicy.Policy.Expanding,
+            QSizePolicy.Policy.Expanding,
+        )
         tabs = QTabWidget()
+        tabs.setObjectName("mainTabs")
+        tabs.setSizePolicy(
+            QSizePolicy.Policy.Expanding,
+            QSizePolicy.Policy.Expanding,
+        )
+        tabs_page = CenteredPage(
+            tabs, DOWNLOAD_CONTENT_WIDTH
+        )
         download_tab = QScrollArea()
         download_tab.setObjectName("downloadScrollArea")
         download_tab.setWidgetResizable(True)
+        download_tab.setSizePolicy(
+            QSizePolicy.Policy.Expanding,
+            QSizePolicy.Policy.Expanding,
+        )
         download_tab.setFrameShape(QScrollArea.Shape.NoFrame)
         download_tab.setHorizontalScrollBarPolicy(
             Qt.ScrollBarPolicy.ScrollBarAlwaysOff
         )
+        download_tab.setAlignment(
+            Qt.AlignmentFlag.AlignHCenter | Qt.AlignmentFlag.AlignTop
+        )
         download_content = QWidget()
+        download_content.setObjectName("downloadContent")
+        download_content.setMaximumWidth(DOWNLOAD_CONTENT_WIDTH)
+        download_content.setSizePolicy(
+            QSizePolicy.Policy.Expanding,
+            QSizePolicy.Policy.Expanding,
+        )
         root = QVBoxLayout(download_content)
         root.setSpacing(3)
         download_tab.setWidget(download_content)
@@ -118,6 +164,10 @@ class MainWindow(QMainWindow):
 
         api_group = QGroupBox()
         api_group.setObjectName("wikimapiaGroup")
+        api_group.setSizePolicy(
+            QSizePolicy.Policy.Preferred,
+            QSizePolicy.Policy.Maximum,
+        )
         api_layout = QVBoxLayout(api_group)
         api_layout.setContentsMargins(9, 0, 9, 9)
         brand_row = QHBoxLayout()
@@ -138,6 +188,7 @@ class MainWindow(QMainWindow):
         brand_subtitle.setObjectName("wikimapiaSubtitle")
         brand_text_layout.addWidget(brand_title)
         brand_text_layout.addWidget(brand_subtitle)
+        brand_text.setFixedHeight(brand_text.sizeHint().height())
         brand_row.addWidget(wikimapia_mark)
         brand_row.addWidget(brand_text)
         brand_row.addStretch()
@@ -156,40 +207,15 @@ class MainWindow(QMainWindow):
         categories_grid.setHorizontalSpacing(6)
         categories_grid.setVerticalSpacing(4)
         categories_grid.setColumnStretch(1, 1)
-        self.api_key_input = QLineEdit()
-        self.api_key_input.setEchoMode(QLineEdit.EchoMode.Password)
-        self.api_key_input.setPlaceholderText("WIKIMAPIA_API_KEY")
-        self.api_key_input.returnPressed.connect(self._add_api_key)
-        self.api_key_visibility_button = QPushButton("👁")
-        self.api_key_visibility_button.setCheckable(True)
-        self.api_key_visibility_button.setFixedWidth(38)
-        self.api_key_visibility_button.setToolTip("Показать API-ключ")
-        self.api_key_visibility_button.clicked.connect(
-            self._toggle_api_key_visibility
-        )
-        self.add_api_key_button = QPushButton("+")
-        self.add_api_key_button.setObjectName("addActionButton")
-        self.add_api_key_button.setFixedWidth(42)
-        self.add_api_key_button.setAccessibleName("Добавить API-ключ")
-        self.add_api_key_button.setToolTip("Добавить API-ключ")
-        self.add_api_key_button.clicked.connect(self._add_api_key)
-        self.remove_api_key_button = QPushButton("−")
-        self.remove_api_key_button.setObjectName("removeActionButton")
-        self.remove_api_key_button.setFixedWidth(42)
-        self.remove_api_key_button.setAccessibleName(
-            "Удалить выбранный API-ключ"
-        )
-        self.remove_api_key_button.setToolTip("Удалить выбранный API-ключ")
-        self.remove_api_key_button.clicked.connect(self._remove_api_key)
+        self.api_key_manager_button = QPushButton("🔑 Менеджер API-ключей")
+        self.api_key_manager_button.setToolTip("Открыть менеджер API-ключей")
+        self.api_key_manager_button.clicked.connect(self._open_api_key_manager)
         api_key_input_row = QHBoxLayout()
         api_key_input_row.setContentsMargins(0, 0, 0, 0)
-        api_key_input_row.addWidget(self.api_key_input, 1)
-        api_key_input_row.addWidget(self.api_key_visibility_button)
-        api_key_input_row.addWidget(self.add_api_key_button)
-        api_key_input_row.addWidget(self.remove_api_key_button)
-        self.api_key_list = QListWidget()
-        self.api_key_list.setMaximumHeight(72)
-        self.api_key_list.currentRowChanged.connect(self._select_api_key)
+        api_key_input_row.addWidget(self.api_key_manager_button)
+        api_key_input_row.addStretch()
+        self.api_key_status_label = QLabel("Статус ключа: Отсутствует")
+        self.api_key_status_label.setObjectName("apiKeyStatus")
         self.category_input = QLineEdit()
         self.category_input.setPlaceholderText("ID категории")
         self.category_input.returnPressed.connect(self._add_category)
@@ -237,17 +263,11 @@ class MainWindow(QMainWindow):
         category_input_row.addWidget(self.remove_category_button)
         category_input_row.addWidget(self.category_browser_button)
         self.category_list = QListWidget()
+        self.category_list.setObjectName("categoryIdList")
         self.category_list.setMaximumHeight(72)
-        api_key_label = QLabel("API-ключи:")
         category_id_label = QLabel("ID категорий:")
-        api_key_grid.addWidget(
-            api_key_label,
-            0,
-            0,
-            Qt.AlignmentFlag.AlignVCenter,
-        )
-        api_key_grid.addLayout(api_key_input_row, 0, 1)
-        api_key_grid.addWidget(self.api_key_list, 1, 1)
+        api_key_grid.addLayout(api_key_input_row, 0, 0, 1, 2)
+        api_key_grid.addWidget(self.api_key_status_label, 1, 0, 1, 2)
         categories_grid.addWidget(
             category_id_label,
             0,
@@ -256,8 +276,16 @@ class MainWindow(QMainWindow):
         )
         categories_grid.addLayout(category_input_row, 0, 1)
         categories_grid.addWidget(self.category_list, 1, 1)
-        api_fields_layout.addWidget(api_key_column, 1)
-        api_fields_layout.addWidget(categories_column, 1)
+        api_fields_layout.addWidget(
+            api_key_column,
+            1,
+            Qt.AlignmentFlag.AlignTop,
+        )
+        api_fields_layout.addWidget(
+            categories_column,
+            1,
+            Qt.AlignmentFlag.AlignTop,
+        )
         api_layout.addLayout(api_fields_layout)
         root.addWidget(api_group)
 
@@ -321,16 +349,28 @@ class MainWindow(QMainWindow):
         root.addWidget(coords_group)
 
         request_group = QGroupBox("Параметры запроса")
-        request_form = QFormLayout(request_group)
+        request_layout = QHBoxLayout(request_group)
+        request_values_column = QWidget()
+        request_values_form = QFormLayout(request_values_column)
+        request_options_column = QWidget()
+        request_options_form = QFormLayout(request_options_column)
         self.max_pages = self._integer_spin(1, 1000, 1)
         self.results_per_page = self._integer_spin(1, 100, 1)
         self.request_delay = QDoubleSpinBox()
         self.request_delay.setRange(0, 60)
         self.request_delay.setDecimals(1)
         self.request_delay.setSuffix(" с")
-        request_form.addRow("Максимум страниц:", self.max_pages)
-        request_form.addRow("Объектов на странице:", self.results_per_page)
-        request_form.addRow("Задержка:", self.request_delay)
+        for request_field in (
+            self.max_pages,
+            self.results_per_page,
+            self.request_delay,
+        ):
+            request_field.setFixedWidth(110)
+        request_values_form.addRow("Максимум страниц:", self.max_pages)
+        request_values_form.addRow(
+            "Объектов на странице:", self.results_per_page
+        )
+        request_values_form.addRow("Задержка:", self.request_delay)
         self.include_detailed_description = QCheckBox(
             "Загружать подробное описание"
         )
@@ -338,11 +378,21 @@ class MainWindow(QMainWindow):
             "Выполняет дополнительный запрос для каждого места; "
             "загрузка займёт больше времени"
         )
-        request_form.addRow("Описание:", self.include_detailed_description)
+        request_options_form.addRow(
+            "Описание:", self.include_detailed_description
+        )
         self.request_lock_button = QPushButton()
         self.request_lock_button.setCheckable(True)
         self.request_lock_button.clicked.connect(self._toggle_request_fields_lock)
-        request_form.addRow("Редактирование:", self.request_lock_button)
+        request_options_form.addRow(
+            "Редактирование:", self.request_lock_button
+        )
+        request_layout.addWidget(
+            request_values_column, 1, Qt.AlignmentFlag.AlignTop
+        )
+        request_layout.addWidget(
+            request_options_column, 1, Qt.AlignmentFlag.AlignTop
+        )
         self._set_request_fields_locked(True)
         self._update_total_areas()
         root.addWidget(request_group)
@@ -357,14 +407,14 @@ class MainWindow(QMainWindow):
         root.addLayout(output_row)
 
         settings_buttons = QHBoxLayout()
-        save_settings_button = QPushButton("Сохранить настройки")
+        self.save_settings_button = QPushButton("📄 Сохранить настройки")
         restore_defaults_button = QPushButton("По умолчанию")
         self.log_toggle_button = QPushButton("📖 Журнал загрузки")
         self.log_toggle_button.setToolTip("Открыть журнал загрузки")
         self.log_toggle_button.clicked.connect(self._open_download_log)
-        save_settings_button.clicked.connect(self._save_settings)
+        self.save_settings_button.clicked.connect(self._save_settings)
         restore_defaults_button.clicked.connect(self._restore_defaults)
-        settings_buttons.addWidget(save_settings_button)
+        settings_buttons.addWidget(self.save_settings_button)
         settings_buttons.addWidget(restore_defaults_button)
         settings_buttons.addWidget(self.log_toggle_button)
         settings_buttons.addStretch()
@@ -380,6 +430,11 @@ class MainWindow(QMainWindow):
         buttons.addWidget(self.start_button)
         buttons.addWidget(self.stop_button)
         root.addLayout(buttons)
+
+        self.main_progress_bar = QProgressBar()
+        self.main_progress_bar.setValue(0)
+        self.main_progress_bar.setToolTip("Прогресс загрузки")
+        root.addWidget(self.main_progress_bar)
 
         grid_group = QGroupBox("Сетка областей")
         grid_layout = QVBoxLayout(grid_group)
@@ -409,6 +464,50 @@ class MainWindow(QMainWindow):
         self.log_view.setPlaceholderText("Здесь появится журнал загрузки…")
         log_layout.addWidget(self.log_view, 1)
 
+        self.api_key_manager_page = QWidget()
+        key_manager_layout = QVBoxLayout(self.api_key_manager_page)
+        key_manager_header = QHBoxLayout()
+        key_manager_back_button = QPushButton("← Назад")
+        key_manager_back_button.clicked.connect(self._close_api_key_manager)
+        key_manager_title = QLabel("Менеджер API-ключей Wikimapia")
+        key_manager_title.setObjectName("pageTitle")
+        key_manager_header.addWidget(key_manager_back_button)
+        key_manager_header.addWidget(key_manager_title)
+        key_manager_header.addStretch()
+        key_manager_layout.addLayout(key_manager_header)
+
+        key_manager_input_row = QHBoxLayout()
+        self.api_key_input = QLineEdit()
+        self.api_key_input.setEchoMode(QLineEdit.EchoMode.Password)
+        self.api_key_input.setPlaceholderText("Введите API-ключ Wikimapia")
+        self.api_key_input.returnPressed.connect(self._add_api_key)
+        self.api_key_visibility_button = QPushButton("👁")
+        self.api_key_visibility_button.setCheckable(True)
+        self.api_key_visibility_button.setFixedWidth(38)
+        self.api_key_visibility_button.setToolTip("Показать API-ключи")
+        self.api_key_visibility_button.clicked.connect(
+            self._toggle_api_key_visibility
+        )
+        self.add_api_key_button = QPushButton("+")
+        self.add_api_key_button.setObjectName("addActionButton")
+        self.add_api_key_button.setFixedWidth(42)
+        self.add_api_key_button.setToolTip("Добавить API-ключ")
+        self.add_api_key_button.clicked.connect(self._add_api_key)
+        self.remove_api_key_button = QPushButton("−")
+        self.remove_api_key_button.setObjectName("removeActionButton")
+        self.remove_api_key_button.setFixedWidth(42)
+        self.remove_api_key_button.setToolTip("Удалить выбранный API-ключ")
+        self.remove_api_key_button.clicked.connect(self._remove_api_key)
+        key_manager_input_row.addWidget(self.api_key_input, 1)
+        key_manager_input_row.addWidget(self.api_key_visibility_button)
+        key_manager_input_row.addWidget(self.add_api_key_button)
+        key_manager_input_row.addWidget(self.remove_api_key_button)
+        key_manager_layout.addLayout(key_manager_input_row)
+
+        self.api_key_list = QListWidget()
+        self.api_key_list.currentRowChanged.connect(self._select_api_key)
+        key_manager_layout.addWidget(self.api_key_list, 1)
+
         self.category_browser = CategoryBrowserWidget()
         self.category_browser.back_requested.connect(self._close_category_browser)
         self.category_browser.category_requested.connect(
@@ -417,10 +516,20 @@ class MainWindow(QMainWindow):
         self.category_browser.category_removal_requested.connect(
             self._remove_category_from_browser
         )
-        self.main_stack.addWidget(tabs)
-        self.main_stack.addWidget(self.category_browser)
-        self.main_stack.addWidget(self.log_page)
-        central_layout.addWidget(self.main_stack)
+        self.category_browser_container = CenteredPage(
+            self.category_browser, DOWNLOAD_CONTENT_WIDTH
+        )
+        self.log_page_container = CenteredPage(
+            self.log_page, DOWNLOAD_CONTENT_WIDTH
+        )
+        self.api_key_manager_container = CenteredPage(
+            self.api_key_manager_page, DOWNLOAD_CONTENT_WIDTH
+        )
+        self.main_stack.addWidget(tabs_page)
+        self.main_stack.addWidget(self.category_browser_container)
+        self.main_stack.addWidget(self.log_page_container)
+        self.main_stack.addWidget(self.api_key_manager_container)
+        central_layout.addWidget(self.main_stack, 1)
         self.setCentralWidget(central)
 
     @staticmethod
@@ -459,9 +568,16 @@ class MainWindow(QMainWindow):
             )
 
     def _open_download_log(self):
-        self.main_stack.setCurrentWidget(self.log_page)
+        self.main_stack.setCurrentWidget(self.log_page_container)
 
     def _close_download_log(self):
+        self.main_stack.setCurrentIndex(0)
+
+    def _open_api_key_manager(self):
+        self.main_stack.setCurrentWidget(self.api_key_manager_container)
+
+    def _close_api_key_manager(self):
+        self.api_key_input.clear()
         self.main_stack.setCurrentIndex(0)
 
     def _choose_output_dir(self):
@@ -515,6 +631,7 @@ class MainWindow(QMainWindow):
             self._selected_api_key_index = None
         elif selected_key not in self._api_keys():
             self.api_key_list.setCurrentRow(0)
+        self._update_api_key_status_label()
 
     def _set_api_keys(self, values):
         self._selected_api_key_index = None
@@ -525,6 +642,7 @@ class MainWindow(QMainWindow):
             key = str(key).strip()
             if key:
                 self._append_api_key(key)
+        self._update_api_key_status_label()
 
     def _api_keys(self):
         return [
@@ -537,6 +655,36 @@ class MainWindow(QMainWindow):
             return None
         item = self.api_key_list.item(self._selected_api_key_index)
         return item.data(Qt.ItemDataRole.UserRole) if item else None
+
+    def _update_api_key_status_label(self):
+        if self._selected_api_key_index is None:
+            status = "Отсутствует"
+        else:
+            item = self.api_key_list.item(self._selected_api_key_index)
+            if item is None:
+                status = "Отсутствует"
+            else:
+                count = item.data(Qt.ItemDataRole.UserRole + 1) or 0
+                limit = item.data(Qt.ItemDataRole.UserRole + 2) or 100
+                seconds = item.data(Qt.ItemDataRole.UserRole + 3) or 0
+                exhausted = count >= limit and seconds > 0
+                status = "Лимит исчерпан" if exhausted else "Активен"
+        if status == "Активен":
+            status_text = (
+                '<span style="color: #2e7d32; font-weight: 700;">'
+                '✓ Активен</span>'
+            )
+        elif status == "Отсутствует":
+            status_text = (
+                '<span style="color: #d4a000; font-weight: 700;">'
+                '⚠ Отсутствует</span>'
+            )
+        else:
+            status_text = status
+        self.api_key_status_label.setText(
+            f"Статус ключа: {status_text}"
+        )
+        self.api_key_status_label.setStyleSheet("color: #000000;")
 
     def _render_api_key_item(self, item):
         key = item.data(Qt.ItemDataRole.UserRole)
@@ -578,6 +726,7 @@ class MainWindow(QMainWindow):
             if seconds == 0:
                 item.setData(Qt.ItemDataRole.UserRole + 1, 0)
             self._render_api_key_item(item)
+        self._update_api_key_status_label()
 
     @staticmethod
     def _masked_api_key(key):
@@ -623,7 +772,6 @@ class MainWindow(QMainWindow):
         api_keys = self._api_keys()
         api_key = (
             self._selected_api_key()
-            or self.api_key_input.text().strip()
             or (api_keys[0] if api_keys else "")
         )
         if not api_key:
@@ -634,7 +782,7 @@ class MainWindow(QMainWindow):
             )
             return
         self.category_browser.open(api_key, self._category_ids())
-        self.main_stack.setCurrentWidget(self.category_browser)
+        self.main_stack.setCurrentWidget(self.category_browser_container)
 
     def _close_category_browser(self):
         self.category_browser.cancel_request()
@@ -828,7 +976,7 @@ class MainWindow(QMainWindow):
 
     def _save_settings(self):
         try:
-            self._validate_common_settings()
+            self._validate_common_settings(require_api_keys=False)
             self._validated_coordinates(required=False)
         except ValueError as error:
             QMessageBox.warning(self, "Проверьте параметры", str(error))
@@ -906,9 +1054,9 @@ class MainWindow(QMainWindow):
             output_dir=output_dir,
         )
 
-    def _validate_common_settings(self):
+    def _validate_common_settings(self, require_api_keys=True):
         api_keys = self._api_keys()
-        if not api_keys:
+        if require_api_keys and not api_keys:
             raise ValueError("Укажите хотя бы один API-ключ Wikimapia")
 
         categories = self._category_ids()
@@ -986,6 +1134,8 @@ class MainWindow(QMainWindow):
             settings.total_jobs,
         )
         self.progress_bar.setValue(0)
+        self.main_progress_bar.setRange(0, settings.total_jobs)
+        self.main_progress_bar.setValue(0)
         self.download_grid.set_grid(settings.row_count, settings.square_count)
         self._area_place_counts = [
             0 for _ in range(settings.square_count * settings.row_count)
@@ -1051,8 +1201,9 @@ class MainWindow(QMainWindow):
             self._control_enabled_states.clear()
 
     def _update_progress(self, value, maximum):
-        self.progress_bar.setRange(0, maximum)
-        self.progress_bar.setValue(value)
+        for progress_bar in (self.progress_bar, self.main_progress_bar):
+            progress_bar.setRange(0, maximum)
+            progress_bar.setValue(value)
 
     def _update_key_status(self, index, count, limit, seconds, errors):
         if not 0 <= index < self.api_key_list.count():
@@ -1063,6 +1214,7 @@ class MainWindow(QMainWindow):
         item.setData(Qt.ItemDataRole.UserRole + 3, seconds)
         item.setData(Qt.ItemDataRole.UserRole + 4, errors)
         self._render_api_key_item(item)
+        self._update_api_key_status_label()
 
     def _select_api_key(self, index):
         if not 0 <= index < self.api_key_list.count():
@@ -1078,6 +1230,7 @@ class MainWindow(QMainWindow):
                 and 0 <= changed_index < self.api_key_list.count()
             ):
                 self._render_api_key_item(self.api_key_list.item(changed_index))
+        self._update_api_key_status_label()
 
     def _area_started(self, row, column, category_id):
         display_row, display_column = self._display_area_coordinates(row, column)
@@ -1140,6 +1293,7 @@ class MainWindow(QMainWindow):
     def _download_failed(self, message):
         self.log_view.clear()
         self.progress_bar.setValue(0)
+        self.main_progress_bar.setValue(0)
         self.download_grid.reset()
         QMessageBox.critical(self, "Ошибка загрузки", message)
 

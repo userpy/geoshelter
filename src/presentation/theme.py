@@ -210,6 +210,11 @@ QPushButton {{
     font-weight: 600;
 }}
 
+QPushButton#categoryToggleButton {{
+    border: 1px solid {MINT};
+    border-radius: 0;
+}}
+
 QPushButton:hover {{
     background-color: {MINT};
     border-color: {PRIMARY};
@@ -334,6 +339,49 @@ QAbstractItemView {{
 
 QAbstractItemView::item {{
     padding: 4px;
+}}
+
+QListWidget#categoryList::item {{
+    padding: 0;
+}}
+
+QListWidget#categoryList QScrollBar:vertical,
+QListWidget#categoryIdList QScrollBar:vertical,
+QScrollArea#downloadScrollArea QScrollBar:vertical {{
+    background-color: {SOFT_MINT};
+    margin-right: 2px;
+}}
+
+QListWidget#categoryList QScrollBar::handle:vertical,
+QListWidget#categoryIdList QScrollBar::handle:vertical,
+QScrollArea#downloadScrollArea QScrollBar::handle:vertical {{
+    background-color: {PRIMARY};
+    min-height: 24px;
+}}
+
+QListWidget#categoryList QScrollBar::handle:vertical:hover,
+QListWidget#categoryIdList QScrollBar::handle:vertical:hover,
+QScrollArea#downloadScrollArea QScrollBar::handle:vertical:hover {{
+    background-color: {DEEP_TEAL};
+}}
+
+QListWidget#categoryList QScrollBar::add-line:vertical,
+QListWidget#categoryList QScrollBar::sub-line:vertical,
+QListWidget#categoryIdList QScrollBar::add-line:vertical,
+QListWidget#categoryIdList QScrollBar::sub-line:vertical,
+QScrollArea#downloadScrollArea QScrollBar::add-line:vertical,
+QScrollArea#downloadScrollArea QScrollBar::sub-line:vertical {{
+    height: 0;
+    border: none;
+}}
+
+QListWidget#categoryList QScrollBar::add-page:vertical,
+QListWidget#categoryList QScrollBar::sub-page:vertical,
+QListWidget#categoryIdList QScrollBar::add-page:vertical,
+QListWidget#categoryIdList QScrollBar::sub-page:vertical,
+QScrollArea#downloadScrollArea QScrollBar::add-page:vertical,
+QScrollArea#downloadScrollArea QScrollBar::sub-page:vertical {{
+    background: transparent;
 }}
 
 QAbstractItemView::item:selected {{
