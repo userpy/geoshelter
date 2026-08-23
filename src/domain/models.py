@@ -25,6 +25,7 @@ class DownloadSettings:
     output_dir: Path
     include_detailed_description: bool = False
     selected_api_key_index: int = 0
+    api_key_states: tuple[tuple[int, int, int, int], ...] = ()
 
     def __post_init__(self) -> None:
         if not self.api_keys:

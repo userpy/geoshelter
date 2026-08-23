@@ -1,4 +1,5 @@
 import os
+import time
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -60,7 +61,7 @@ class ApiKeyStatusTest(unittest.TestCase):
                     "Статус ключа: Лимит исчерпан",
                 )
 
-                item.setData(Qt.ItemDataRole.UserRole + 3, 1)
+                item.setData(Qt.ItemDataRole.UserRole + 5, time.time() - 1)
                 window._tick_api_key_timers()
                 self.assertEqual(item.foreground().color().name(), "#2e7d32")
                 self.assertEqual(item.data(Qt.ItemDataRole.UserRole + 1), 0)
@@ -71,6 +72,31 @@ class ApiKeyStatusTest(unittest.TestCase):
                 window.close()
             finally:
                 main_window.create_user_settings = original_create_user_settings
+
+    def test_api_key_counter_survives_window_restart(self):
+        with TemporaryDirectory() as directory:
+            settings_path = str(Path(directory) / "GeoShelter.conf")
+            original_factory = main_window.create_user_settings
+            main_window.create_user_settings = lambda: QSettings(
+                settings_path, QSettings.Format.IniFormat
+            )
+            try:
+                first = main_window.MainWindow()
+                first._set_api_keys(["persistent-key"])
+                first.saved_settings.setValue("api_keys", "persistent-key")
+                first._update_key_status(0, 37, 100, 240, 2)
+                first.close()
+
+                second = main_window.MainWindow()
+                item = second.api_key_list.item(0)
+                self.assertEqual(item.data(Qt.ItemDataRole.UserRole + 1), 37)
+                self.assertEqual(item.data(Qt.ItemDataRole.UserRole + 4), 2)
+                self.assertGreaterEqual(
+                    item.data(Qt.ItemDataRole.UserRole + 3), 238
+                )
+                second.close()
+            finally:
+                main_window.create_user_settings = original_factory
 
 
 if __name__ == "__main__":

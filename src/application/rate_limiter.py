@@ -6,10 +6,19 @@ from application.errors import DownloadCancelled
 
 
 class RequestRateLimiter:
-    def __init__(self, limit: int = 100, window_seconds: float = 300):
+    def __init__(
+        self,
+        limit: int = 100,
+        window_seconds: float = 300,
+        initial_count: int = 0,
+        retry_after: float = 0,
+    ):
         self.limit = limit
         self.window_seconds = window_seconds
         self._requests: deque[float] = deque()
+        if initial_count > 0 and retry_after > 0:
+            oldest = time.monotonic() - max(0, window_seconds - retry_after)
+            self._requests.extend(oldest for _ in range(min(initial_count, limit)))
 
     @property
     def count(self) -> int:

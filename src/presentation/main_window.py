@@ -1,4 +1,6 @@
+import json
 import re
+import time
 from pathlib import Path
 
 from PyQt6.QtCore import Qt, QThread, QTimer
@@ -620,6 +622,7 @@ class MainWindow(QMainWindow):
         item.setData(Qt.ItemDataRole.UserRole + 2, 100)
         item.setData(Qt.ItemDataRole.UserRole + 3, 0)
         item.setData(Qt.ItemDataRole.UserRole + 4, 0)
+        item.setData(Qt.ItemDataRole.UserRole + 5, 0.0)
         self.api_key_list.addItem(item)
         self._render_api_key_item(item)
         if self._selected_api_key_index is None:
@@ -644,7 +647,51 @@ class MainWindow(QMainWindow):
             key = str(key).strip()
             if key:
                 self._append_api_key(key)
+        self._load_api_key_states()
         self._update_api_key_status_label()
+
+    def _load_api_key_states(self):
+        try:
+            states = json.loads(
+                self.saved_settings.value("api_key_states", "{}", type=str)
+            )
+        except (TypeError, ValueError, json.JSONDecodeError):
+            states = {}
+        now = time.time()
+        for index in range(self.api_key_list.count()):
+            item = self.api_key_list.item(index)
+            state = states.get(item.data(Qt.ItemDataRole.UserRole), {})
+            deadline = float(state.get("deadline", 0) or 0)
+            seconds = max(0, round(deadline - now))
+            count = int(state.get("count", 0) or 0) if seconds > 0 else 0
+            item.setData(Qt.ItemDataRole.UserRole + 1, count)
+            item.setData(
+                Qt.ItemDataRole.UserRole + 2,
+                int(state.get("limit", 100) or 100),
+            )
+            item.setData(Qt.ItemDataRole.UserRole + 3, seconds)
+            item.setData(
+                Qt.ItemDataRole.UserRole + 4,
+                int(state.get("errors", 0) or 0),
+            )
+            item.setData(
+                Qt.ItemDataRole.UserRole + 5,
+                deadline if seconds > 0 else 0.0,
+            )
+            self._render_api_key_item(item)
+
+    def _persist_api_key_states(self):
+        states = {}
+        for index in range(self.api_key_list.count()):
+            item = self.api_key_list.item(index)
+            states[item.data(Qt.ItemDataRole.UserRole)] = {
+                "count": item.data(Qt.ItemDataRole.UserRole + 1) or 0,
+                "limit": item.data(Qt.ItemDataRole.UserRole + 2) or 100,
+                "deadline": item.data(Qt.ItemDataRole.UserRole + 5) or 0,
+                "errors": item.data(Qt.ItemDataRole.UserRole + 4) or 0,
+            }
+        self.saved_settings.setValue("api_key_states", json.dumps(states))
+        self.saved_settings.sync()
 
     def _api_keys(self):
         return [
@@ -720,13 +767,14 @@ class MainWindow(QMainWindow):
     def _tick_api_key_timers(self):
         for index in range(self.api_key_list.count()):
             item = self.api_key_list.item(index)
-            seconds = item.data(Qt.ItemDataRole.UserRole + 3) or 0
-            if seconds <= 0:
+            deadline = item.data(Qt.ItemDataRole.UserRole + 5) or 0
+            seconds = max(0, round(deadline - time.time())) if deadline else 0
+            if not deadline:
                 continue
-            seconds -= 1
             item.setData(Qt.ItemDataRole.UserRole + 3, seconds)
             if seconds == 0:
                 item.setData(Qt.ItemDataRole.UserRole + 1, 0)
+                item.setData(Qt.ItemDataRole.UserRole + 5, 0.0)
             self._render_api_key_item(item)
         self._update_api_key_status_label()
 
@@ -1046,10 +1094,28 @@ class MainWindow(QMainWindow):
     def _collect_settings(self):
         api_keys, categories, output_dir = self._validate_common_settings()
         top_point, bottom_point = self._validated_coordinates(required=True)
+        key_states = tuple(
+            (
+                self.api_key_list.item(index).data(
+                    Qt.ItemDataRole.UserRole + 1
+                ) or 0,
+                self.api_key_list.item(index).data(
+                    Qt.ItemDataRole.UserRole + 2
+                ) or 100,
+                self.api_key_list.item(index).data(
+                    Qt.ItemDataRole.UserRole + 3
+                ) or 0,
+                self.api_key_list.item(index).data(
+                    Qt.ItemDataRole.UserRole + 4
+                ) or 0,
+            )
+            for index in range(self.api_key_list.count())
+        )
 
         return DownloadSettings(
             api_keys=tuple(api_keys),
             selected_api_key_index=self._selected_api_key_index or 0,
+            api_key_states=key_states,
             categories=tuple(categories),
             top_point=top_point,
             bottom_point=bottom_point,
@@ -1135,14 +1201,6 @@ class MainWindow(QMainWindow):
             return
 
         self.log_view.clear()
-        self._selected_api_key_index = None
-        for index in range(self.api_key_list.count()):
-            item = self.api_key_list.item(index)
-            item.setData(Qt.ItemDataRole.UserRole + 1, 0)
-            item.setData(Qt.ItemDataRole.UserRole + 2, 100)
-            item.setData(Qt.ItemDataRole.UserRole + 3, 0)
-            item.setData(Qt.ItemDataRole.UserRole + 4, 0)
-            self._render_api_key_item(item)
         self.progress_bar.setRange(
             0,
             settings.total_jobs,
@@ -1227,8 +1285,13 @@ class MainWindow(QMainWindow):
         item.setData(Qt.ItemDataRole.UserRole + 2, limit)
         item.setData(Qt.ItemDataRole.UserRole + 3, seconds)
         item.setData(Qt.ItemDataRole.UserRole + 4, errors)
+        item.setData(
+            Qt.ItemDataRole.UserRole + 5,
+            time.time() + seconds if seconds > 0 else 0.0,
+        )
         self._render_api_key_item(item)
         self._update_api_key_status_label()
+        self._persist_api_key_states()
 
     def _select_api_key(self, index):
         if not 0 <= index < self.api_key_list.count():
@@ -1325,4 +1388,5 @@ class MainWindow(QMainWindow):
             self.worker.stop()
             self.thread.quit()
             self.thread.wait(35_000)
+        self._persist_api_key_states()
         event.accept()

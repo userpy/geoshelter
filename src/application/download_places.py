@@ -36,11 +36,22 @@ class DownloadPlaces:
         saved_files = 0
         saved_places = 0
         completed_jobs = 0
-        rate_limiters = [
-            RequestRateLimiter(limit=100, window_seconds=300)
-            for _client in self.clients
-        ]
-        key_errors = [0 for _client in self.clients]
+        states = settings.api_key_states
+        rate_limiters = []
+        key_errors = []
+        for index, _client in enumerate(self.clients):
+            count, limit, seconds, errors = (
+                states[index] if index < len(states) else (0, 100, 0, 0)
+            )
+            rate_limiters.append(
+                RequestRateLimiter(
+                    limit=limit,
+                    window_seconds=300,
+                    initial_count=count,
+                    retry_after=seconds,
+                )
+            )
+            key_errors.append(errors)
         self._next_client_index = settings.selected_api_key_index
         self._client_selection_lock = asyncio.Lock()
         concurrency = asyncio.Semaphore(len(self.clients))
