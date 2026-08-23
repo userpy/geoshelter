@@ -1,4 +1,5 @@
 import os
+import time
 import unittest
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
@@ -69,6 +70,38 @@ class CategoryBrowserTest(unittest.TestCase):
         )
         item = browser.category_list.item(0)
         self.assertGreaterEqual(item.sizeHint().height(), button.height() + 10)
+
+    def test_category_search_rotates_api_keys_and_reports_usage(self):
+        browser = CategoryBrowserWidget()
+        browser._api_keys = ["first", "second"]
+        browser._key_counts = [0, 0]
+        browser._key_deadlines = [0, 0]
+        browser._key_errors = [0, 0]
+        browser._next_key_index = 0
+        selected = []
+        statuses = []
+        browser.key_selected.connect(selected.append)
+        browser.key_status_changed.connect(
+            lambda *values: statuses.append(values)
+        )
+
+        self.assertEqual(browser._acquire_key(set()), 0)
+        self.assertEqual(browser._acquire_key(set()), 1)
+
+        self.assertEqual(selected, [0, 1])
+        self.assertEqual(statuses[0][0:3], (0, 1, 100))
+        self.assertEqual(statuses[1][0:3], (1, 1, 100))
+
+    def test_exhausted_category_key_is_skipped(self):
+        browser = CategoryBrowserWidget()
+        browser._api_keys = ["exhausted", "available"]
+        browser._key_counts = [100, 4]
+        browser._key_deadlines = [time.monotonic() + 300] * 2
+        browser._key_errors = [0, 0]
+        browser._next_key_index = 0
+
+        self.assertEqual(browser._acquire_key(set()), 1)
+        self.assertEqual(browser._key_counts, [100, 5])
 
 
 if __name__ == "__main__":

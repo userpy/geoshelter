@@ -1,4 +1,5 @@
 import json
+import time
 
 from PyQt6.QtCore import QTimer, QUrl, QUrlQuery, pyqtSignal
 from PyQt6.QtNetwork import QNetworkAccessManager, QNetworkReply, QNetworkRequest
@@ -20,10 +21,19 @@ class CategoryBrowserWidget(QWidget):
     back_requested = pyqtSignal()
     category_requested = pyqtSignal(int)
     category_removal_requested = pyqtSignal(int)
+    key_status_changed = pyqtSignal(int, int, int, int, int)
+    key_selected = pyqtSignal(int)
+
+    KEY_REQUEST_LIMIT = 100
+    KEY_WINDOW_SECONDS = 300
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self._api_key = ""
+        self._api_keys: list[str] = []
+        self._key_counts: list[int] = []
+        self._key_deadlines: list[float] = []
+        self._key_errors: list[int] = []
+        self._next_key_index = 0
         self._selected_categories: set[int] = set()
         self._add_buttons: dict[int, QPushButton] = {}
         self._category_rows: dict[int, QWidget] = {}
@@ -67,8 +77,29 @@ class CategoryBrowserWidget(QWidget):
         self.search_input.textChanged.connect(self._schedule_search)
         self.search_input.returnPressed.connect(self._search_immediately)
 
-    def open(self, api_key: str, selected_categories: list[int]) -> None:
-        self._api_key = api_key
+    def open(
+        self,
+        api_keys: list[str],
+        selected_key_index: int,
+        selected_categories: list[int],
+        key_states: list[tuple[int, int, int, int]] | None = None,
+    ) -> None:
+        self._api_keys = list(api_keys)
+        self._next_key_index = (
+            selected_key_index if 0 <= selected_key_index < len(api_keys) else 0
+        )
+        states = key_states or []
+        now = time.monotonic()
+        self._key_counts = []
+        self._key_deadlines = []
+        self._key_errors = []
+        for index in range(len(api_keys)):
+            count, limit, seconds, errors = (
+                states[index] if index < len(states) else (0, 100, 0, 0)
+            )
+            self._key_counts.append(int(count))
+            self._key_deadlines.append(now + max(0, int(seconds)))
+            self._key_errors.append(int(errors))
         self.set_selected_categories(selected_categories)
         self.search_input.clear()
         self._search_timer.stop()
@@ -113,7 +144,7 @@ class CategoryBrowserWidget(QWidget):
         self._search()
 
     def _search(self) -> None:
-        if not self._api_key:
+        if not self._api_keys:
             self._show_error("Сначала добавьте API-ключ Wikimapia")
             return
 
@@ -122,9 +153,25 @@ class CategoryBrowserWidget(QWidget):
         if self._active_reply is not None:
             self._active_reply.abort()
 
+        self._request_with_next_key(request_number, set())
+
+    def _request_with_next_key(
+        self, request_number: int, attempted_indexes: set[int]
+    ) -> None:
+        key_index = self._acquire_key(attempted_indexes)
+        if key_index is None:
+            if len(attempted_indexes) >= len(self._api_keys):
+                self._show_error("Запрос не выполнен ни одним API-ключом")
+            else:
+                self._show_error(
+                    "Лимит всех API-ключей исчерпан. Дождитесь окончания таймера"
+                )
+            return
+        attempted_indexes.add(key_index)
+
         query_text = self.search_input.text().strip()
         query = QUrlQuery()
-        query.addQueryItem("key", self._api_key)
+        query.addQueryItem("key", self._api_keys[key_index])
         query.addQueryItem("format", "json")
         query.addQueryItem("language", "ru")
         if query_text.isdigit():
@@ -146,10 +193,48 @@ class CategoryBrowserWidget(QWidget):
         reply = self._network.get(request)
         self._active_reply = reply
         reply.finished.connect(
-            lambda: self._handle_reply(reply, request_number)
+            lambda: self._handle_reply(
+                reply, request_number, key_index, attempted_indexes
+            )
         )
 
-    def _handle_reply(self, reply: QNetworkReply, request_number: int) -> None:
+    def _acquire_key(self, excluded_indexes: set[int]) -> int | None:
+        now = time.monotonic()
+        for offset in range(len(self._api_keys)):
+            index = (self._next_key_index + offset) % len(self._api_keys)
+            if index in excluded_indexes:
+                continue
+            if self._key_deadlines[index] <= now:
+                self._key_counts[index] = 0
+                self._key_deadlines[index] = 0
+            if self._key_counts[index] >= self.KEY_REQUEST_LIMIT:
+                continue
+            self._key_counts[index] += 1
+            if self._key_counts[index] >= self.KEY_REQUEST_LIMIT:
+                self._key_deadlines[index] = now + self.KEY_WINDOW_SECONDS
+            self._next_key_index = (index + 1) % len(self._api_keys)
+            self._emit_key_status(index)
+            self.key_selected.emit(index)
+            return index
+        return None
+
+    def _emit_key_status(self, index: int) -> None:
+        seconds = max(0, round(self._key_deadlines[index] - time.monotonic()))
+        self.key_status_changed.emit(
+            index,
+            self._key_counts[index],
+            self.KEY_REQUEST_LIMIT,
+            seconds,
+            self._key_errors[index],
+        )
+
+    def _handle_reply(
+        self,
+        reply: QNetworkReply,
+        request_number: int,
+        key_index: int,
+        attempted_indexes: set[int],
+    ) -> None:
         if self._active_reply is reply:
             self._active_reply = None
         if request_number != self._request_number:
@@ -159,7 +244,12 @@ class CategoryBrowserWidget(QWidget):
         if reply.error() != QNetworkReply.NetworkError.NoError:
             message = reply.errorString()
             reply.deleteLater()
-            self._show_error(f"Ошибка запроса: {message}")
+            self._key_errors[key_index] += 1
+            self._emit_key_status(key_index)
+            if len(attempted_indexes) < len(self._api_keys):
+                self._request_with_next_key(request_number, attempted_indexes)
+            else:
+                self._show_error(f"Ошибка запроса: {message}")
             return
 
         try:
@@ -179,7 +269,17 @@ class CategoryBrowserWidget(QWidget):
             )
             if isinstance(error, dict) and error.get("code") == 1000:
                 message = "недействительный API-ключ"
-            self._show_error(f"Ошибка Wikimapia API: {message}")
+            self._key_errors[key_index] += 1
+            if self._is_limit_error(error, message):
+                self._key_counts[key_index] = self.KEY_REQUEST_LIMIT
+                self._key_deadlines[key_index] = (
+                    time.monotonic() + self.KEY_WINDOW_SECONDS
+                )
+            self._emit_key_status(key_index)
+            if len(attempted_indexes) < len(self._api_keys):
+                self._request_with_next_key(request_number, attempted_indexes)
+            else:
+                self._show_error(f"Ошибка Wikimapia API: {message}")
             return
 
         raw_categories = data.get("categories", [])
@@ -187,6 +287,15 @@ class CategoryBrowserWidget(QWidget):
             raw_categories = [data["category"]]
         categories = self._normalize_categories(raw_categories)
         self._show_categories(categories)
+
+    @staticmethod
+    def _is_limit_error(error: object, message: str) -> bool:
+        code = error.get("code") if isinstance(error, dict) else None
+        text = message.casefold()
+        return code in {1001, 1002, 429} or any(
+            marker in text
+            for marker in ("limit", "quota", "too many", "лимит")
+        )
 
     @staticmethod
     def _normalize_categories(raw_categories) -> list[dict]:

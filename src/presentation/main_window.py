@@ -516,6 +516,8 @@ class MainWindow(QMainWindow):
         self.category_browser.category_removal_requested.connect(
             self._remove_category_from_browser
         )
+        self.category_browser.key_status_changed.connect(self._update_key_status)
+        self.category_browser.key_selected.connect(self._select_api_key)
         self.category_browser_container = CenteredPage(
             self.category_browser, DOWNLOAD_CONTENT_WIDTH
         )
@@ -770,18 +772,30 @@ class MainWindow(QMainWindow):
 
     def _open_category_browser(self):
         api_keys = self._api_keys()
-        api_key = (
-            self._selected_api_key()
-            or (api_keys[0] if api_keys else "")
-        )
-        if not api_key:
+        if not api_keys:
             QMessageBox.warning(
                 self,
                 "Нет API-ключа",
                 "Добавьте, пожалуйста, API-ключ Wikimapia",
             )
             return
-        self.category_browser.open(api_key, self._category_ids())
+        key_states = []
+        for index in range(self.api_key_list.count()):
+            item = self.api_key_list.item(index)
+            key_states.append(
+                (
+                    item.data(Qt.ItemDataRole.UserRole + 1) or 0,
+                    item.data(Qt.ItemDataRole.UserRole + 2) or 100,
+                    item.data(Qt.ItemDataRole.UserRole + 3) or 0,
+                    item.data(Qt.ItemDataRole.UserRole + 4) or 0,
+                )
+            )
+        self.category_browser.open(
+            api_keys,
+            self._selected_api_key_index or 0,
+            self._category_ids(),
+            key_states,
+        )
         self.main_stack.setCurrentWidget(self.category_browser_container)
 
     def _close_category_browser(self):
