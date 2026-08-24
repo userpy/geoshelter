@@ -57,8 +57,10 @@ QGroupBox::title {{
     subcontrol-origin: margin;
     subcontrol-position: top left;
     left: 12px;
-    padding: 0 5px;
+    padding: 2px 9px;
     background-color: {SURFACE};
+    border: 1px solid {BORDER};
+    border-radius: 7px;
 }}
 
 QGroupBox#wikimapiaGroup {{
