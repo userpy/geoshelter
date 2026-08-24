@@ -310,7 +310,7 @@ class MainWindow(QMainWindow):
         coords_grid.addWidget(QLabel("Нижняя правая:"), 1, 0)
         coords_grid.addWidget(self.bottom_point, 1, 1)
         coords_grid.addWidget(
-            QLabel("Вставьте пару целиком, например: 55.838340, 49.206620"),
+            QLabel("Вставьте пару целиком, например: XX.XXXXXX, XX.XXXXXX"),
             2,
             0,
             1,
