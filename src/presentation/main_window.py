@@ -162,7 +162,8 @@ class MainWindow(QMainWindow):
         root.setSpacing(3)
         download_tab.setWidget(download_content)
         tabs.addTab(download_tab, "Загрузка мест")
-        tabs.addTab(KmlMergerWidget(), "Объединение KML в KMZ")
+        self.kml_merger = KmlMergerWidget()
+        tabs.addTab(self.kml_merger, "Объединение KML в KMZ")
 
         api_group = QGroupBox()
         api_group.setObjectName("wikimapiaGroup")
@@ -1077,11 +1078,15 @@ class MainWindow(QMainWindow):
             "categories": "",
             "top_point": "",
             "bottom_point": "",
+            "output_dir": "",
         }
-        self.saved_settings.clear()
+        for key in DEFAULT_SETTINGS:
+            self.saved_settings.remove(key)
+        self.saved_settings.remove("api_key")
         for key, value in cleared_values.items():
             self.saved_settings.setValue(key, value)
         self.saved_settings.sync()
+        self.kml_merger.clear_output_file()
         default_values = {
             **DEFAULT_SETTINGS,
             **cleared_values,

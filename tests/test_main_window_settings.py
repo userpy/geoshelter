@@ -9,6 +9,7 @@ from PyQt6.QtCore import QSettings
 from PyQt6.QtWidgets import QApplication, QMessageBox, QTabWidget, QWidget
 
 import presentation.main_window as main_window
+import presentation.kml_merger as kml_merger
 
 
 class MainWindowSettingsTest(unittest.TestCase):
@@ -74,6 +75,40 @@ class MainWindowSettingsTest(unittest.TestCase):
             finally:
                 main_window.create_user_settings = original_factory
                 QMessageBox.warning = original_warning
+
+    def test_restore_defaults_clears_output_paths(self):
+        with TemporaryDirectory() as directory:
+            settings_path = str(Path(directory) / "GeoShelter.conf")
+            original_main_factory = main_window.create_user_settings
+            original_merger_factory = kml_merger.create_user_settings
+            settings = QSettings(settings_path, QSettings.Format.IniFormat)
+            main_window.create_user_settings = lambda: settings
+            kml_merger.create_user_settings = lambda: settings
+            try:
+                window = main_window.MainWindow()
+                output_dir = str(Path(directory) / "kml")
+                output_file = str(Path(directory) / "result.kmz")
+                window.output_dir.setText(output_dir)
+                merger = window.kml_merger
+                merger.output_file.setText(output_file)
+                merger._save_output_file()
+
+                window._restore_defaults()
+
+                self.assertEqual(window.output_dir.text(), "")
+                self.assertEqual(merger.output_file.text(), "")
+                self.assertEqual(
+                    settings.value("kml_merger/output_file", type=str), ""
+                )
+                window.close()
+
+                reopened_window = main_window.MainWindow()
+                self.assertEqual(reopened_window.output_dir.text(), "")
+                self.assertEqual(reopened_window.kml_merger.output_file.text(), "")
+                reopened_window.close()
+            finally:
+                main_window.create_user_settings = original_main_factory
+                kml_merger.create_user_settings = original_merger_factory
 
 
 if __name__ == "__main__":

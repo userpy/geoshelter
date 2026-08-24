@@ -137,7 +137,11 @@ class KmlMergerWidget(QWidget):
         layout.addWidget(self.table, 1)
 
         output_row = QHBoxLayout()
-        self.output_file = QLineEdit(str(Path.cwd() / "places.kmz"))
+        default_output = str(Path.cwd() / "places.kmz")
+        self.output_file = QLineEdit(
+            self.settings.value("kml_merger/output_file", default_output, type=str)
+        )
+        self.output_file.editingFinished.connect(self._save_output_file)
         browse_button = QPushButton("Обзор…")
         browse_button.clicked.connect(self._choose_output)
         output_row.addWidget(QLabel("Итоговый KMZ:"))
@@ -312,12 +316,25 @@ class KmlMergerWidget(QWidget):
             self.output_file.setText(
                 filename if filename.lower().endswith(".kmz") else f"{filename}.kmz"
             )
+            self._save_output_file()
+
+    def _save_output_file(self):
+        self.settings.setValue(
+            "kml_merger/output_file", self.output_file.text().strip()
+        )
+        self.settings.sync()
+
+    def clear_output_file(self):
+        self.output_file.clear()
+        self.settings.setValue("kml_merger/output_file", "")
+        self.settings.sync()
 
     def _merge(self):
         output = Path(self.output_file.text().strip()).expanduser()
         if output.suffix.lower() != ".kmz":
             output = output.with_suffix(".kmz")
             self.output_file.setText(str(output))
+        self._save_output_file()
         if output.exists() and QMessageBox.question(
             self, "Заменить файл?", f"{output.name} уже существует. Заменить?"
         ) != QMessageBox.StandardButton.Yes:
