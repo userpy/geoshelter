@@ -1,0 +1,10 @@
+Package: geoshelter
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: userpy <dima6225@yandex.ru>
+Installed-Size: 256782
+Depends:
+Description: Add your description here
+ Standalone desktop application for downloading Wikimapia places and creating KML/KMZ files.
