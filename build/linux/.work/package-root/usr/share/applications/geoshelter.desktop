@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=GeoShelter
-Comment=Add your description here
-Exec=geoshelter
-Icon=geoshelter
-Terminal=false
-Categories=Utility;Geography;
-StartupNotify=true
