@@ -4,9 +4,9 @@ GeoShelter загружает объекты заданных категорий
 ## Cкачать приложение
 Версии для ОС:
 
-  Linux: https://github.com/userpy/geoshelter/blob/main/build/linux/geoshelter_0.1.0_amd64.deb
+  Linux:   https://github.com/userpy/geoshelter/raw/refs/heads/main/build/linux/geoshelter_0.1.0_amd64.deb
   
-  Windows: https://github.com/userpy/geoshelter/blob/main/build/windows/GeoShelter.exe
+  Windows: https://github.com/userpy/geoshelter/raw/refs/heads/main/build/windows/GeoShelter.exe
 ## Возможности
 
 - Выгрузка объектов по ID категорий Wikimapia.
