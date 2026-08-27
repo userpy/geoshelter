@@ -18,6 +18,7 @@ SURFACE = "#FFFFFF"
 SOFT_MINT = "#E1F5F1"
 INPUT_BACKGROUND = "#FAFEFD"
 BORDER = "#8AD7CB"
+TAB_BORDER_SUBTLE = "1px solid rgba(138, 215, 203, 0.2)"
 TEXT = "#123D37"
 MUTED_TEXT = "#55766F"
 DISABLED_BACKGROUND = "#DDEBE8"
@@ -297,7 +298,7 @@ QPushButton#primaryButton:disabled {{
 
 QTabWidget::pane {{
     background-color: {BACKGROUND};
-    border: 1px solid {BORDER};
+    border: {TAB_BORDER_SUBTLE};
     border-radius: 0;
     top: -1px;
 }}
@@ -305,7 +306,7 @@ QTabWidget::pane {{
 QTabBar::tab {{
     background-color: {SOFT_MINT};
     color: {DEEP_TEAL};
-    border: 1px solid {BORDER};
+    border: {TAB_BORDER_SUBTLE};
     border-bottom: none;
     padding: 8px 16px;
     margin-right: 2px;
