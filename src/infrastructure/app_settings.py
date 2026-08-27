@@ -29,9 +29,9 @@ def create_user_settings() -> QSettings:
 
 DEFAULT_SETTINGS = {
     "api_keys": os.getenv("WIKIMAPIA_API_KEY", ""),
-    "categories": "44690, 2390",
-    "top_point": "55.838340, 49.206620",
-    "bottom_point": "55.795710, 49.305150",
+    "categories": "",
+    "top_point": "",
+    "bottom_point": "",
     "square_count": 1,
     "row_count": 1,
     "vertical_direction": "down",

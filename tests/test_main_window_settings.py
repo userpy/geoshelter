@@ -17,6 +17,22 @@ class MainWindowSettingsTest(unittest.TestCase):
     def setUpClass(cls):
         cls.app = QApplication.instance() or QApplication([])
 
+    def test_new_install_starts_without_categories_or_coordinates(self):
+        with TemporaryDirectory() as directory:
+            settings_path = str(Path(directory) / "GeoShelter.conf")
+            original_factory = main_window.create_user_settings
+            main_window.create_user_settings = lambda: QSettings(
+                settings_path, QSettings.Format.IniFormat
+            )
+            try:
+                window = main_window.MainWindow()
+                self.assertEqual(window._category_ids(), [])
+                self.assertEqual(window.top_point.text(), "")
+                self.assertEqual(window.bottom_point.text(), "")
+                window.close()
+            finally:
+                main_window.create_user_settings = original_factory
+
     def test_saves_settings_with_empty_coordinates(self):
         with TemporaryDirectory() as directory:
             settings_path = str(Path(directory) / "GeoShelter.conf")

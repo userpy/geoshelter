@@ -29,6 +29,34 @@ PYPROJECT = PROJECT_DIR / "pyproject.toml"
 LINUX_BUILD_DIR = PROJECT_DIR / "build" / "linux"
 WORK_DIR = LINUX_BUILD_DIR / ".work"
 
+# GeoShelter displays SVG icons and runs on regular X11/Wayland desktops. These
+# Qt plugins target embedded/framebuffer environments or unused image formats.
+UNUSED_QT_PLUGIN_DIRS = ("egldeviceintegrations",)
+UNUSED_QT_PLUGINS = (
+    "platforms/libqeglfs.so",
+    "platforms/libqlinuxfb.so",
+    "platforms/libqminimal.so",
+    "platforms/libqminimalegl.so",
+    "platforms/libqvkkhrdisplay.so",
+    "platforms/libqvnc.so",
+    "imageformats/libqicns.so",
+    "imageformats/libqpdf.so",
+    "imageformats/libqtga.so",
+    "imageformats/libqtiff.so",
+    "imageformats/libqwbmp.so",
+    "imageformats/libqwebp.so",
+)
+KEPT_QT_TRANSLATIONS = {
+    "qt_en.qm",
+    "qt_ru.qm",
+    "qtbase_en.qm",
+    "qtbase_ru.qm",
+}
+UNUSED_QT_LIBRARIES = (
+    "libQt6EglFSDeviceIntegration.so.6",
+    "libQt6Pdf.so.6",
+)
+
 
 @dataclass(frozen=True)
 class Metadata:
@@ -167,13 +195,20 @@ def write_text(path: Path, content: str, mode: int = 0o644) -> None:
 
 
 def installed_size(root: Path) -> int:
-    total = sum(p.stat().st_size for p in root.rglob("*") if p.is_file() and "DEBIAN" not in p.parts)
+    # lstat avoids counting a symlink target for every link to a bundled Qt library.
+    total = sum(
+        p.lstat().st_size
+        for p in root.rglob("*")
+        if (p.is_file() or p.is_symlink()) and "DEBIAN" not in p.parts
+    )
     return max(1, (total + 1023) // 1024)
 
 
 def normalize_permissions(root: Path, executable: Path) -> None:
     root.chmod(0o755)
     for path in root.rglob("*"):
+        if path.is_symlink():
+            continue
         if path.is_dir():
             path.chmod(0o755)
         elif path.is_file():
@@ -182,7 +217,9 @@ def normalize_permissions(root: Path, executable: Path) -> None:
 
 def create_package_tree(meta: Metadata, pyinstaller_dir: Path, package_root: Path) -> Path:
     app_dir = package_root / "opt" / meta.package
-    shutil.copytree(pyinstaller_dir, app_dir)
+    # PyInstaller uses relative links for duplicate Qt libraries. Preserve them;
+    # following the links inflates Installed-Size by tens of megabytes.
+    shutil.copytree(pyinstaller_dir, app_dir, symlinks=True)
     binary = app_dir / meta.executable
     if not binary.is_file():
         fail(f"PyInstaller не создал главный бинарник: {binary}")
@@ -211,6 +248,48 @@ def create_package_tree(meta: Metadata, pyinstaller_dir: Path, package_root: Pat
         shutil.copy2(meta.icon, target)
     normalize_permissions(package_root, binary)
     return binary
+
+
+def optimize_pyinstaller_tree(app_dir: Path) -> None:
+    """Remove Qt assets which GeoShelter cannot use, retaining desktop support."""
+    qt_dir = app_dir / "_internal" / "PyQt6" / "Qt6"
+    plugins_dir = qt_dir / "plugins"
+    removed_bytes = 0
+
+    for relative in UNUSED_QT_PLUGIN_DIRS:
+        target = plugins_dir / relative
+        if target.is_dir():
+            removed_bytes += sum(
+                item.stat().st_size for item in target.rglob("*") if item.is_file()
+            )
+            shutil.rmtree(target)
+
+    for relative in UNUSED_QT_PLUGINS:
+        target = plugins_dir / relative
+        if target.is_file():
+            removed_bytes += target.stat().st_size
+            target.unlink()
+
+    translations = qt_dir / "translations"
+    if translations.is_dir():
+        for translation in translations.iterdir():
+            if translation.is_file() and translation.name not in KEPT_QT_TRANSLATIONS:
+                removed_bytes += translation.stat().st_size
+                translation.unlink()
+
+    # Their only consumers were the EGLFS and PDF image plugins removed above.
+    qt_libraries = qt_dir / "lib"
+    internal_dir = app_dir / "_internal"
+    for library_name in UNUSED_QT_LIBRARIES:
+        library = qt_libraries / library_name
+        if library.is_file():
+            removed_bytes += library.stat().st_size
+            library.unlink()
+        link = internal_dir / library_name
+        if link.is_symlink():
+            link.unlink()
+
+    log(f"Удалено неиспользуемых Qt-ресурсов: {removed_bytes / 1024 / 1024:.1f} MiB")
 
 
 def sha256(path: Path) -> str:
@@ -255,7 +334,7 @@ def build(args: argparse.Namespace) -> Path:
     log(f"PyInstaller --onedir: {meta.entry_point.relative_to(PROJECT_DIR)}")
     command = [
         sys.executable, "-m", "PyInstaller", "--noconfirm", "--clean", "--onedir",
-        "--windowed", "--name", meta.executable, "--distpath", str(dist_dir),
+        "--windowed", "--strip", "--name", meta.executable, "--distpath", str(dist_dir),
         "--workpath", str(WORK_DIR / "pyinstaller"), "--specpath", str(WORK_DIR / "spec"),
         "--paths", str(PROJECT_DIR / "src"),
     ]
@@ -265,6 +344,8 @@ def build(args: argparse.Namespace) -> Path:
     command.append(str(meta.entry_point))
     run(command)
 
+    log("Оптимизация Qt-ресурсов")
+    optimize_pyinstaller_tree(dist_dir / meta.executable)
     log("Формирование корня Debian-пакета")
     binary = create_package_tree(meta, dist_dir / meta.executable, package_root)
     control = (
