@@ -19,6 +19,7 @@ SOFT_MINT = "#E1F5F1"
 INPUT_BACKGROUND = "#FAFEFD"
 BORDER = "#8AD7CB"
 TAB_BORDER_SUBTLE = "1px solid rgba(138, 215, 203, 0.2)"
+BORDER_TRANSPARENT = "rgba(138, 215, 203, 0.2)"
 TEXT = "#123D37"
 MUTED_TEXT = "#55766F"
 DISABLED_BACKGROUND = "#DDEBE8"
@@ -46,7 +47,7 @@ QScrollArea#downloadScrollArea {{
 
 QGroupBox {{
     background-color: {SURFACE};
-    border: 1px solid {BORDER};
+    border: 1px solid {BORDER_TRANSPARENT};
     border-radius: 8px;
     margin-top: 10px;
     padding-top: 10px;
@@ -60,7 +61,7 @@ QGroupBox::title {{
     left: 12px;
     padding: 2px 9px;
     background-color: {SURFACE};
-    border: 1px solid {BORDER};
+    border: 1px solid {BORDER_TRANSPARENT};
     border-radius: 7px;
 }}
 
