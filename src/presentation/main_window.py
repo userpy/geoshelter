@@ -586,11 +586,17 @@ class MainWindow(QMainWindow):
         self.main_stack.setCurrentIndex(0)
 
     def _choose_output_dir(self):
-        directory = QFileDialog.getExistingDirectory(
-            self,
-            "Выберите каталог",
-            self.output_dir.text(),
+        dialog = QFileDialog(
+            self, "Выберите каталог", self.output_dir.text()
         )
+        dialog.setFileMode(QFileDialog.FileMode.Directory)
+        dialog.setOption(QFileDialog.Option.ShowDirsOnly, True)
+        dialog.setLabelText(QFileDialog.DialogLabel.LookIn, "Папка:")
+        dialog.setLabelText(QFileDialog.DialogLabel.FileName, "Каталог:")
+        dialog.setLabelText(QFileDialog.DialogLabel.FileType, "Тип файлов:")
+        if not dialog.exec():
+            return
+        directory = dialog.selectedFiles()[0]
         if directory:
             self.output_dir.setText(directory)
 

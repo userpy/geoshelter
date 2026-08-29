@@ -155,9 +155,14 @@ class KmlMergerWidget(QWidget):
         layout.addWidget(merge_button, 0, Qt.AlignmentFlag.AlignLeft)
 
     def _add_files(self):
-        files, _ = QFileDialog.getOpenFileNames(
-            self, "Выберите KML-файлы", str(Path.cwd()), "KML (*.kml)"
-        )
+        dialog = QFileDialog(self, "Выберите KML-файлы", str(Path.cwd()))
+        dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
+        dialog.setNameFilter("KML (*.kml)")
+        dialog.setLabelText(QFileDialog.DialogLabel.LookIn, "Папка:")
+        dialog.setLabelText(QFileDialog.DialogLabel.FileType, "Тип файлов:")
+        if not dialog.exec():
+            return
+        files = dialog.selectedFiles()
         existing = {
             self.table.item(row, 0).data(Qt.ItemDataRole.UserRole)
             for row in range(self.table.rowCount())
