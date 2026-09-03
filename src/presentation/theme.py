@@ -425,6 +425,34 @@ QToolTip {{
     border: 1px solid {AQUA};
     padding: 4px;
 }}
+
+QMenu {{
+    background-color: {SURFACE};
+    color: {TEXT};
+    border: 1px solid {BORDER};
+    padding: 4px;
+}}
+
+QMenu::item {{
+    background-color: transparent;
+    color: {TEXT};
+    padding: 5px 24px 5px 8px;
+}}
+
+QMenu::item:selected {{
+    background-color: {SOFT_MINT};
+    color: {DEEP_TEAL};
+}}
+
+QMenu::item:disabled {{
+    color: {DISABLED_TEXT};
+}}
+
+QMenu::separator {{
+    background-color: {BORDER};
+    height: 1px;
+    margin: 4px 6px;
+}}
 """
 
 

@@ -4,7 +4,15 @@ import time
 from pathlib import Path
 
 from PyQt6.QtCore import Qt, QThread, QTimer
-from PyQt6.QtGui import QBrush, QColor, QIcon, QPalette, QTextCharFormat, QTextCursor
+from PyQt6.QtGui import (
+    QBrush,
+    QColor,
+    QIcon,
+    QKeySequence,
+    QPalette,
+    QTextCharFormat,
+    QTextCursor,
+)
 from PyQt6.QtWidgets import (
     QAbstractSpinBox,
     QCheckBox,
@@ -65,6 +73,86 @@ class CenteredPage(QWidget):
         width = min(self._content_width, event.size().width())
         self._content.setFixedWidth(width)
         super().resizeEvent(event)
+
+
+class PasteFriendlyLineEdit(QLineEdit):
+    """Keep paste working when a Cyrillic keyboard layout is active."""
+
+    _MENU_STYLE = """
+        QMenu {
+            background-color: #FFFFFF;
+            color: #123D37;
+            border: 1px solid #8AD7CB;
+            padding: 4px;
+        }
+        QMenu::item {
+            background-color: #FFFFFF;
+            color: #123D37;
+            padding: 6px 28px 6px 10px;
+        }
+        QMenu::item:selected {
+            background-color: #E1F5F1;
+            color: #006B5B;
+        }
+        QMenu::item:disabled {
+            background-color: #FFFFFF;
+            color: #55766F;
+        }
+        QMenu::separator {
+            background-color: #8AD7CB;
+            height: 1px;
+            margin: 4px 6px;
+        }
+    """
+
+    def contextMenuEvent(self, event):
+        menu = self.createStandardContextMenu()
+        menu.setStyleSheet(self._MENU_STYLE)
+        palette = menu.palette()
+        for group in (
+            QPalette.ColorGroup.Active,
+            QPalette.ColorGroup.Inactive,
+        ):
+            palette.setColor(group, QPalette.ColorRole.Text, QColor("#123D37"))
+            palette.setColor(
+                group, QPalette.ColorRole.ButtonText, QColor("#123D37")
+            )
+            palette.setColor(group, QPalette.ColorRole.Window, QColor("#FFFFFF"))
+        palette.setColor(
+            QPalette.ColorGroup.Disabled,
+            QPalette.ColorRole.Text,
+            QColor("#55766F"),
+        )
+        palette.setColor(
+            QPalette.ColorGroup.Disabled,
+            QPalette.ColorRole.ButtonText,
+            QColor("#55766F"),
+        )
+        menu.setPalette(palette)
+        menu.exec(event.globalPos())
+        menu.deleteLater()
+
+    def keyPressEvent(self, event):
+        modifiers = event.modifiers()
+        paste_modifier = modifiers & (
+            Qt.KeyboardModifier.ControlModifier
+            | Qt.KeyboardModifier.MetaModifier
+        )
+        blocked_modifier = modifiers & Qt.KeyboardModifier.AltModifier
+        cyrillic_paste_key = event.text().lower() == "м"
+        if (
+            not self.isReadOnly()
+            and paste_modifier
+            and not blocked_modifier
+            and (
+                event.matches(QKeySequence.StandardKey.Paste)
+                or cyrillic_paste_key
+            )
+        ):
+            self.paste()
+            event.accept()
+            return
+        super().keyPressEvent(event)
 
 
 class MainWindow(QMainWindow):
@@ -480,7 +568,7 @@ class MainWindow(QMainWindow):
         key_manager_layout.addLayout(key_manager_header)
 
         key_manager_input_row = QHBoxLayout()
-        self.api_key_input = QLineEdit()
+        self.api_key_input = PasteFriendlyLineEdit()
         self.api_key_input.setEchoMode(QLineEdit.EchoMode.Password)
         self.api_key_input.setPlaceholderText("Введите API-ключ Wikimapia")
         self.api_key_input.returnPressed.connect(self._add_api_key)

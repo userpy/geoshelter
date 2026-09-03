@@ -23,7 +23,10 @@ class _RussianQtFallbackTranslator(QTranslator):
     }
 
     def translate(self, context, source_text, disambiguation=None, n=-1):
-        return self._TRANSLATIONS.get(source_text, "")
+        # ``None`` means "translation not found" and lets Qt ask the next
+        # installed translator.  An empty Python string is a valid translation
+        # and therefore erased labels in standard context menus.
+        return self._TRANSLATIONS.get(source_text)
 
 
 def _set_windows_app_id() -> None:
