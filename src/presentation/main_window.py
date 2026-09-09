@@ -139,15 +139,18 @@ class PasteFriendlyLineEdit(QLineEdit):
             | Qt.KeyboardModifier.MetaModifier
         )
         blocked_modifier = modifiers & Qt.KeyboardModifier.AltModifier
-        cyrillic_paste_key = event.text().lower() == "м"
+        # With a Cyrillic layout Qt may expose Ctrl+V as Ctrl+М.  Depending
+        # on the platform/backend, text() can be "м", empty, or a control
+        # character, while key() still contains the Cyrillic key code.
+        cyrillic_paste_key = (
+            event.text().casefold() == "м"
+            or event.key() in (ord("м"), ord("М"))
+        )
+        standard_paste = event.matches(QKeySequence.StandardKey.Paste)
         if (
             not self.isReadOnly()
-            and paste_modifier
             and not blocked_modifier
-            and (
-                event.matches(QKeySequence.StandardKey.Paste)
-                or cyrillic_paste_key
-            )
+            and (standard_paste or (paste_modifier and cyrillic_paste_key))
         ):
             self.paste()
             event.accept()
